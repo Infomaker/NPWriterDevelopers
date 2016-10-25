@@ -1,0 +1,26 @@
+- title: "Developer Portal"
+  href: "/"
+
+- title: "Getting started"
+  href: "/getting-started.html"
+  subcategories:
+    - subtitle: "Learning topic 1"
+      subhref: "/learn1/"
+    - subtitle: "Learning topic 2"
+      subhref: "/learn2/"
+    - subtitle: "Learning topic 3"
+      subhref: "/learn3/"
+
+- title: "Guides"
+  subcategories:
+    - subtitle: "Tools1"
+      subhref: "/tools1/"
+    - subtitle: "Tools2"
+      subhref: "/tools2/"
+
+- title: "API Reference"
+  href: "/api-reference/"
+
+
+- title: "Sample Code"
+  href: "/sample-code/"

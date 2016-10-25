@@ -1,5 +1,40 @@
 @import "bootstrap-flex.scss";
+@import "highlight";
 
 body {
     background-color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+h1 {
+    font-weight: 700;
+    color:#333;
+}
+p {
+    font-size: 1.2rem;
+    font-weight:300;
+}
+.navbar {
+    background-color: #0079b5;
+
+    a {
+        color: #fff;
+    }
+    .nav-item.active {
+        font-weight:700;
+    }
+}
+.main-content {
+    margin-top:100px;
+
+    h3 {
+        font-weight: 700;
+        font-size: 1.2rem;
+        padding-top:20px;
+    }
+}
+
+.highlight {
+    background-color: #efefef;
+    border-radius: 5px;
+    padding: 0 20px;
 }
