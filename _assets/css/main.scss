@@ -22,6 +22,11 @@ p {
     .nav-item.active {
         font-weight:700;
     }
+    .dropdown-menu {
+        a {
+            color: #0079b5;
+        }
+    }
 }
 .main-content {
     margin-top:100px;
@@ -37,4 +42,8 @@ p {
     background-color: #efefef;
     border-radius: 5px;
     padding: 0 20px;
+}
+.footer {
+    position: absolute;
+    bottom:0;
 }

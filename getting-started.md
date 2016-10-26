@@ -14,7 +14,16 @@ eat our own dog food.
 
 ### Clone and start Newspilot Writer
 
-Download and clone
+Download and clone from Github
+
+```text
+
+git clone git@github.com:Infomaker/NPWriter.git
+npm install
+npm run dev
+
+```
+
 
 ### Clone and start the plugin bundle
 

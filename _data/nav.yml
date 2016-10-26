@@ -12,6 +12,7 @@
       subhref: "/learn3/"
 
 - title: "Guides"
+  href: "/guides/"
   subcategories:
     - subtitle: "Tools1"
       subhref: "/tools1/"
