@@ -3,7 +3,7 @@ layout: default
 title: Getting started 
 ---
 
-#Getting started
+# Getting started
 
 Newspilot Writer consists of two different projects, the NPWriter core 
 and the NPWriterPluginBundle. One containing the writer itself and the other
@@ -16,19 +16,20 @@ eat our own dog food.
 
 Download and clone from Github
 
-```text
+~~~text
 
 git clone git@github.com:Infomaker/NPWriter.git
 npm install
 npm run dev
 
-```
+~~~
 
 
 ### Clone and start the plugin bundle
 
 ***
-###Discuss this
+### Discuss this
+
 <div id="disqus_thread"></div>
 <script>
 

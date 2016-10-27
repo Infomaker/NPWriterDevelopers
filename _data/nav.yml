@@ -2,7 +2,7 @@
   href: "/"
 
 - title: "Getting started"
-  href: "/getting-started.html"
+  href: "/getting-started/"
   subcategories:
     - subtitle: "Learning topic 1"
       subhref: "/learn1/"
