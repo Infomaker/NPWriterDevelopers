@@ -4,10 +4,16 @@
 
 @import "bootstrap-flex.scss";
 @import "highlight";
+@import "footer.scss";
 
+html {
+    position: relative;
+    min-height: 100%;
+}
 body {
     background-color: #fff;
     font-family: 'Lato', sans-serif;
+    margin-bottom: 60px;
 }
 h1 {
     font-weight: 700;
@@ -39,6 +45,12 @@ p {
         font-weight: 700;
         font-size: 1.2rem;
         padding-top:20px;
+    }
+
+    h2 {
+        font-weight:700;
+        font-size:1.6rem;
+        padding-top: 30px;
     }
 }
 
