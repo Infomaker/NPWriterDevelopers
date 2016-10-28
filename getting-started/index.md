@@ -37,7 +37,22 @@ npm run dev
 ~~~ 
 Plugin server started at [localhost:5001](http://localhost:5001)
 
+
+### Start with config files on S3
+
+Start in production mode with config files on S3.
+
+~~~
+
+AWS_ACCESS_KEY_ID=XXX AWS_SECRET_ACCESS_KEY=XXX AWS_S3_BUCKET_NAME=XXX NODE_ENV=production PORT=5000 node server.js 
+
+~~~
+
+
+
 ## Create and add your own plugin
+
+
 
 <!--
 //~~~ javascript
