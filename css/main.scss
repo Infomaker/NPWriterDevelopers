@@ -3,7 +3,7 @@
 
 
 @import "bootstrap-flex.scss";
-@import "highlight";
+@import "highlight.scss";
 @import "footer.scss";
 
 html {
@@ -58,6 +58,7 @@ p {
     background-color: #efefef;
     border-radius: 5px;
     padding: 0 20px;
+
 }
 .footer {
     position: absolute;
