@@ -30,6 +30,8 @@ Jekyll is built in Ruby and requires bundle and jekyll to start a local environm
 
 ~~~ bash
 
+git clone git@github.com:Infomaker/NPWriterDevelopers.git
+cd NPWriterDevelopers
 gem install jekyll bundler
 bundle exec jekyll serve --config _config-dev.yml
 
