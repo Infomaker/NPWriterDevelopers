@@ -15,7 +15,7 @@ title: Guides
 The following stuff is just added while developing some of the features so we dont forget to write it down.
 It will later be categorized in to different guides or pages.
 
-## Event contants
+## Event constants
 
 The writer trigger different events when thing changes. As a developer you can listen on these events and react on it.
 There is a object provided with a complete list of events triggered by the writer.
