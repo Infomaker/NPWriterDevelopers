@@ -13,9 +13,15 @@
 
 - title: "Guides"
   href: "/guides/"
-  subcategories:
-    - subtitle: "Tools1"
-      subhref: "/tools1/"
+  subpages:
+    - subtitle: "Plugin configuration in writer config"
+      subhref: "plugin-configuration.html"
+      description: "Learn how to add and configure your plugin"
+
+    - subtitle: "Open a modal"
+      description: "Learn how to open and configure modal with buttons and callbacks"
+      subhref: "open-modal.html"
+
     - subtitle: "Tools2"
       subhref: "/tools2/"
 

@@ -5,6 +5,8 @@
             {% for navItem in site.data.nav %}
                 {% if page.url == navItem.href %}
                     <li class="nav-item active"><a class="nav-link" href="{{ site.url }}{{ site.baseurl }}{{ navItem.href }}">{{ navItem.title }}</a></li>
+                {% elsif page.active == navItem.href %}
+                    <li class="nav-item active"><a class="nav-link" href="{{ site.url }}{{ site.baseurl }}{{ navItem.href }}">{{ navItem.title }}</a></li>
                 {% else %}
                     <li class="nav-item"><a class="nav-link" href="{{ site.url }}{{ site.baseurl }}{{ navItem.href }}">{{ navItem.title }}</a></li>
                 {% endif %}

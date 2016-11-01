@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Add your plugin it the configuration file
+active: /guides/
 ---
 
 # Add your plugin it the configuration file
