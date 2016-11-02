@@ -15,15 +15,57 @@ Currently there is two types of modals available, __custom dialog__ (provided by
 
 ## Create a dialog with your custom component
 
-To open a dialog you call `api.ui.showDialog` which takes three parameters (contentComponent, props, options)
+How to create and open a basic modal.
 
 
-|-----------------+------------+----------------|
-| Name            |Type        | Description    | 
-|-----------------|------------|----------------|
-| contentComponent  | Component | Your component that will be opened inside the modal 
-| props             | object    | An object contain information you want to access in your dialog. 
-| options           | object    | An options object for the modal. [Valid option properties](#valid-options-properties)
+_DialogComponent.js_
+
+~~~ javascript
+
+import {Component} from 'substance'
+
+class DialogComponent extends Component {
+    
+    render($$) {
+        return $$('div').append('Hello world')
+    }
+    
+    onClose(action) { // action is save or cancel
+        
+    }
+}
+
+~~~
+
+_PluginComponent.js_
+
+
+~~~ javascript
+
+import {Component} from 'substance'
+import {api} from 'writer'
+import DialogComponent from './DialogComponent'
+
+class PluginComponent extends Component {
+    
+    render($$) {
+        const el = $$('div')
+        
+        const openDialogButton = $$('button').on('click', () => {
+            api.ui.showDialog(DialogComponent, {}, {})   
+        }
+        
+        el.append(openDialogButton)
+        
+        return el
+    }
+    
+}
+
+~~~
+
+The modal is opened by calling the `api.ui.showDialog` method.
+
 
 
 ### Valid options properties
