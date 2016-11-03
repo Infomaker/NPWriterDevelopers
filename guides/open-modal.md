@@ -18,7 +18,7 @@ Currently there is two types of modals available, __custom dialog__ (provided by
 How to create and open a basic modal.
 
 
-_DialogComponent.js_
+__DialogComponent.js__ - _The component that is rendered inside the modal_
 
 ~~~ javascript
 
@@ -37,7 +37,8 @@ class DialogComponent extends Component {
 
 ~~~
 
-_PluginComponent.js_
+
+__PluginComponent.js__ - _The main plugin components that initiate the modal open_
 
 
 ~~~ javascript
