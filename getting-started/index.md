@@ -12,6 +12,11 @@ one Infomakers plugins.
 the exact same development environment as third party developers. This way we have to
 eat our own dog food.
 
+
+<!-- Video with subtitles -->
+<video src="{{site.url}}{{site.baseurl}}/getting-started/get-started.mp4" width="100%" controls="true">
+</video>
+
 ### Clone and start Newspilot Writer
 
 Download and clone from Github
