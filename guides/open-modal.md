@@ -13,6 +13,18 @@ when showing a map or browsing an image archive.
 
 Currently there is two types of modals available, __custom dialog__ (provided by plugin developer) and a __message dialog__.
 
+__Folder structure__
+
+~~~
+
+Myplugin
+    |_ DialogComponent.js
+    |_ PluginComponent.js
+    |_ PluginPackage.js
+    |_ index.js
+    
+~~~
+
 ## Create a dialog with your custom component
 
 How to create and open a basic modal.
@@ -65,8 +77,40 @@ class PluginComponent extends Component {
 
 ~~~
 
-The modal is opened by calling the `api.ui.showDialog` method.
+The modal is opened by calling the `api.ui.showDialog` method. 
+When clicking the button the API will be called to open a new dialog containing the DialogComponent class.
 
+__PluginPackage.js__ - 
+
+~~~ javascript
+
+import PluginComponent from './PluginComponent'
+
+export default {
+    name: 'myplugin',
+    id: 'se.infomaker.myplugin',
+    configure: function (config) {
+        config.addComponentToSidebarWithTabId(this.id, 'main', PluginComponent)
+    }
+}
+
+~~~
+
+__index.js__ - The index file used to register the plugin
+
+~~~javascript 
+
+import PluginPackage from './PluginPackage'
+
+(() => {
+if (registerPlugin) {
+        registerPlugin(DevkitPackage)
+    } else {
+        console.error("Register method not yet available");
+    }
+})()
+
+~~~
 
 
 ### Valid options properties

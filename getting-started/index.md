@@ -25,11 +25,13 @@ Download and clone from Github
 
 git clone git@github.com:Infomaker/NPWriter.git
 npm install
+npm run build-dep
 npm run dev
 
 ~~~
 
-You can now open thw writer with a demo document [localhost:5000/#demo](http://localhost:5000/#demo)
+You can now open thw writer with a demo document [localhost:5000/#demo](http://localhost:5000/#demo) or just 
+[localhost:5000/](http://localhost:5000/) to create a new article
 
 
 ### Clone and start the plugin bundle
