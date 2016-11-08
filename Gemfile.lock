@@ -155,7 +155,7 @@ DEPENDENCIES
   kramdown
 
 RUBY VERSION
-   ruby 2.0.0p645
+   ruby 2.3.1p112
 
 BUNDLED WITH
    1.13.6
