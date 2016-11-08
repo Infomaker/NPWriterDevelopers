@@ -11,7 +11,7 @@ when showing a map or browsing an image archive.
 
 Currently there is two types of modals available, __custom dialog__ (provided by plugin developer) and a __message dialog__.
 
-<img src="{{ site.url }}{{ site.baseurl }}/guides/open-modal.gif" class="img-thumbnail" width="100%">
+<img src="{{ site.url }}{{ site.baseurl }}/guides/open-modal/open-modal.gif" class="img-thumbnail" width="100%">
 
 
 ## Example

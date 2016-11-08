@@ -13,7 +13,7 @@
 
     - subtitle: "Open a modal"
       description: "Learn how to open and configure modal with buttons and callbacks"
-      subhref: "open-modal.html"
+      subhref: "open-modal/"
 
     - subtitle: "Tools2"
       subhref: "/tools2/"
