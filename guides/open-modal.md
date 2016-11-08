@@ -6,12 +6,22 @@ active: /guides/
 
 # Open and configure a modal
 
-<img src="{{ site.url }}{{ site.baseurl }}/guides/open-modal.gif" class="img-thumbnail" width="100%">
-
 Opening a modal window can be very useful when your plugins need to have more space, for example
 when showing a map or browsing an image archive.
 
 Currently there is two types of modals available, __custom dialog__ (provided by plugin developer) and a __message dialog__.
+
+<img src="{{ site.url }}{{ site.baseurl }}/guides/open-modal.gif" class="img-thumbnail" width="100%">
+
+
+## Example
+[This example code is available at Github](https://github.com/Infomaker/NPWriterExamplePlugins/tree/master/examples/open-modal)
+
+
+
+## Create a dialog with your custom component
+
+How to create and open a basic modal.
 
 __Folder structure__
 
@@ -25,9 +35,6 @@ open-modal
     
 ~~~
 
-## Create a dialog with your custom component
-
-How to create and open a basic modal.
 
 
 __DialogComponent.js__ - _The component that is rendered inside the modal_
