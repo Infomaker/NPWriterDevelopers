@@ -7,6 +7,15 @@
 - title: "Guides"
   href: "/guides/"
   subpages:
+
+    - subtitle: "Migration guide"
+      description: "Migrate your version 1 plugin to version 3"
+      subhref: "migration-guide/"
+
+    - subtitle: "Basic information"
+      description: "Basic information anatomy of a plugin and how plugin loading is done"
+      subhref: "basic-information/"
+
     - subtitle: "Plugin configuration in writer config"
       subhref: "plugin-configuration.html"
       description: "Learn how to add and configure your plugin"
@@ -15,8 +24,6 @@
       description: "Learn how to open and configure modal with buttons and callbacks"
       subhref: "open-modal/"
 
-    - subtitle: "Tools2"
-      subhref: "/tools2/"
 
 - title: "API Reference"
   href: "/api-reference/"

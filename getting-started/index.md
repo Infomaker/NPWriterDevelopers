@@ -21,20 +21,21 @@ is to:
 
 ## Prerequisites
 
+{{ page.writer }} requires Node.js version 6.9.1
+
 Since {{ page.writer }} is served by Node.js, the first step is to install it on the local machine.
 
 - [Installing NodeJS for OS X]({{site.url}}{{site.baseurl}}/getting-started/nodejs-installations/osx.html)
 - [Installing NodeJS for Windows]({{site.url}}{{site.baseurl}}/getting-started/nodejs-installations/win.html)
 
+---
 
-## Get the source code and build it
-<!-- Video with subtitles -->
-<video src="{{site.url}}{{site.baseurl}}/getting-started/get-started.mp4" width="100%" controls="true">
-</video>
-
-### Clone and start Newspilot Writer
+## Clone and start Newspilot Writer
 
 Download and clone from Github
+<video src="{{site.url}}{{site.baseurl}}/getting-started/get-started.mp4" width="70%" controls="true">
+</video>
+
 
 ~~~text
 
@@ -46,34 +47,40 @@ npm run dev
 
 ~~~
 
+
+
 You can now open thw writer with a demo document [localhost:5000/#demo](http://localhost:5000/#demo) or just 
 [localhost:5000/](http://localhost:5000/) to create a new article
 
 
-### Clone and start the plugin bundle
+---
+
+## Download add enable the Devkit plugin
+
+We have provided you with a developers kit which is supplied with an example plugin.
+
+<video src="{{site.url}}{{site.baseurl}}/getting-started/add-devkit-plugin.mp4" width="70%" controls="true">
+</video>
+
+
 ~~~ 
 
-git clone git@github.com:Infomaker/NPWriterPluginBundle.git
+git clone git@github.com:Infomaker/NPWriterDevKit.git
+cd NPWriterDevKit
 npm install 
 npm run dev
 
 ~~~ 
-Plugin server started at [localhost:5001](http://localhost:5001)
+
+Plugin server started at [localhost:3000](http://localhost:3000)
 
 
-### Start with config files on S3
-
-Start in production mode with config files on S3.
-
-~~~
-
-AWS_ACCESS_KEY_ID=XXX AWS_SECRET_ACCESS_KEY=XXX AWS_S3_BUCKET_NAME=XXX NODE_ENV=production PORT=5000 node server.js 
-
-~~~
+To enable plugin open NPWriter and edit server/config/writer.json
 
 
 
-## Create and add your own plugin
+
+
 
 
 
