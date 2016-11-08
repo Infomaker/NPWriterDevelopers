@@ -128,13 +128,6 @@ if (registerPlugin) {
 
 ### Valid options properties
 
-|-----------------+------------+----------------|
-| Property        |Type        | Description    | 
-|-----------------|------------|----------------|
-| title  | string, optional | The title for the modal  
-| props             | object    | An object contain information you want to access in your dialog. 
-| options           | object    | An options object for the modal. [Valid option properties](#valid-options-properties)
-
-
+Please see the Ui section in API Reference
 
 ### Create a message dialog 
