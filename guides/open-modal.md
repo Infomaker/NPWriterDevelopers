@@ -6,7 +6,7 @@ active: /guides/
 
 # Open and configure a modal
 
-<!--<img src="{{ site.url }}{{ site.baseurl }}/assets/open_modal.png" class="img-thumbnail float-xs-right" width="50%">-->
+<img src="{{ site.url }}{{ site.baseurl }}/guides/open-modal.gif" class="img-thumbnail" width="100%">
 
 Opening a modal window can be very useful when your plugins need to have more space, for example
 when showing a map or browsing an image archive.
@@ -17,7 +17,7 @@ __Folder structure__
 
 ~~~
 
-Myplugin
+open-modal
     |_ DialogComponent.js
     |_ PluginComponent.js
     |_ PluginPackage.js
@@ -39,13 +39,14 @@ import {Component} from 'substance'
 class DialogComponent extends Component {
     
     render($$) {
-        return $$('div').append('Hello world')
+        return $$('div').append('Hello world from DialogComponent')
     }
     
     onClose(action) { // action is save or cancel
         
     }
 }
+export default DialogComponent
 
 ~~~
 
@@ -64,9 +65,11 @@ class PluginComponent extends Component {
     render($$) {
         const el = $$('div')
         
-        const openDialogButton = $$('button').on('click', () => {
-            api.ui.showDialog(DialogComponent, {}, {})   
-        }
+        const openDialogButton = $$('button')
+                .append("Click me to open dialog")
+                .on('click', () => {
+                    api.ui.showDialog(DialogComponent, {}, {})
+                })
         
         el.append(openDialogButton)
         
@@ -74,6 +77,8 @@ class PluginComponent extends Component {
     }
     
 }
+
+export default PluginComponent
 
 ~~~
 
@@ -87,8 +92,8 @@ __PluginPackage.js__ -
 import PluginComponent from './PluginComponent'
 
 export default {
-    name: 'myplugin',
-    id: 'se.infomaker.myplugin',
+    name: 'open-modal',
+    id: 'se.infomaker.open-modal',
     configure: function (config) {
         config.addComponentToSidebarWithTabId(this.id, 'main', PluginComponent)
     }
@@ -100,11 +105,12 @@ __index.js__ - The index file used to register the plugin
 
 ~~~javascript 
 
+import {registerPlugin} from 'writer'
 import PluginPackage from './PluginPackage'
 
 (() => {
 if (registerPlugin) {
-        registerPlugin(DevkitPackage)
+        registerPlugin(PluginPackage)
     } else {
         console.error("Register method not yet available");
     }
