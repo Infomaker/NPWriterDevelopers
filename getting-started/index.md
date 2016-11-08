@@ -1,18 +1,33 @@
 ---
 layout: default
-title: Getting started 
+title: Getting started
+writer: Newspilot Writer
+infomaker: Infomaker
 ---
 
-# Getting started
+# {{ page.title }}
 
-Newspilot Writer consists of two different projects, the NPWriter core 
+{{ page.writer }} consists of two different projects, the NPWriter core 
 and the NPWriterPluginBundle. One containing the writer itself and the other
-one Infomakers plugins.
- By using this approach we, as core developers gets
-the exact same development environment as third party developers. This way we have to
-eat our own dog food.
+one {{ page.infomaker }}s plugins.
+
+The {{ page.writer }} is served to the browser via a node.js server. The server get the instructions of
+which plugins to load from a configuration file. The easiest way to develop plugins on a local machine
+is to:
+ 
+1. Clone the {{ page.writer }} source code from github
+2. Edit the configuration file and link to the new plugin
+3. Start the {{ page.writer }} Node.js server
+
+## Prerequisites
+
+Since {{ page.writer }} is served by Node.js, the first step is to install it on the local machine.
+
+- [Installing NodeJS for OS X]({{site.url}}{{site.baseurl}}/getting-started/nodejs-installations/osx.html)
+- [Installing NodeJS for Windows]({{site.url}}{{site.baseurl}}/getting-started/nodejs-installations/win.html)
 
 
+## Get the source code and build it
 <!-- Video with subtitles -->
 <video src="{{site.url}}{{site.baseurl}}/getting-started/get-started.mp4" width="100%" controls="true">
 </video>
