@@ -18,6 +18,10 @@
     - subtitle: "Tools2"
       subhref: "/tools2/"
 
+    - subtitle: "Newspilot Writer format"
+      description: "Quick guide to the format used by the Newspilot Writer"
+      subhref: "writer-format.html"
+
 - title: "API Reference"
   href: "/api-reference/"
 
