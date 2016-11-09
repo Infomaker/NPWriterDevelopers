@@ -25,8 +25,13 @@ is to:
 
 Since {{ page.writer }} is served by Node.js, the first step is to install it on the local machine.
 
-- [Installing NodeJS for OS X]({{site.url}}{{site.baseurl}}/getting-started/nodejs-installations/osx.html)
-- [Installing NodeJS for Windows]({{site.url}}{{site.baseurl}}/getting-started/nodejs-installations/win.html)
+- [Installing NodeJS in OS X]({{site.url}}{{site.baseurl}}/getting-started/nodejs-installations/osx.html)
+- [Installing NodeJS in Windows]({{site.url}}{{site.baseurl}}/getting-started/nodejs-installations/win.html)
+
+The code resides on github, hence you need to have Git installed.
+
+- [Installing Git in OS X]({{site.url}}{{site.baseurl}}/getting-started/git-installations/osx.html)
+- [Installing Git in Windows]({{site.url}}{{site.baseurl}}/getting-started/git-installations/osx.html)
 
 ---
 
