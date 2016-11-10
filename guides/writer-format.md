@@ -6,11 +6,12 @@ active: /guides/
 
 # Writer format
 
+## Article format
 In order for Newspilot Writer to render and process articles these need to be in a specific format. The format used is based on NewsML which is an IPTC standard (further explained in detail here [https://iptc.org/standards/newsml-g2/](https://iptc.org/standards/newsml-g2/){:target="_blank"}). 
 
 Newspilot Writer is using an extended version of the `NewsItem` to represent articles. The Newspilot Writer NewsItem format is documented here; [https://github.com/Infomaker/writer-format/blob/master/newsml/newsitem/newsitem-text.xml](https://github.com/Infomaker/writer-format/blob/master/newsml/newsitem/newsitem-text.xml){:target="_blank"}.
 
-## Format explained
+### Format explained
 Below are links to xsd files that can be used to understand and validate the Newspilot Writer format.
 
 - [NewsItem](https://github.com/Infomaker/writer-format/blob/master/validation_service/xsd/Infomaker-NewsItem_ver1.0.xsd){:target="_blank"} - Represent the "whole" article (i.e. metadata and content)
@@ -20,7 +21,7 @@ Below are links to xsd files that can be used to understand and validate the New
 Below are the extensions used in the format explained in more detail.
 
 
-### object
+#### object
 The `object` node is an extension to the standard which is used to wrap plugin specific data. Below is an example of how to use the `object` node.
 
 ~~~xml
@@ -42,7 +43,7 @@ The attribute `object/@type` is used to map the `object` to a specific plugin. T
 
 The `data` node wraps any plugin specific data that the plugin might need. 
 
-### metadata
+#### metadata
 The `metadata` node is used to wrap `object` nodes that are not located inside the content part (i.e. `idf`) of the article. `object` nodes within `metadata` node represent data that is not "inline" so to say. Example below.
 
 ~~~xml
@@ -72,7 +73,7 @@ The `links` node wraps `link` nodes that are used to represent related entities 
 </links>
 ~~~
 
-### idf
+#### idf
 The `idf` (Infomaker Data Format) node wraps the actual content of the article, i.e. headlines, text and inline images etc. It is wrapped by the standard node `inlineXML`. Example below.
 
 ~~~xml
@@ -107,8 +108,18 @@ The `idf` (Infomaker Data Format) node wraps the actual content of the article, 
 </idf>
 ~~~
 
-## Modifying the format
+### Modifying the format
 
 Using the Newspilot Writer plugin framework it is possible to modify any part of the `NewsItem` as long as it is compliant with the standard and with the Newspilot Writer extensions.
 
 How to use the plugin framework to modifiy the format is explained in the [API Reference]({{site.url}}{{site.baseurl}}/api-reference/){:target="_blank"}.
+
+## Concept format
+
+Concept format can be used to represent different types of metadata such as geo-position, categories etc. In order to 
+use plugins developed by Infomaker that handle metadata a specific "concept format" - `ConceptItem` - is used. This
+format is part of the NewsML standard and is used with some extensions by metadata plugins developed by Infomaker.
+
+Example of `ConceptItems` can be found here; [https://github.com/Infomaker/writer-format/tree/master/newsml/conceptitem](https://github.com/Infomaker/writer-format/tree/master/newsml/conceptitem).
+The examples include comments describing the nodes used in the `ContentItem`s. The same extensions to the standard are
+used as for the `NewsItem` (see above).
