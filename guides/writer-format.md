@@ -117,10 +117,76 @@ How to use the plugin framework to modifiy the format is explained in the [API R
 
 ## Concept format
 
-Concept format can be used to represent different types of metadata such as geo-position, categories etc. In order to 
+Concept format can be used to represent different types of metadata such as geodata, categories etc. In order to 
 use plugins developed by Infomaker that handle metadata a specific "concept format" - `ConceptItem` - is used. This
 format is part of the NewsML standard and is used with some extensions by metadata plugins developed by Infomaker.
 
 Example of `ConceptItems` can be found here; [https://github.com/Infomaker/writer-format/tree/master/newsml/conceptitem](https://github.com/Infomaker/writer-format/tree/master/newsml/conceptitem).
 The examples include comments describing the nodes used in the `ContentItem`s. The same extensions to the standard are
 used as for the `NewsItem` (see above).
+
+### Example ConceptItem - Geodata (position)
+~~~xml
+<?xml version="1.0" encoding="UTF-8"?>
+<conceptItem xmlns="http://iptc.org/std/nar/2006-10-01/" guid="bce38dda-555b-11e5-885d-feff819cdc9f"
+    version="1" standard="NewsML-G2" standardversion="2.20" conformance="power">
+    <!-- catalog for ninat:, nprov:, irel:, cpnat:, drol:, etc... -->
+    <catalogRef href="http://www.iptc.org/std/catalog/catalog.IPTC-G2-Standards_27.xml"/>
+
+    <!-- catalog for infomaker extensions: imchn, imext etc... -->
+    <catalogRef href="http://infomaker.se/spec/catalog/catalog.infomaker.g2.1_0.xml"/>
+
+    <itemMeta>
+        <itemClass qcode="cinat:concept"/>
+
+        <!-- The party (person or organisation) responsible for the management of the Item. -->
+        <provider literal="John Doe"/>
+
+        <!-- Timestamps for created and updated. https://www.ietf.org/rfc/rfc3339.txt -->
+        <versionCreated>2015-12-07T15:03:42+00:00</versionCreated>
+        <firstCreated>2015-12-07T15:03:42+00:00</firstCreated>
+        
+        <!-- The publishing status of the Item, its value is "usable" by default. -->
+        <pubStatus qcode="stat:usable"/>
+
+        <!-- Extension used to map concept to x-im/place -->
+        <itemMetaExtProperty type="imext:type" value="x-im/place"/>        
+
+        <links xmlns="http://www.infomaker.se/newsml/1.0">
+            <!-- User that has created the concept. -->
+            <link title="John Doe" rel="creator" type="x-im/user"
+                uuid="9e1653f3-7575-4cb7-9b74-dc4dea63513e"/>
+
+            <!-- Additional information for the concept. -->
+            <link rel="irel:seeAlso" type="text/html" url="http://example.org/alvesta"/>
+        </links>
+    </itemMeta>
+    <concept>
+        <!-- Mandatory. @qcode or @uri must be used -->
+        <conceptId created="2015-08-11T07:30:42Z" qcode="imcpt:bce38dda-555b-11e5-885d-feff819cdc9f"
+            uri="im://place/bce38dda-555b-11e5-885d-feff819cdc9f"/>
+
+        <!-- Mandatory (for writer usage). Identifies the concept as an abstract which maps to "place" -->
+        <type qcode="cpnat:poi"/>
+
+        <!-- Mandatory. Name of concept -->
+        <name>Alvesta</name>
+
+        <!-- Descriptions -->
+        <definition role="drol:long">A long description...</definition>
+        <definition role="drol:short">A short description</definition>
+
+        <!--
+            To represent geodata we are using WKT, for more info see
+            https://en.wikipedia.org/wiki/Well-known_text.
+        -->
+        <metadata xmlns="http://www.infomaker.se/newsml/1.0">
+            <object id="B1Lkp0OqQXo" type="x-im/position">
+                <data>
+                    <geometry>POINT(14.55600 56.89921)</geometry>
+                </data>
+            </object>
+        </metadata>
+    </concept>
+</conceptItem>
+~~~
