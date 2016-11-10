@@ -7,28 +7,22 @@ infomaker: Infomaker
 
 # {{ page.title }}
 
-{{ page.writer }} consists of two different projects, the NPWriter core 
-and the NPWriterPluginBundle. One containing the writer itself and the other
-one {{ page.infomaker }}s plugins.
+**{{ page.writer }} consists of the NPWriter core project, which provides core editing functionality,
+and optional plugin projects that extends the functionality of the writer.
+In this article you will find instructions of how to download and start the {{ page.writer }} locally
+and how to start developing your first plugin.**
 
-The {{ page.writer }} is served to the browser via a node.js server. The server get the instructions of
-which plugins to load from a configuration file. The easiest way to develop plugins on a local machine
-is to:
- 
-1. Clone the {{ page.writer }} source code from github
-2. Edit the configuration file and link to the new plugin
-3. Start the {{ page.writer }} Node.js server
 
 ## Prerequisites
 
 {{ page.writer }} requires Node.js version 6.9.1
 
-Since {{ page.writer }} is served by Node.js, the first step is to install it on the local machine.
+Start by installing Node.js on your machine.
 
 - [Installing NodeJS in OS X]({{site.url}}{{site.baseurl}}/getting-started/nodejs-installations/osx.html)
 - [Installing NodeJS in Windows]({{site.url}}{{site.baseurl}}/getting-started/nodejs-installations/win.html)
 
-The code resides on github, hence you need to have Git installed.
+The code resides on github, hence you also need to have Git installed.
 
 - [Installing Git in OS X]({{site.url}}{{site.baseurl}}/getting-started/git-installations/osx.html)
 - [Installing Git in Windows]({{site.url}}{{site.baseurl}}/getting-started/git-installations/osx.html)
