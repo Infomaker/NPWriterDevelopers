@@ -5,6 +5,7 @@ active: /guides/
 ---
 
 # Writer format
+In this guide the format used by Newspilot Writer for articles and metadata or "concepts" are described.
 
 ## Article format
 In order for Newspilot Writer to render and process articles these need to be in a specific format. The format used is based on NewsML which is an IPTC standard (further explained in detail here [https://iptc.org/standards/newsml-g2/](https://iptc.org/standards/newsml-g2/){:target="_blank"}). 
