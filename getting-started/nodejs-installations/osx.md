@@ -20,7 +20,7 @@ After the installation finishes, please close and re-open Terminal to allow envi
 
 ## Test the installation
 
-Open up the Command Prompt and type
+Open up the Terminal and type
 
     $ node --version
     v7.0.0
