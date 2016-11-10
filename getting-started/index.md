@@ -38,7 +38,7 @@ Download and clone from Github
 
 ~~~text
 
-git clone git@github.com:Infomaker/NPWriter.git
+git clone https://github.com:Infomaker/NPWriter.git
 cd NPWriter
 npm install
 npm run build-dep
@@ -64,7 +64,7 @@ We have provided you with a developers kit which is supplied with an example plu
 
 ~~~ 
 
-git clone git@github.com:Infomaker/NPWriterDevKit.git
+git clone https://github.com/Infomaker/NPWriterDevKit.git
 cd NPWriterDevKit
 npm install 
 npm run dev
