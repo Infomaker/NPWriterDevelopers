@@ -25,7 +25,7 @@ Start by installing Node.js on your machine.
 The code resides on github, hence you also need to have Git installed.
 
 - [Installing Git in OS X]({{site.url}}{{site.baseurl}}/getting-started/git-installations/osx.html)
-- [Installing Git in Windows]({{site.url}}{{site.baseurl}}/getting-started/git-installations/osx.html)
+- [Installing Git in Windows]({{site.url}}{{site.baseurl}}/getting-started/git-installations/win.html)
 
 ---
 
