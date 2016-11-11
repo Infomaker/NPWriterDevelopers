@@ -12,9 +12,9 @@
       description: "Basic information anatomy of a plugin and how plugin loading is done"
       subhref: "basic-information/"
 
-    - subtitle: "Adding custom paragraph styles"
-      subhref: "plugin-configuration.html"
-      description: "Learn how to add and configure your plugin"
+    - subtitle: "Insert an object with component, converter and node"
+      subhref: "insert-object"
+      description: "A complete example of how to insert a node that you can edit inside the editor"
 
     - subtitle: "Adding different plugin components"
       subhref: "plugin-components"
