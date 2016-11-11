@@ -10,6 +10,16 @@ connection is located in server/config/server.json
 
 The article format is based on the NewsML standard, you can more about the format here.
 
+## Newspilot Writer Overview
+
+Below is an overview image of different parts of the Newspilot Writer.
+
+The areas shown is areas were you can place you plugins.
+
+[Read instructions here on how to add your plugin components]({{site.url}}{{site.baseurl}}/guides/plugin-components/)
+
+![Writer Overview]({{site.url}}{{site.baseurl}}/guides/basic-information/writer-overview.png){:class="img-fluid" style="border:1px solid #efefef"}
+
 ## Plugin information
 
 ### Plugin loading

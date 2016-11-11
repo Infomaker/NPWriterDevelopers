@@ -3,6 +3,11 @@ layout: default
 titlt: Documentation to be categorized
 ---
 
+* Dema concepts med GEO
+* Droppa in bild - Lägg till concept
+* Varför finns writer?
+* Vad är OC?
+* Vad är Concepts?
 
 ***
 

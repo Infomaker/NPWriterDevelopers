@@ -9,20 +9,24 @@ active: /guides/
 
 Below is the section for a plugin, in this case the __npwriterdevkit__.
 
-This is configured in the writer configuration file, located in {{site.data.vars.writer_config_path}}
+{% assign config = site.data.vars['config'] %} 
+This is configured in the writer configuration file, located in {{config.writer_config_path}}
 
 ~~~ json
 
-{
-    "id": "se.infomaker.npwriterdevkit",
-    "name": "npwriterdevkit",
-    "url": "http://localhost:3000/index.js",
-    "style": "http://localhost:3000/style.css",
-    "mandatory": false,
-    "enabled": false,
-    "data": {
-        "foo": "bar"
-    }
+plugins: [
+    ...
+    {
+        "id": "se.infomaker.npwriterdevkit",
+        "name": "npwriterdevkit",
+        "url": "http://localhost:3000/index.js",
+        "style": "http://localhost:3000/style.css",
+        "mandatory": false,
+        "enabled": false,
+        "data": {
+            "foo": "bar"
+    },
+    ...
 }
 
 ~~~

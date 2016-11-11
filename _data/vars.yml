@@ -1,1 +1,2 @@
-- writer_config_path: "server/config/writer.json"
+config:
+  writer_config_path: "server/config/writer.json"

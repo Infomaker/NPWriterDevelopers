@@ -8,13 +8,17 @@
   href: "/guides/"
   subpages:
 
-    - subtitle: "Migration guide"
-      description: "Migrate your version 1 plugin to version 3"
-      subhref: "migration-guide/"
-
     - subtitle: "Basic information"
       description: "Basic information anatomy of a plugin and how plugin loading is done"
       subhref: "basic-information/"
+
+    - subtitle: "Adding custom paragraph styles"
+      subhref: "plugin-configuration.html"
+      description: "Learn how to add and configure your plugin"
+
+    - subtitle: "Adding different plugin components"
+      subhref: "plugin-components"
+      description: "Add different type of component to the writer such as tools, command and nodes"
 
     - subtitle: "Plugin configuration in writer config"
       subhref: "plugin-configuration.html"
@@ -28,6 +32,10 @@
     - subtitle: "Newspilot Writer format"
       description: "Quick guide to the format used by the Newspilot Writer"
       subhref: "writer-format.html"
+
+    - subtitle: "Migration guide"
+      description: "Migrate your version 1 plugin to version 3"
+      subhref: "migration-guide/"
 
 - title: "API Reference"
   href: "/api-reference/"
