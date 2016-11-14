@@ -63,17 +63,17 @@ API doesn't reject depending on status codes.
 
 ~~~ javascript
 
-    const urlToFetch = 'http://api.krisinformation.se/v1/capmessage?format=json'
-    
-    api.router.get('/api/proxy/', {url: urlToFetch})
-        .then(response => this.context.api.router.checkForOKStatus(response))
-        .then(response => response.json())
-        .then(json => {
-            console.log("Response is", json)
-        })
-        .catch((e) => {
-            console.error(e)
-        })
+const urlToFetch = 'http://api.krisinformation.se/v1/capmessage?format=json'
+
+api.router.get('/api/proxy/', {url: urlToFetch})
+    .then(response => this.context.api.router.checkForOKStatus(response))
+    .then(response => response.json())
+    .then(json => {
+        console.log("Response is", json)
+    })
+    .catch((e) => {
+        console.error(e)
+    })
 
 
 ~~~ 
