@@ -63,8 +63,6 @@ API doesn't reject depending on status codes.
 
 ~~~ javascript
 
-    let url = this.url
-    
     const urlToFetch = 'http://api.krisinformation.se/v1/capmessage?format=json'
     
     api.router.get('/api/proxy/', {url: urlToFetch})
