@@ -24,6 +24,10 @@
       subhref: "plugin-configuration.html"
       description: "Learn how to add and configure your plugin"
 
+    - subtitle: "Fetch asynchronous data"
+      description: "Fetch asynchronous from your plugins"
+      subhref: "fetch-asynchronous-data/"
+
     - subtitle: "Open a modal"
       description: "Learn how to open and configure modal with buttons and callbacks"
       subhref: "open-modal/"

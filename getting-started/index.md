@@ -15,6 +15,8 @@ and how to start developing your first plugin.**
 
 ## Prerequisites
 
+To use  {{ page.writer }} you need to use the latest version of Google Chrome 
+
 {{ page.writer }} requires Node.js version 6.9.1
 
 Start by installing Node.js on your machine.
