@@ -38,7 +38,7 @@ Download and clone from Github
 
 ~~~text
 
-git clone https://github.com:Infomaker/NPWriter.git
+git clone https://github.com/Infomaker/NPWriter.git
 cd NPWriter
 npm install
 npm run build-dep
