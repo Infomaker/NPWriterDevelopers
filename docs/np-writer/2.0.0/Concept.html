@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Document - Documentation</title>
+    <title>Concept - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -28,7 +28,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">Document</h1>
+    <h1 class="page-title">Concept</h1>
     
 
     
@@ -41,12 +41,10 @@
 <header>
     
         <h2>
-        Document
+        Concept
         </h2>
         
-            <div class="class-description"><p>Document</p>
-<p>Document manipulation methods. All methods available directly in the
-context.api object.</p></div>
+            <div class="class-description"><p>High-level functions for working with Concepts.</p></div>
         
     
 </header>
@@ -60,7 +58,7 @@ context.api object.</p></div>
     <h2>Constructor</h2>
     
 
-    <h4 class="name" id="Document"><span class="type-signature"></span>new Document<span class="signature">()</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="Concept"><span class="type-signature"></span>new Concept<span class="signature">()</span><span class="type-signature"></span></h4>
 
     
 
@@ -107,7 +105,7 @@ context.api object.</p></div>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api_Document.js.html">api/Document.js</a>, <a href="api_Document.js.html#line10">line 10</a>
+        <a href="api_Concept.js.html">api/Concept.js</a>, <a href="api_Concept.js.html#line12">line 12</a>
     </li></ul></dd>
     
 
@@ -156,16 +154,14 @@ context.api object.</p></div>
 
     
 
-    <h4 class="name" id="deleteNode"><span class="type-signature"></span>deleteNode<span class="signature">(name, node)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id=".getDefinitionForType"><span class="type-signature">(static) </span>getDefinitionForType<span class="signature">(definition, type)</span><span class="type-signature"> &rarr; {*}</span></h4>
 
     
 
 
 
 <div class="description">
-    <p>Deletes a node from the document.
-Triggers a 'document:changed' event to all document:changed listeners except
-the plugin making the change.</p>
+    <p>Search in definition to find specified type'</p>
 </div>
 
 
@@ -201,7 +197,30 @@ the plugin making the change.</p>
 
         <tr>
             
-                <td class="name"><code>name</code></td>
+                <td class="name"><code>definition</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>An array or object</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
             
 
             <td class="type">
@@ -217,30 +236,7 @@ the plugin making the change.</p>
 
             
 
-            <td class="description last"><p>Plugin name</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>node</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Node to delete, must contain an id</p></td>
+            <td class="description last"><p>The type to search for, drol:short, drol:long</p></td>
         </tr>
 
     
@@ -281,100 +277,7 @@ the plugin making the change.</p>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api_Document.js.html">api/Document.js</a>, <a href="api_Document.js.html#line103">line 103</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-<h5>Fires:</h5>
-<ul>
-    <li>document:changed</li>
-</ul>
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Example</h5>
-    
-    <pre class="prettyprint"><code>this.context.api.deleteNode(this.props.node);</code></pre>
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="getDocumentNodes"><span class="type-signature"></span>getDocumentNodes<span class="signature">()</span><span class="type-signature"> &rarr; {Array}</span></h4>
-
-    
-
-
-
-<div class="description">
-    <p>Get all nodes in the document
-Get all nodeId:s from body container and fetch the actual node by Id</p>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api_Document.js.html">api/Document.js</a>, <a href="api_Document.js.html#line123">line 123</a>
+        <a href="api_Concept.js.html">api/Concept.js</a>, <a href="api_Concept.js.html#line21">line 21</a>
     </li></ul></dd>
     
 
@@ -400,487 +303,10 @@ Get all nodeId:s from body container and fetch the actual node by Id</p>
 <h5>Returns:</h5>
 
         
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Array</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="handleDrag"><span class="type-signature"></span>handleDrag<span class="signature">(element, node)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-<div class="description">
-    <p>Make element/node combination draggable within the writer. At the
-moment only a (with href attribute) and img elements are supported.</p>
+<div class="param-desc">
+    <p>Return either the definition object or undefined if not found</p>
 </div>
 
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>element</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>node</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api_Document.js.html">api/Document.js</a>, <a href="api_Document.js.html#line140">line 140</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="insertBlockNode"><span class="type-signature"></span>insertBlockNode<span class="signature">(name, data)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-<div class="description">
-    <p>Function to insert block node at current selection</p>
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>name</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Plugin that's inserting block node</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>data</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Data defined by node</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api_Document.js.html">api/Document.js</a>, <a href="api_Document.js.html#line66">line 66</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="insertInlineNode"><span class="type-signature"></span>insertInlineNode<span class="signature">(name, data)</span><span class="type-signature"> &rarr; {*}</span></h4>
-
-    
-
-
-
-<div class="description">
-    <p>Insert an inline node at current selection</p>
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>name</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>The plugin which inserts inline node</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>data</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Data defined by node schema</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api_Document.js.html">api/Document.js</a>, <a href="api_Document.js.html#line28">line 28</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
 
 
 <dl class="param-type">
@@ -896,6 +322,160 @@ moment only a (with href attribute) and img elements are supported.</p>
 </dl>
 
     
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".setDefinitionDependingOnArrayOrObject"><span class="type-signature">(static) </span>setDefinitionDependingOnArrayOrObject<span class="signature">(definition, description)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Set definition depending on previous definition is an object or array</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>definition</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>An array or object</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>description</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>object</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_Concept.js.html">api/Concept.js</a>, <a href="api_Concept.js.html#line42">line 42</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
