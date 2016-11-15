@@ -33,6 +33,11 @@
       subhref: "open-modal/"
 
 
+    - subtitle: "Handle File and URI drops"
+      description: "Register to handle when user dropping a file or an uri"
+      subhref: "handle-drops/"
+
+
     - subtitle: "Newspilot Writer format"
       description: "Quick guide to the format used by the Newspilot Writer"
       subhref: "writer-format.html"
