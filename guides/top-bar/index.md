@@ -25,7 +25,7 @@ export default({
                 icon: 'fa-history',
                 align: 'right'
             },
-            HistoryMainComponent
+            PopoverComponent
         )
     }
 })
