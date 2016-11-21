@@ -38,6 +38,11 @@
       subhref: "handle-drops/"
 
 
+    - subtitle: "Add plugin to top bar"
+      description: "Add a plugin and popover to the topbar"
+      subhref: "top-bar/"
+
+
     - subtitle: "Newspilot Writer format"
       description: "Quick guide to the format used by the Newspilot Writer"
       subhref: "writer-format.html"
