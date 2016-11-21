@@ -5,10 +5,10 @@ active: /guides/
 ---
 # Basic information
 
-Newspilot works against a java backend called editorservice, the configuration for the backend
+Newspilot Writer works against a java backend called editorservice, the configuration for the backend
 connection is located in server/config/server.json
 
-The article format is based on the NewsML standard, you can more about the format here.
+The article format is based on the NewsML standard, you can more about the format [here]({{site.url}}{{site.baseurl}}/guides/writer-format.html).
 
 ## Newspilot Writer Overview
 
