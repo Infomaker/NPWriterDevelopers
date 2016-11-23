@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>api/Document.js - Documentation</title>
+    <title>api/History.js - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -28,7 +28,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">api/Document.js</h1>
+    <h1 class="page-title">api/History.js</h1>
     
 
     
@@ -38,178 +38,269 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import { createAnnotation, insertText, NodeSelection, deleteNode, insertNode } from 'substance'
-import idGenerator from '../utils/IdGenerator'
+            <pre class="prettyprint source linenums"><code>import moment from 'moment'
+import Event from '../utils/Event'
+const HST_KEY = "__history__"
+const HST_MAX_LENGTH = 15
+
 
 /**
- * @class Document
+ * @class Api.History
  *
- * Document manipulation methods. All methods available directly in the
- * context.api object.
+ * History api class handles local changes to a document and allows access
+ * to a limited versioning of local changes.
  */
-class Document {
+class History {
 
+    /**
+     * Constructor
+     * @param {object} api An instance of the Api class
+     */
     constructor(api) {
         this.api = api
-    }
-
-
-    triggerFetchResourceNode(node) {
-
-        this.api.writer.ResourceManageranager.triggerFetch(node)
+        this.storage = null
     }
 
     /**
-     * Insert an inline node at current selection
-     * @param {string} name The plugin which inserts inline node
-     * @param {object} data Data defined by node schema
+     * Check that local storage is available before any operation is performed
+     *
+     * @returns {boolean}
+     */
+    isAvailable() {
+        if (this.storage !== null) {
+            return (this.storage !== false)
+        }
+
+        try {
+            var storage = window['localStorage'],
+                x = '__storage_test__'
+
+            storage.setItem(x, x)
+            storage.removeItem(x)
+            this.storage = storage
+
+            return true;
+        }
+        catch (e) {
+            this.storage = false
+            return false
+        }
+    }
+
+
+    /**
+     * Get a history object for uuid
      * @returns {*}
+     * @param id
+     * @param historyList
      */
-    insertInlineNode(name, data) {
-
-        const surface = this.api.editorSession.getFocusedSurface();
-        if (!surface) {
-            throw new Error("Trying to insert node with no active surface");
-        }
-        return surface.transaction((tx, args) => {
-            // 1. Insert fake character where the citation should stick on
-            args = insertText(tx, {
-                selection: args.selection,
-                text: '$'
-            });
-            var citationSel = this.doc.createSelection({
-                type: 'property',
-                path: args.selection.path,
-                startOffset: args.selection.endOffset - 1,
-                endOffset: args.selection.endOffset
-            });
-
-            // 2. Create citation annotation
-            args.annotationType = name;
-            args.annotationData = data;
-            args.selection = citationSel;
-            args.splitContainerSelections = false;
-            args.containerId = surface.getContainerId();
-
-            args = createAnnotation(tx, args);
-            return args;
-        });
-    }
-
-
-    /**
-     * Function to insert block node at current selection
-     *
-     * @param {string} name Plugin that's inserting block node
-     * @param {object} data Data defined by node
-     */
-    insertBlockNode(name, data) {
-
-        let editorSession = this.api.editorSession;
-        let surface = editorSession.getFocusedSurface();
-        let result;
-
-        if (!surface) {
-            throw new Error("Trying to insert node with no active surface");
+    get(id, historyList) {
+        if (!this.isAvailable()) {
+            return false;
         }
 
-        // Add type and a generated id if not provided
-        data.type = !data.type ? name : data.type;
-        data.id = !data.id ? idGenerator() : data.id;
-
-        editorSession.transaction((tx, args) => {
-            args.node = data;
-            args.containerId = 'body';
-            result = insertNode(tx, args);
-            // NOTE: need to return result here, so that the selection is set
-            return result
-        });
-
-        return result;
+        let doc = this.getHistoryForArticle(id)
+        return doc || this.createAndAddEmptyHistory(id);
     }
 
 
 
+
+    createAndAddEmptyHistory(id) {
+
+        let articleHistory = []
+        if (!this.isAvailable()) {
+            return false;
+        }
+        let history = {id: id, versions: [], updated: moment()};
+
+        // If this is temporary, add a property to keep track
+        if (this.api.newsItem.hasTemporaryId()) {
+            history['unsavedArticle'] = true;
+        }
+
+        articleHistory.push(history)
+
+        return history;
+    }
+
+
     /**
-     * Deletes a node from the document.
-     * Triggers a 'document:changed' event to all document:changed listeners except
-     * the plugin making the change.
-     *
-     * @param {string} name Plugin name
-     * @param {object} node Node to delete, must contain an id
-     * @example this.context.api.deleteNode(this.props.node);
-     * @fires document:changed
+     * Deletes history for an ID
+     * @param id
      */
-    deleteNode(name, node) {
-        // TODO: is this actually always a node in the body?
-        // i.e. the surface is always the body editor?
-        var editorSession = this.api.editorSession;
-        var surface = editorSession.getFocusedSurface();
-        editorSession.transaction((tx, args) => {
-            args.nodeId = node.id;
-            args.containerId = surface.getContainerId();
-            return deleteNode(tx, args);
-        });
+    deleteHistory(id) {
 
-        this.api.Events.documentChanged(name, {});
+        if (!this.isAvailable()) {
+            return false;
+        }
+
+        this.storage.removeItem(HST_KEY+id)
     }
 
+
     /**
-     * Get all nodes in the document
-     * Get all nodeId:s from body container and fetch the actual node by Id
-     *
+     * Get history from local storage for all articles and JSON Parse to Object
      * @returns {Array}
      */
-    getDocumentNodes() {
-        const doc = this.api.editorSession.getDocument()
+    getHistory() {
+        if (!this.isAvailable()) {
+            return false;
+        }
 
-        const docNodes = doc.getNodes()['body'].nodes;
-        return docNodes.map((nodeId) => {
-            return doc.get(nodeId)
+        const history = Object.keys(this.storage).filter((key) => {
+            return key.indexOf('__history__') >= 0
+        }).map((historyKey)=> {
+            return this.storage[historyKey]
+        }).map((article) => {
+            try {
+                return JSON.parse(article)
+            } catch(e) {
+                this.api.ui.showNotification('history', null, "Error loading history");
+            }
+
         })
+        return (!history) ? [] : history;
     }
 
+    getHistoryForArticle(id) {
+        if (!this.isAvailable()) {
+            return false;
+        }
 
-    setDocumentStatus(newStatus) {
-        this.status = newStatus
+        try {
+            let articleHistory = this.storage.getItem(HST_KEY+id)
+            return (!articleHistory) ? null : JSON.parse(articleHistory);
+        }
+        catch (e) {
+            this.api.ui.showNotification('history', null, "Error loading history");
+        }
     }
 
-    getDocumentStatus() {
-        return this.status
-    }
 
     /**
-     * Make element/node combination draggable within the writer. At the
-     * moment only a (with href attribute) and img elements are supported.
-     *
-     * @param {object} element
-     * @param {object} node
+     * Removed half the list of articles based on the updated property
+     * @param historyObj
+     * @returns {boolean}
      */
-    /*handleDrag(el, node) {
-        var nodeId = node.id;
+    cleanOldVersions(historyObj) {
+        if (!this.isAvailable()) {
+            return false;
+        }
 
-        el.attr('draggable', 'true');
-        el.attr('href', '#' + node.id);
-        el.on('click', function (evt) {
-            evt.preventDefault();
+        var versions = historyObj.sort(function (a, b) {
+            var dateA = moment(a.updated),
+                dateB = moment(b.updated)
+
+            if (dateA.isBefore(dateB)) {
+                return -1;
+            } else {
+                return 1;
+            }
+        });
+        versions.splice(0, versions.length / 2);
+
+        try {
+            this.saveHistory(versions)
+        } catch (e) {
+            this.api.ui.showNotification('history', null, "Could not save version to local storage");
+        }
+    }
+
+
+    /**
+     * Save history to local storage
+     * @param history
+     * @returns {boolean}
+     */
+    saveHistory(id, history) {
+        if (!this.isAvailable()) {
+            return false;
+        }
+
+        try {
+            let historyJson = JSON.stringify(history)
+            this.storage.setItem(HST_KEY+id, historyJson)
+
+            const eventData = {
+                type: 'add',
+                action: 'add',
+                data: null
+            }
+            this.api.events.triggerEvent(null, Event.HISTORY_SAVED, eventData);
+        }
+        catch (e) {
+            throw e;
+        }
+    }
+
+
+    snapshot(action) {
+        if (!this.isAvailable()) {
+            return false;
+        }
+
+        let id = this.api.newsItem.getIdForArticle()
+
+
+        var _lsTotal = 0, _xLen, _x;
+
+        for (_x in localStorage) {
+            _xLen = ((localStorage[_x].length + _x.length) * 2);
+            _lsTotal += _xLen;
+            console.info(_x.substr(0, 50) + " using " + (_xLen / 1024).toFixed(2) + " KB")
+        }
+
+        let doc = this.get(id)
+
+        // Don't grow the version list too much
+        if (doc.versions.length >= HST_MAX_LENGTH) {
+            doc.versions.shift()
+        }
+
+        // Check if version already exists among versions
+        let existingVersion = doc.versions.find((version) => {
+            return version.src === this.api.newsItem.getSource();
         });
 
-        el.on('dragstart', (evt) => {
-            this.context.surface._draggedSelection = new NodeSelection(nodeId);
+        if (!existingVersion) {
+            // Add the new version
+            doc.updated = moment()
+            doc.versions.push({
+                time: moment(),
+                src: this.api.newsItem.getSource(),
+                action: action || null
+            })
+        }
 
-            // Necessary for firefox to work
-            evt.dataTransfer.setData('nodeid', nodeId);
-            evt.target.style.opacity = 0.4;
-            evt.stopPropagation();
-        });
+        try {
+            this.saveHistory(id, doc)
+        } catch (e) {
+            if (e instanceof window.DOMException) {
+                this.cleanAndRetry(historyObj);
+            } else {
+                this.api.ui.showNotification('history', null, e.message);
+            }
+        }
 
-        el.on('dragend', function (evt) {
-            evt.target.style.opacity = 1;
-        });
-    }*/
+    }
+
+    cleanAndRetry(historyObj) {
+        try {
+            this.cleanOldVersions(historyObj);
+        } catch (e) {
+            this.api.ui.showNotification('history', null, "Error saving version to local storage");
+        }
+        finally {
+            this.api.ui.showNotification('history', null, "Error");
+        }
+
+    }
+
+
 }
 
-export default Document
+export default History
 </code></pre>
         </article>
     </section>

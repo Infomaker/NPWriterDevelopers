@@ -239,4 +239,43 @@ import NodeClass from './NodeClass'
 
 ## Adding validation
 
-Validation is still WIP
+Validator plugins is executed before the article is saved.
+
+Validators must implement a constructor (calling the super constructor) and a validate method
+
+
+__SampleValidation.js__ - *The validation class extends from writer.Validator*
+
+~~~ javascript
+
+import {Validator, api} from 'writer'
+
+class SampleValidation extends Validator {
+
+    constructor(...args) {
+        super(...args)
+    }
+
+    validate() {
+        // newsItem is availble as this.newsItem
+        // Add messages by calling this.addError() this.addWarning() this.addInfo()
+    }
+}
+
+export default SampleValidation
+
+~~~
+
+__PackageFile__
+
+~~~ javascript
+
+import SampleValidation from './SampleValidation'
+
+...
+    configure: function(configurator) {
+        configurator.addValidator(SampleValidation)
+    }
+...
+
+~~~

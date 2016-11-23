@@ -1,9 +1,20 @@
 ---
 layout: default
-title: Basic information
+title: Migration guide for plugin
 active: /guides/
 ---
 # Migration from version 1 to 3
+
+## TOC
+
+* [Dependency imports](#dependency-imports)
+* [Name changes](#name-changes)
+* [Plugin registration](#registering-a-plugin)
+* [Validator](#validator)
+* [API changes](#api-changes)
+* [Node changes](#changes-in-nodes)
+* [Component changes](#changes-in-components)
+
 
 ## From ES5 to ES6
 
@@ -99,6 +110,77 @@ export default {
 
 
 ~~~
+
+## Validator
+
+The validation plugins has changed. The validation plugins must now extend writer.Validator class and implement a constructor and a `validate` method
+
+The newsItem is accessible by using `this.newsItem`
+
+To add messages you call the function for the type of message you want to add.
+
+`this.addError({string})` - *Adds a message of type error*
+
+`this.addWarning({string})` - *Adds a message of type warning*
+
+`this.addInfo({string})` - *Adds a message of type info*
+
+~~~ javascript 
+
+import {Validator, api} from 'writer'
+class AuthorValidation extends Validator {
+
+    constructor(...args) {
+        super(...args)
+    }
+
+    validate() {
+    }
+}
+export default AuthorValidation
+
+~~~
+
+## API changes
+
+We have made some changes to the API. Mostly it's just the method that's changed and not the signatures.
+
+[Here is the full API Reference]({{site.url}}{{site.baseurl}}/api-reference)
+
+New endpoints in the API
+
+### Dialog
+
+The dialog methods has moved to:
+
+`api.ui.showDialog` *(was api.showDialog)*
+
+`api.ui.showMessageDialog` *(was api.showMessageDialog)*
+
+### Events
+
+New endpoint calling on/off for Events
+
+`api.events.on()` *(was api.on)*
+
+`api.events.off()` *(was api.off)*
+
+`api.events.triggerEvent()` *(was api.triggerEvent)*
+
+### Newsitem
+
+The endpoints used to manipulate the newsItem has moved to `api.newsItem`. Those method was previously directly under `api`
+
+For example `api.getGuid` has now been moved to `api.newsItem.getGuid`
+
+To avoid confusion with the newsItem endpoint and the actual newsItem article we now have different name.
+
+The newsitem article is now located under `api.newsItemArticle`
+
+
+### Document
+
+api.document.insertInlineNode (was api.insertInlineNode)
 
 ## Changes in Nodes
 

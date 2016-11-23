@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Events - Documentation</title>
+    <title>History - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -28,7 +28,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">Events</h1>
+    <h1 class="page-title">History</h1>
     
 
     
@@ -41,11 +41,12 @@
 <header>
     
         <h2>
-        Events
+        History
         </h2>
         
-            <div class="class-description"><p>Events</p>
-<p>Event handling methods. All methods available directly in the context.api object.</p></div>
+            <div class="class-description"><p>Api.History</p>
+<p>History api class handles local changes to a document and allows access
+to a limited versioning of local changes.</p></div>
         
     
 </header>
@@ -59,18 +60,71 @@
     <h2>Constructor</h2>
     
 
-    <h4 class="name" id="Events"><span class="type-signature"></span>new Events<span class="signature">()</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="History"><span class="type-signature"></span>new History<span class="signature">(api)</span><span class="type-signature"></span></h4>
 
     
 
 
 
+<div class="description">
+    <p>Constructor</p>
+</div>
 
 
 
 
 
 
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>api</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>An instance of the Api class</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
 
 
 
@@ -106,7 +160,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api_Events.js.html">api/Events.js</a>, <a href="api_Events.js.html#line9">line 9</a>
+        <a href="api_History.js.html">api/History.js</a>, <a href="api_History.js.html#line13">line 13</a>
     </li></ul></dd>
     
 
@@ -155,98 +209,14 @@
 
     
 
-    <h4 class="name" id="_triggerEvent"><span class="type-signature"></span>_triggerEvent<span class="signature">()</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="cleanOldVersions"><span class="type-signature"></span>cleanOldVersions<span class="signature">(historyObj)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
 
     
 
 
 
 <div class="description">
-    <p>Trigger event, renamed to triggerEvent as it is a publicly needed function.</p>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <dt class="important tag-deprecated">Deprecated:</dt><dd class="yes-def tag-deprecated"><ul class="dummy"><li>Yes</li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api_Events.js.html">api/Events.js</a>, <a href="api_Events.js.html#line92">line 92</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="documentChanged"><span class="type-signature"></span>documentChanged<span class="signature">(name, data)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-<div class="description">
-    <p>Triggers a document changed event (document:changed)</p>
+    <p>Removed half the list of articles based on the updated property</p>
 </div>
 
 
@@ -282,15 +252,10 @@
 
         <tr>
             
-                <td class="name"><code>name</code></td>
+                <td class="name"><code>historyObj</code></td>
             
 
             <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
             
             </td>
 
@@ -298,30 +263,7 @@
 
             
 
-            <td class="description last"><p>Name of plugin that sends the event</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>data</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>An object with change, info, and doc</p></td>
+            <td class="description last"></td>
         </tr>
 
     
@@ -362,7 +304,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api_Events.js.html">api/Events.js</a>, <a href="api_Events.js.html#line102">line 102</a>
+        <a href="api_History.js.html">api/History.js</a>, <a href="api_History.js.html#line146">line 146</a>
     </li></ul></dd>
     
 
@@ -385,463 +327,24 @@
 
 
 
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="documentIsUnsaved"><span class="type-signature"></span>documentIsUnsaved<span class="signature">(originalEvent)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-<div class="description">
-    <p>Event when document becomes unsaved. Only triggers one time when there's unsaved changes
-(document:isunsaved)</p>
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
+<h5>Returns:</h5>
 
         
 
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
         
+<span class="param-type">boolean</span>
 
-        <th class="last">Description</th>
-    </tr>
-    </thead>
 
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>originalEvent</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Data that originally triggered the document is unsaved event</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api_Events.js.html">api/Events.js</a>, <a href="api_Events.js.html#line125">line 125</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="documentSaved"><span class="type-signature"></span>documentSaved<span class="signature">()</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-<div class="description">
-    <p>Triggers a document saved event (document:saved)</p>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api_Events.js.html">api/Events.js</a>, <a href="api_Events.js.html#line132">line 132</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="documentSaveFailed"><span class="type-signature"></span>documentSaveFailed<span class="signature">()</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-<div class="description">
-    <p>Triggers an event when the save process did not succeed (document:savefailed)</p>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api_Events.js.html">api/Events.js</a>, <a href="api_Events.js.html#line139">line 139</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="off"><span class="type-signature"></span>off<span class="signature">(name, eventType)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-<div class="description">
-    <p>Unregister event listener for a specific plugin.</p>
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>name</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>The plugin which listens for the event.</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>eventType</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>The event to stop listening for.</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api_Events.js.html">api/Events.js</a>, <a href="api_Events.js.html#line52">line 52</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-    <dt class="tag-todo">To Do:</dt>
-    <dd class="tag-todo">
-        <ul>
-            <li>How do we unregister an event listener if there are several listeners for en event type?</li>
-        </ul>
     </dd>
-    
 </dl>
 
-
-
-
-
-
-
-
-
-
-
-
-
+    
 
 
 
@@ -850,14 +353,14 @@
 
     
 
-    <h4 class="name" id="on"><span class="type-signature"></span>on<span class="signature">(name, eventType, Function)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="deleteHistory"><span class="type-signature"></span>deleteHistory<span class="signature">(id)</span><span class="type-signature"></span></h4>
 
     
 
 
 
 <div class="description">
-    <p>Register event listener for a specific plugin.</p>
+    <p>Deletes history for an ID</p>
 </div>
 
 
@@ -893,15 +396,10 @@
 
         <tr>
             
-                <td class="name"><code>name</code></td>
+                <td class="name"><code>id</code></td>
             
 
             <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
             
             </td>
 
@@ -909,53 +407,7 @@
 
             
 
-            <td class="description last"><p>The plugin which listens for the event.</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>eventType</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>The event to listen for.</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>Function</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>to call when event is triggered.</p></td>
+            <td class="description last"></td>
         </tr>
 
     
@@ -996,96 +448,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api_Events.js.html">api/Events.js</a>, <a href="api_Events.js.html#line29">line 29</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-    <dt class="tag-todo">To Do:</dt>
-    <dd class="tag-todo">
-        <ul>
-            <li>Should either warn or allow for several eventlisteners on the same event for the same plugin</li>
-        </ul>
-    </dd>
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="onDocumentStartSaving"><span class="type-signature"></span>onDocumentStartSaving<span class="signature">()</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-<div class="description">
-    <p>Triggers a document start saving event (document:startsaving)</p>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api_Events.js.html">api/Events.js</a>, <a href="api_Events.js.html#line155">line 155</a>
+        <a href="api_History.js.html">api/History.js</a>, <a href="api_History.js.html#line92">line 92</a>
     </li></ul></dd>
     
 
@@ -1116,14 +479,14 @@
 
     
 
-    <h4 class="name" id="triggerEvent"><span class="type-signature">(private) </span>triggerEvent<span class="signature">(name, eventType, data)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="get"><span class="type-signature"></span>get<span class="signature">(id, historyList)</span><span class="type-signature"> &rarr; {*}</span></h4>
 
     
 
 
 
 <div class="description">
-    <p>Trigger an event.</p>
+    <p>Get a history object for uuid</p>
 </div>
 
 
@@ -1159,15 +522,10 @@
 
         <tr>
             
-                <td class="name"><code>name</code></td>
+                <td class="name"><code>id</code></td>
             
 
             <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
             
             </td>
 
@@ -1175,22 +533,17 @@
 
             
 
-            <td class="description last"><p>Plugin type to not send event to, leave it empty to send to all</p></td>
+            <td class="description last"></td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>eventType</code></td>
+                <td class="name"><code>historyList</code></td>
             
 
             <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
             
             </td>
 
@@ -1198,22 +551,343 @@
 
             
 
-            <td class="description last"><p>The event type to trigger</p></td>
+            <td class="description last"></td>
         </tr>
 
     
+    </tbody>
+</table>
 
-        <tr>
-            
-                <td class="name"><code>data</code></td>
-            
 
-            <td class="type">
-            
-                
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_History.js.html">api/History.js</a>, <a href="api_History.js.html#line57">line 57</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
 <span class="param-type">*</span>
 
 
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getHistory"><span class="type-signature"></span>getHistory<span class="signature">()</span><span class="type-signature"> &rarr; {Array}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Get history from local storage for all articles and JSON Parse to Object</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_History.js.html">api/History.js</a>, <a href="api_History.js.html#line106">line 106</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="isAvailable"><span class="type-signature"></span>isAvailable<span class="signature">()</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Check that local storage is available before any operation is performed</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_History.js.html">api/History.js</a>, <a href="api_History.js.html#line29">line 29</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="saveHistory"><span class="type-signature"></span>saveHistory<span class="signature">(history)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Save history to local storage</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>history</code></td>
+            
+
+            <td class="type">
             
             </td>
 
@@ -1221,7 +895,7 @@
 
             
 
-            <td class="description last"><p>Event specific data</p></td>
+            <td class="description last"></td>
         </tr>
 
     
@@ -1262,7 +936,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api_Events.js.html">api/Events.js</a>, <a href="api_Events.js.html#line75">line 75</a>
+        <a href="api_History.js.html">api/History.js</a>, <a href="api_History.js.html#line176">line 176</a>
     </li></ul></dd>
     
 
@@ -1285,16 +959,24 @@
 
 
 
+<h5>Returns:</h5>
+
+        
 
 
-    <h5>Example</h5>
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
     
-    <pre class="prettyprint"><code>Data should be
-{
-            type: 'edit',
-            action: 'edit',
-            data: data
-        }</code></pre>
 
 
 
