@@ -7,6 +7,7 @@ active: /guides/
 
 ## TOC
 
+* [ES5 to ES6](#from-es5-to-es6)
 * [Dependency imports](#dependency-imports)
 * [Name changes](#name-changes)
 * [Plugin registration](#registering-a-plugin)
@@ -19,6 +20,62 @@ active: /guides/
 ## From ES5 to ES6
 
 The biggest work to be done is to migrate your plugins to ES6 with the new class system
+
+__An ES5 component__ - *Preamble component in ES5*
+
+~~~ javascript
+
+'use strict';
+
+var Component = require('substance/ui/Component');
+var $$ = Component.$$;
+var TextProperty = require('substance/ui/TextPropertyComponent');
+
+function PreambleComponent() {
+    Component.apply(this, arguments);
+}
+
+PreambleComponent.Prototype = function() {
+
+    this.render = function() {
+        return $$('div')
+            .addClass('sc-preamble')
+            .attr('data-id', this.props.node.id)
+            .append($$(TextProperty, {
+                path: [this.props.node.id, 'content']
+            }));
+    };
+};
+Component.extend(PreambleComponent);
+module.exports = PreambleComponent;
+
+~~~ 
+
+
+__An ES6 Component__ - *Preamble component in ES6*
+
+~~~ javascript
+
+const {Component, TextPropertyComponent} = substance
+
+class PreambleComponent extends Component {
+
+    render($$) {
+        return $$('div')
+            .addClass('sc-preamble')
+            .attr('data-id', this.props.node.id)
+            .append($$(TextPropertyComponent, {
+                path: [this.props.node.id, 'content']
+            }));
+    }
+}
+
+export default PreambleComponent;
+
+~~~
+
+
+
 
 ## Dependency imports
 
@@ -62,7 +119,14 @@ We used to have a name and a vendor but that has now changed to `name` and `id`
 
 For the id we recommend you use the reverse domain notation, for example the id for our plugins starts with `se.infomaker`
 
+~~~ javascript
 
+export default {
+    name: 'preamble',
+    id: 'se.infomaker.preamble',
+    ...
+
+~~~
 
 ## Registering a plugin
 
@@ -180,9 +244,60 @@ The newsitem article is now located under `api.newsItemArticle`
 
 ### Document
 
-api.document.insertInlineNode (was api.insertInlineNode)
+`api.document.getDocumentNodes()` *(was api.getDocumentNodes)*
+
+`api.document.insertInlineNode` *(was api.insertInlineNode)*
 
 ## Changes in Nodes
 
+There is very small changes in the node. 
+
+The needed information is still the same.
+
+__Version 1__
+
+~~~ javascript
+
+'use strict';
+var TextBlock = require('substance/model/TextBlock');
+function Preamble() {
+    Preamble.super.apply(this, arguments);
+}
+TextBlock.extend(Preamble);
+Preamble.static.name = "preamble";
+Preamble.static.defineSchema({
+    "id": { type: 'string' }
+});
+
+module.exports = Preamble;
+
+~~~
+
+__Version 3__
+
+~~~ javascript 
+
+import {TextBlock} from 'substance'
+
+class PreambleNode extends TextBlock {}
+
+PreambleNode.type = 'preamble'
+PreambleNode.define({
+    "id": {type: 'string'}
+})
+
+export default PreambleNode
+
+~~~
+
 ## Changes in components
 
+The `$$` function is now passed to the component in the `render` method
+
+~~~ javascript
+
+render($$) {
+    return $$('div')
+}
+
+~~~
