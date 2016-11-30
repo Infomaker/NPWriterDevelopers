@@ -4,7 +4,7 @@ title: Developer Portal for Newspilot Writer
 ---
 
 <div class="jumbotron">
-    <h1>Newspilor Writer Developer Portal</h1>
+    <h1>Newspilot Writer Developer Portal</h1>
     <p class="lead">
     Learn how to create a lot of different type of plugins for Newspilot Writer.
     Our writer is based on the reliable Substance.io text editor. 
