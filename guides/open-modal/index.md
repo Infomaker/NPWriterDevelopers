@@ -125,6 +125,15 @@ if (registerPlugin) {
 
 ~~~
 
+### Add a custom css class to modal
+
+You can provide a custom css class that will be added to the main modal container
+
+~~~ javascript
+
+api.ui.showDialog(DialogComponent, {}, {cssClass: 'my-custom-class'})
+
+~~~
 
 ### Valid options properties
 
