@@ -42,6 +42,10 @@
       description: "Add a plugin and popover to the topbar"
       subhref: "top-bar/"
 
+    - subtitle: "Fetching external data via the resource proxy"
+      description: "Use the Newspilot Writer resource proxy to fetch external data and avoid CORS problems"
+      subhref: "resource-proxy/"
+
 
     - subtitle: "Newspilot Writer format"
       description: "Quick guide to the format used by the Newspilot Writer"

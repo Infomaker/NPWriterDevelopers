@@ -65,7 +65,7 @@ API doesn't reject depending on status codes.
 
 const urlToFetch = 'http://api.krisinformation.se/v1/capmessage?format=json'
 
-api.router.get('/api/proxy/', {url: urlToFetch})
+api.router.get('/api/resourceproxy', {url: urlToFetch})
     .then(response => api.router.checkForOKStatus(response))
     .then(response => response.json())
     .then(json => {
