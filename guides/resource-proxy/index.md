@@ -116,7 +116,7 @@ const request = {
     url: 'http://url.to.fetch',
     headers: {
         "Content-Type": "text/json",
-        "x-custom-header": "this is PUT",
+        "x-custom-header": "this is DELETE",
     },
     body: JSON.stringify(bodyData)
 }
