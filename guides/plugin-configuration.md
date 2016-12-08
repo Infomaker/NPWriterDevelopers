@@ -44,3 +44,51 @@ plugins: [
 | data              | Data is a javascript object containing data or configuration properties for your plugin            |
 |-----------------+------------+
 
+
+### Disable use of annotations - bold, italic link etc
+
+You can disable the use of annotation tools, (like strong and italic) in the configuration for the writer.
+
+You can choose to disable for the whole plugin or just for one field, (TextPropertyEditor)
+
+__Disable for multiple fields. Title and subject in this case__ - disableUseOfAnnotationToolsForFields is used to disable per field
+
+~~~ json
+
+ {
+    "id": "se.infomaker.npwriterdevkit",
+    "name": "npwriterdevkit",
+    "url": "http://localhost:3000/index.js",
+    "style": "http://localhost:3000/style.css",
+    "mandatory": false,
+    "enabled": false,
+    "data": {
+        "disableUseOfAnnotationToolsForFields": [
+          "title",
+          "subject"
+        ],
+},
+
+
+
+~~~
+
+
+__Disable for plugin__ - disableUseOfAnnotationTools is used to disable tools
+
+~~~ json
+
+ {
+    "id": "se.infomaker.npwriterdevkit",
+    "name": "npwriterdevkit",
+    "url": "http://localhost:3000/index.js",
+    "style": "http://localhost:3000/style.css",
+    "mandatory": false,
+    "enabled": false,
+    "data": {
+        "disableUseOfAnnotationTools": true
+    }
+}
+
+
+~~~
