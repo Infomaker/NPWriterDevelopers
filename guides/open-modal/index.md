@@ -135,6 +135,17 @@ api.ui.showDialog(DialogComponent, {}, {cssClass: 'my-custom-class'})
 
 ~~~
 
+
+### Add an icon to dialog title bar
+
+You can provide a FontAwesome icon that will be displayed in the dialog title bar
+
+~~~ javascript
+
+api.ui.showDialog(DialogComponent, {}, {icon: 'fa-sitemap'})
+
+~~~
+
 ### Valid options properties
 
 Please see the Ui section in API Reference
