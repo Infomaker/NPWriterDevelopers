@@ -9,24 +9,6 @@ titlt: Documentation to be categorized
 The following stuff is just added while developing some of the features so we dont forget to write it down.
 It will later be categorized in to different guides or pages.
 
-## Event constants
-
-The writer trigger different events when thing changes. As a developer you can listen on these events and react on it.
-There is a object provided with a complete list of events triggered by the writer.
-
-A complete list of events can be found [here](https://github.com/Infomaker/NPWriter/blob/develop/writer/utils/Event.js)
-
-~~~ javascript
-
-const {event} = writer
-
-// Listen for document changed event
-api.events.on('textanalyzer', event.DOCUMENT_CHANGED, () => {
-this.calculateText()
-})
-
-~~~
-
 
 ## Writer API Endpoints
 

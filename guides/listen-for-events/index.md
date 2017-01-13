@@ -12,7 +12,8 @@ appropriate actions
 
 ## Newspilot Writer Events
 
-Here's a list of the events fired by the Writer. You can also see all events contants by typing `writer.events` in developer console in the Writer
+Here's a list of the events fired by the Writer. You can also see all events contants by typing `writer.events` in developer console in the Writer 
+check them out at [Github](https://github.com/Infomaker/NPWriter/blob/develop/writer/utils/Event.js)
 
 To get access to these event constants you can import those in your plugin: 
 `import {events} from 'writer`
