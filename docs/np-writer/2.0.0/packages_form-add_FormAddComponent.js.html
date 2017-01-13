@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>packages/form-search/FormSearchComponent.js - Documentation</title>
+    <title>packages/form-add/FormAddComponent.js - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -28,7 +28,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">packages/form-search/FormSearchComponent.js</h1>
+    <h1 class="page-title">packages/form-add/FormAddComponent.js</h1>
     
 
     
@@ -42,7 +42,6 @@
 
 var _ = require('lodash');
 
-import SpinnerComponent from './SpinnerComponent'
 import {Component} from 'substance'
 import clone from 'lodash/clone'
 
@@ -59,7 +58,7 @@ import clone from 'lodash/clone'
  * @constructor
  */
 
-class FormSearchComponent extends Component {
+class FormAddComponent extends Component {
 
     constructor(...args) {
         super(...args)
@@ -69,81 +68,8 @@ class FormSearchComponent extends Component {
         }
     }
 
-    next() {
-        //noinspection JSJQueryEfficiency
-        const selectedDomItem = document.getElementById('item-' + this.currentSelectedItem.uuid)
-        let currentSelectedItem = this.currentSelectedItem &amp;&amp; selectedDomItem
-        if (currentSelectedItem) {
-            let searchResultElement = this.refs.searchResult.el.el;
-            let selectedItem = selectedDomItem
-            let items = this.state.items
-
-            if (this.state.currentSelectedIndex >= 0) {
-                let idx = parseInt(this.state.currentSelectedIndex)
-                idx++;
-
-                searchResultElement.scrollTop = selectedItem.offsetTop;
-                this.extendState({
-                    currentSelectedIndex: idx
-                });
-
-                if (idx === items.length) {
-                    this.extendState({
-                        currentSelectedIndex: 0
-                    });
-                    searchResultElement.scrollTop = 0
-                }
-            }
-        }
-    }
-
-    prev() {
-        //noinspection JSJQueryEfficiency
-        const selectedDomItem = document.getElementById('item-' + this.currentSelectedItem.uuid)
-        let currentSelectedItem = this.currentSelectedItem &amp;&amp; selectedDomItem
-        if (currentSelectedItem) {
-            let searchResultElement = this.refs.searchResult.el.el
-            let selectedItemPrevSibling = selectedDomItem.previousSibling
-
-            let items = this.state.items;
-            if (this.state.currentSelectedIndex >= 0) {
-                var idx = parseInt(this.state.currentSelectedIndex)
-
-                if (selectedItemPrevSibling === null) {
-                    searchResultElement.scrollTop = searchResultElement.lastChild.offsetTop
-                    this.extendState({
-                        currentSelectedIndex: items.length - 1
-                    });
-
-                } else {
-                    let offsetTop = selectedItemPrevSibling.offsetTop
-                    let offsetHeight = selectedItemPrevSibling.offsetHeight
-
-                    searchResultElement.scrollTop = offsetTop - offsetHeight
-                    idx--;
-
-                    this.extendState({
-                        currentSelectedIndex: idx
-                    });
-                }
-            }
-        }
-    }
-
-    search(e) {
+    execute(e) {
         switch (e.keyCode) {
-
-            case 38: // up arrow
-                if (e.shiftKey) return;
-                e.preventDefault();
-                this.prev();
-                break;
-
-            case 40: // down arrow
-                if (e.shiftKey) return;
-                e.preventDefault();
-                this.next();
-                break;
 
             case 9: // tab
             case 13: // enter
@@ -164,7 +90,6 @@ class FormSearchComponent extends Component {
         this.refs.searchInput.val("");
         this.extendState({
             items: [],
-            isSearching: false,
             currentSelectedIndex: 0
         })
 
@@ -175,53 +100,10 @@ class FormSearchComponent extends Component {
     }
 
     lookup() {
-        var input = this.refs.searchInput.val();
+        let data = [this.getCreateNewItem()];
+
         this.extendState({
-            isSearching: true
-        });
-
-        if (input.length === 0) {
-            this.extendState({
-                items: [],
-                isSearching: false,
-                currentSelectedIndex: 0
-            });
-            return;
-        }
-
-        // Might pass a boolean from parent to search with wildcard?
-        var wildcardSearch = true;
-        if (wildcardSearch) {
-            input += '*';
-        }
-
-        if (this.props.searchUrl === null) {
-            this.handleSearchResult([]);
-        }
-        else {
-            const fetchParameters = {
-                headers: {
-                    contentType: 'application/json',
-                    dataType: 'application/json'
-                }
-            }
-
-            this.context.api.router.get(this.props.searchUrl + input, fetchParameters)
-                .then(response => this.context.api.router.checkForOKStatus(response))
-                .then(response => this.context.api.router.toJson(response))
-                .then((json) => {
-                    this.handleSearchResult(json);
-                })
-                .catch((e) => {
-                    console.error(e)
-                })
-        }
-    }
-
-    handleSearchResult(data) {
-        this.extendState({
-            items: this.getItemsThatNotExisting(data),
-            isSearching: false
+            items: data,
         });
     }
 
@@ -238,46 +120,20 @@ class FormSearchComponent extends Component {
      */
     getCreateNewItem() {
         return {
-            name: [this.getLabel("Create") + ": " + this.refs.searchInput.val()],
+            name: [this.getLabel("Add") + ": " + this.refs.searchInput.val()],
             value: this.refs.searchInput.val(),
             uuid: "__create-new",
             imType: ["x-im/template"],
             shortDescription: [
-                this.getLabel("Create new") + ": " + this.refs.searchInput.val()
+                this.getLabel("Add new") + ": " + this.refs.searchInput.val()
             ]
         };
     }
 
-    getItemsThatNotExisting(data) {
-        var existingItems = this.props.existingItems;
-
-        if (this.props.onCreate &amp;&amp; this.props.createAllowed) {
-            data.push(this.getCreateNewItem());
-        }
-
-        var existingItemsMap = {};
-        if (existingItems) {
-            existingItems.forEach(function (item) {
-                existingItemsMap[item.uuid] = item.uuid;
-            });
-        }
-
-        data.forEach(function (item) {
-            if (existingItemsMap[item.uuid]) {
-                item.exists = true;
-            }
-        });
-
-        return data;
-
-        // return _.differenceWith(data, existingItems, function (a, b) {
-        //     return a.uuid === b.uuid;
-        // });
-    }
 
 
     itemAlreadyExists(items, item) {
-        for (var i = 0; i &lt; items.length; i++) {
+        for (let i = 0; i &lt; items.length; i++) {
             if (items[i].uuid !== '__create-new' &amp;&amp; items[i].name[0].toLowerCase() === item.value.toLowerCase()) {
                 return true;
             }
@@ -290,7 +146,7 @@ class FormSearchComponent extends Component {
             return;
         }
         if (this.props.onCreate &amp;&amp; this.props.createAllowed &amp;&amp; item.uuid === '__create-new') {
-            this.props.onCreate(item, true);
+            this.props.onCreate(item, this.itemAlreadyExists(this.state.items, item));
         } else {
             this.props.onSelect(item);
         }
@@ -300,21 +156,18 @@ class FormSearchComponent extends Component {
 
     render($$) {
 
-        var formGroup = $$('div').addClass('form-group').ref('formGroup');
+        const formGroup = $$('div').addClass('form-group').ref('formGroup');
 
-        var searchInput = $$('input')
+        const searchInput = $$('input')
             .addClass('form-control')
             .addClass('form__search')
-            .on('keyup', this.search)
+            .on('keyup', this.execute)
             .attr('autocomplete', 'off')
             .attr({
                 type: 'text', id: 'formSearch', placeholder: this.getLabel(this.props.placeholderText)
             })
             .ref('searchInput');
 
-        var inlineIcon = $$(SpinnerComponent, {isSearching: this.state.isSearching});
-
-        formGroup.append(inlineIcon);
         formGroup.append(searchInput);
 
 
@@ -363,7 +216,7 @@ class FormSearchComponent extends Component {
     }
 
 }
-export default FormSearchComponent</code></pre>
+export default FormAddComponent</code></pre>
         </article>
     </section>
 
