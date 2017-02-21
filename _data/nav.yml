@@ -8,6 +8,10 @@
   href: "/guides/"
   subpages:
 
+    - subtitle: "Breaking changes beta 6"
+      description: "Known problems with upgrading to Substance Beta 6"
+      subhref: "migration-guide/beta6"
+
     - subtitle: "Basic information"
       description: "Basic information anatomy of a plugin and how plugin loading is done"
       subhref: "basic-information/"
