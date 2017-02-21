@@ -7,7 +7,7 @@ active: /guides/
 
 ## No need to specify node.type
 
-Setting the ~node.type property~ in a converter will result in a error. Setting the node type is not necessary, it should only be specified as a property in the
+Setting the `node.type property` in a converter will result in a error. Setting the node type is not necessary, it should only be specified as a property in the
 converter itself
 
 __Example__ 
@@ -19,3 +19,9 @@ export default {
 }
 
 ~~~ 
+
+## Commands must implement an execute method
+
+Commands must implement an `execute` method, instead of for example an `insertNode` or a self defined method.
+ 
+The command is then executed with `editorSession.executeCommand(name, {})` 
