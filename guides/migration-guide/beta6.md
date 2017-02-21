@@ -3,7 +3,7 @@ layout: default
 title: Breaking changes with Substance Beta 6
 active: /guides/
 ---
-# Breaking changes with Substance Beta 6
+# Breaking changes and new features - Substance Beta 6
 
 ## No need to specify node.type
 
