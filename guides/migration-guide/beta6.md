@@ -5,9 +5,9 @@ active: /guides/
 ---
 # Breaking changes and new features - Substance Beta 6
 
-## Enable access to components with SPACE (in editor)
+## Enable access to components with TAB (in editor)
 By default the nodes in the editor is "closed", which means you must click inside them to activate. 
-This can instead be done with implementing a `grabFocus()` method that's triggered with "SPACE"-key
+This can instead be done with implementing a `grabFocus()` method that's triggered with "TAB"-key
 
 __Example__
 
