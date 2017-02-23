@@ -9,8 +9,22 @@ title: Newspilot Writer 3.0 release
 * [Compatibility](#compatibility)
 * [Issues](#issues)
 
-## General changes
-TODO: What are the breaking changes here?
+## Highlights
+
+### General changes
+* Built in spellchecking
+* Automatic optimistic locking prevent users from overwriting each others changes
+* Possibility to see who else has an article open
+* New UI with top bar and drop down popovers for plugins
+* Many squashed bugs for a better text editing experience
+
+### Breaking changes from Newspilot Writer 2.0
+* Moved to ECMAScript 2015+
+* New plugin architecture
+* Improved drag'n drop handling
+* New translation handling per plugin
+* Paste handling through macros
+* Configuration stored externally
 
 ## Compatibility
 
@@ -41,7 +55,7 @@ TODO: What are the breaking changes here?
 * [WRIT-224] - Pen component renders "wrong" when object in Newspilot Writer is selected
 * [WRIT-230] - Strong/Italic becomes [Object Object] when used in a text property editor
 * [WRIT-231] - When pasting a url and a macro handles an insertion, the url is still there
-* [WRIT-233] - Notifications doesn't disappear 
+* [WRIT-233] - Notifications doesn't disappear
 * [WRIT-234] - Add spinner to save button in dialog when clicking
 * [WRIT-235] - Enable drop to teaser
 * [WRIT-236] - It must be possible to change label of Meta-sidebar
@@ -79,10 +93,10 @@ TODO: What are the breaking changes here?
 * [WRIT-148] - Plugin should be able to load own stylesheet
 * [WRIT-150] - Create plugin bundle for our plugins
 * [WRIT-151] - Statusbar for UI tools like messages, local versioning etc
-* [WRIT-152] - Specify and load a template 
+* [WRIT-152] - Specify and load a template
 * [WRIT-158] - Implement support for validator registration in configurator
-* [WRIT-159] - Implement Save Article 
-* [WRIT-161] - Enable config loading from S3 
+* [WRIT-159] - Implement Save Article
+* [WRIT-161] - Enable config loading from S3
 * [WRIT-163] - Implement support for local versioning
 * [WRIT-164] - Allow plugins to register tools and commands
 * [WRIT-165] - Create build and deploy script
@@ -91,7 +105,7 @@ TODO: What are the breaking changes here?
 * [WRIT-168] - Configure i18n translation overrides
 * [WRIT-169] - Implement support for dialogs
 * [WRIT-170] - Use bootstrap 4
-* [WRIT-173] - Add a window.writer manager 
+* [WRIT-173] - Add a window.writer manager
 * [WRIT-174] - Implement publish plugin in new top bar
 * [WRIT-176] - Load plugin multiple times
 * [WRIT-178] - Expose lodash through API
