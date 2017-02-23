@@ -2,28 +2,14 @@
 layout: default
 title: Lambda Image Publish 2.0 release
 ---
-# Lambda Image Publish 2.0
-
-### Table of contents
-* [General changes](#general-changes)
-* [Issues](#issues)
-
-## General changes
-Lambda function depends on a S3 configuration file (json) that is pointed out via the event. The structure of the 
-configuration file is depicted below. Note that `accesKeyId`, `secretAccessKeyId` and `region` are optional. If not 
-specified, lambda user needs permissions to access the source and target buckets.
-
-**Configuration file**
-
-```json
-{
-    "sourceBucket": "writer-internal-images-test",
-    "targetBucket": "writer-public-images-test",
-    "accessKeyId": "*******",
-    "secretAccessKeyId": "*******",
-    "region": "eu-west-1"    
-}
-```
+<div class="jumbotron">
+    <h1>Lambda Image Publish 2.0</h1>    
+    <h2>Highlights</h2>
+    <ul>
+        <li>Lambda function depends on a S3 configuration file (json) that is pointed out via the event. For more information regarding this
+        please see <a href="https://bitbucket.org/infomaker/s3-publish-image/src/8ac95d3e2f53db2b5bc8a760d5e2caee3ed6c44b/README.md?at=master&fileviewer=file-view-default">README.md</a> on github.</li>
+    </ul>        
+</div>
 
 ## Issues  
 

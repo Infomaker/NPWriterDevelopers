@@ -3,50 +3,50 @@ layout: default
 title: Release notes
 ---
 # Release notes  
-Release notes for versions of the services that make up Newspilot Writer.
 
-### Table of contents
-* [Newspilot Writer](#newspilot-writer)
-* [Newspilot Writer Plugins](#newspilot-writer-plugins)
-* [Concept Backend](#concept-backend)
-* [Editor Service](#editor-service)
-* [Lambda - Image Metadata](#lambda-image-metadata)
-* [Lambda - Image Publish](#lambda-image-publish)
-* [Lambda - Image Publish](#lambda-image-publish)
-* [Newspilot Writer Integration Service](#newspilot-writer-integration-service)
+<div class="release-notes">
+    <h2>Newspilot Writer</h2>    
+    <ul>
+        <li><a href="./writer30.html">Version 3.0</a></li>
+    </ul>
 
-## Newspilot Writer  
-[`README.md`](https://github.com/Infomaker/NPWriter/blob/master/README.md) 
+    <h2>Newspilot Writer Plugins</h2>
+    <ul>
+        <li><a href="./writerplugins10.html">Version 1.0</a></li>
+    </ul>
+</div>
 
-* [Version 3.0](./writer30.html)  
+<div class="release-notes">
+    <h3>Concept Backend</h3>
+    <ul>
+        <li><a href="./conceptbackend255.html">Version 2.5.5</a></li>
+    </ul>
+</div>
 
-## Newspilot Writer Plugins  
-[`README.md`](https://github.com/Infomaker/NPWriterPluginBundle/blob/master/README.md)
+<div class="release-notes">
+    <h3>Editor Service</h3>
+    <ul>
+        <li><a href="./editorservice30.html">Version 3.0</a></li>
+    </ul>
+</div>
 
-* [Version 1.0](./writerplugins10.html)
+<div class="release-notes">
+    <h3>Lambda - Image Metadata</h3>
+    <ul>
+        <li><a href="./imagemetadata21.html">Version 2.1</a></li>
+    </ul>
+</div>
 
-## Concept Backend
-[`README.md`](https://bitbucket.org/infomaker/concepts-backend/src/124d66dcc31fe0c51e2f8be762e8578431321522/README.md?at=master&fileviewer=file-view-default)
+<div class="release-notes">
+    <h3>Lambda - Image Publish</h3>
+    <ul>
+        <li><a href="./imagepublish20.html">Version 2.0</a></li>
+    </ul>
+</div>
 
-* [Version 3.0](./conceptbackend30.html)
-
-## Editor Service
-[`README.md`](https://bitbucket.org/infomaker/npjs-editor-service/src/76974dded90167b710572d712b1d422f5be8bbb3/README.md?at=master&fileviewer=file-view-default)
-
-* [Version 3.0](./editorservice30.html)
-
-## Lambda - Image Metadata  
-[`README.md`](https://github.com/Infomaker/imageMetadataService)
-
-* [Version 2.1](./imagemetadata21.html)
-
-## Lambda - Image Publish  
-[`README.md`](https://bitbucket.org/infomaker/s3-publish-image/src/8ac95d3e2f53db2b5bc8a760d5e2caee3ed6c44b/README.md?at=master&fileviewer=file-view-default)
-
-* [Version 2.0](./imagepublish20.html)
- 
-## Newspilot Writer Integration Service  
-[`README.md`](https://bitbucket.org/infomaker/newspilotwriterintegrationservice/src/82c12d15f22a245fadde812931042fa26b64c224/README.md?at=master&fileviewer=file-view-default)
-
-* [Version 1.2](./writerintegrationservice12.html)
-
+<div class="release-notes">
+    <h3>Newspilot Writer Integration Service</h3>
+    <ul>
+        <li><a href="./writerintegrationservice12.html">Version 1.2</a></li>
+    </ul>
+</div>

@@ -2,36 +2,33 @@
 layout: default
 title: Newspilot Writer 3.0 release
 ---
-# Newspilot Writer 3.0
-
-### Table of contents
-* [General changes](#general-changes)
-* [Compatibility](#compatibility)
-* [Issues](#issues)
-
-## Highlights
-
-### General changes
-* Built in spellchecking
-* Automatic optimistic locking prevent users from overwriting each others changes
-* Possibility to see who else has an article open
-* New UI with top bar and drop down popovers for plugins
-* Many squashed bugs for a better text editing experience
-
-### Breaking changes from Newspilot Writer 2.0
-* Moved to ECMAScript 2015+
-* New plugin architecture
-* Improved drag'n drop handling
-* New translation handling per plugin
-* Paste handling through macros
-* Configuration stored externally
-
-## Compatibility
-
-| Service         | Version |
-| --------------- | ------- |
-| Editor Service  | 3.0     |
-| Concept Backend | 3.0     |
+<div class="jumbotron">
+    <h1>Newspilot Writer 3.0</h1>
+    <h2>Highlights</h2>
+    <ul>
+        <li>Built in spellchecking</li>
+        <li>Automatic optimistic locking prevent users from overwriting each others changes</li>
+        <li>Possibility to see who else has an article open</li>
+        <li>New UI with top bar and drop down popovers for plugins</li>
+        <li>Many squashed bugs for a better text editing experience</li>
+    </ul>
+    
+    <h2>Breaking changes</h2>
+    <ul>
+        <li>Moved to ECMAScript 2015+</li>
+        <li>New plugin architecture</li>
+        <li>Improved drag'n drop handling</li>
+        <li>New translation handling per plugin</li>
+        <li>Paste handling through macros</li>
+        <li>Configuration stored externally</li>
+    </ul>
+    
+    <h2>Compatibility</h2>
+    <ul>
+        <li>Editor Service <code>3.0</code></li>
+        <li>Concept Backend <code>2.5.5</code></li>
+    </ul>
+</div>
 
 ## Issues  
 

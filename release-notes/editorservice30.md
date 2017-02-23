@@ -2,32 +2,27 @@
 layout: default
 title: Editor Service 3.0 release
 ---
-# Editor Service 3.0
-
-### Table of contents
-* [Breaking changes](#breaking-changes)
-* [General changes](#general-changes)
-* [Compatibility](#compatibility)
-* [Issues](#issues)
-
-## Breaking changes
-
-### Version 1 of endpoints removed
-Endpoint `commands` is no longer supported. Instead `v2/commands` should be used. 
-
-## General changes
-
-### ETag 
- 
-If "Optimistic locking" is not disabled update endpoint will not work (since it expects an "If-Match" header).
-
-## Compatibility
-
-| Service                              | Version |
-| ------------------------------------ | ------- |
-| Lambda - Image Metadata              | 2.1     |
-| Lambda - Image Publish               | 2.0     |
-| Newspilot Writer Integration Service | 1.3     |
+<div class="jumbotron">
+    <h1>Editor Service 3.0</h1>
+    <h2>Highlights</h2>
+    <ul>
+        <li>Support for "optimistic locking"</li>
+        <li>Support for <code>https</code> in communication with Open Content</li>
+    </ul>
+    
+    <h2>Breaking changes</h2>
+    <ul>
+        <li>If "optimistic locking" is not disabled, update API endpoint will not work (since API endpoint expects an <code>If-Match</code> header)</li>
+        <li>API endpoint <code>commands</code> is no longer supported. Instead <code>v2/commands</code> should be used</li>        
+    </ul>
+    
+    <h2>Compatibility</h2>
+    <ul>
+        <li>Lambda - Image Metadata <code>2.1</code></li>
+        <li>Lambda - Image Publish <code>2.0</code></li>
+        <li>Newspilot Writer Integration Service <code>1.2</code></li>
+    </ul>
+</div>
 
 ## Issues  
 

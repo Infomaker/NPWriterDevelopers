@@ -2,14 +2,13 @@
 layout: default
 title: Newspilot Writer Integration Service 1.2 release
 ---
-# Newspilot Writer Integration Service 1.2
-
-### Table of contents
-* [General changes](#general-changes)
-* [Issues](#issues)
-
-## General changes
-No breaking changes.
+<div class="jumbotron">
+    <h1>Newspilot Writer Integration Service 1.2</h1>    
+    <h2>Highlights</h2>
+    <ul>
+        <li>Please see <a href="https://bitbucket.org/infomaker/newspilotwriterintegrationservice/src/82c12d15f22a245fadde812931042fa26b64c224/README.md?at=master&fileviewer=file-view-default">README.md</a> for details regarding service</li>        
+    </ul>        
+</div>
 
 ## Issues 
  
