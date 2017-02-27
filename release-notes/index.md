@@ -20,6 +20,7 @@ title: Release notes
     <h3>Concept Backend</h3>
     <ul>
         <li><a href="./conceptbackend255.html">Version 2.5.5</a></li>
+        <li><a href="./conceptbackend256.html">Version 2.5.6</a></li>
     </ul>
 </div>
 

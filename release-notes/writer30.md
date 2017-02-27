@@ -26,7 +26,7 @@ title: Newspilot Writer 3.0 release
     <h2>Compatibility</h2>
     <ul>
         <li>Editor Service <code>3.0</code></li>
-        <li>Concept Backend <code>2.5.5</code></li>
+        <li>Concept Backend <code>2.5.5</code>, <code>2.5.6</code></li>
     </ul>
 </div>
 
