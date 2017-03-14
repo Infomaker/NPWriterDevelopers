@@ -11,8 +11,7 @@ title: Newspilot Writer 3.0 release
         <li>Possibility to see who else has an article open</li>
         <li>New UI with top bar and drop down popovers for plugins</li>
         <li>Many squashed bugs for a better text editing experience</li>
-    </ul>
-    
+    </ul>    
     <h2>Breaking changes</h2>
     <ul>
         <li>Moved to ECMAScript 2015+</li>
@@ -21,11 +20,10 @@ title: Newspilot Writer 3.0 release
         <li>New translation handling per plugin</li>
         <li>Paste handling through macros</li>
         <li>Configuration stored externally</li>
-    </ul>
-    
+    </ul>    
     <h2>Compatibility</h2>
     <ul>
-        <li>Editor Service <code>3.0</code></li>
+        <li>Editor Service <code>3.0</code>, <code>3.1</code>, <code>3.2</code></li>
         <li>Concept Backend <code>2.5.5</code>, <code>2.5.6</code></li>
     </ul>
 </div>
@@ -52,7 +50,7 @@ title: Newspilot Writer 3.0 release
 * [WRIT-224] - Pen component renders "wrong" when object in Newspilot Writer is selected
 * [WRIT-230] - Strong/Italic becomes [Object Object] when used in a text property editor
 * [WRIT-231] - When pasting a url and a macro handles an insertion, the url is still there
-* [WRIT-233] - Notifications doesn't disappear
+* [WRIT-233] - Notifications doesn't disappear 
 * [WRIT-234] - Add spinner to save button in dialog when clicking
 * [WRIT-235] - Enable drop to teaser
 * [WRIT-236] - It must be possible to change label of Meta-sidebar
@@ -79,21 +77,31 @@ title: Newspilot Writer 3.0 release
 * [WRIT-299] - Checking for If-Match even though optimistic locking disabled
 * [WRIT-301] - Writer reports that concept is already in use for all existing concepts
 * [WRIT-304] - Missing If-Match header problem when saving article
+* [WRIT-306] - Person-taggar med tredelade namn tappar sista delen av namnet
 * [WRIT-307] - <esc> empties, or restores, an article in the writer
 * [WRIT-308] - Infinite spinner in save button when abort in conflict dialog
 * [WRIT-312] - debounce-funktionen anropas fel i FormSearchComponent
 * [WRIT-313] - History should be cleared and NOT save new version until document is dirty, after save
 * [WRIT-316] - Link tool is not showing up or behaving weird
+* [WRIT-320] - Byline twitter images does not get rendered in Writer
+* [WRIT-334] - Trim input values in FormSearchComponent
+* [WRIT-335] - Writer api for newsitem does not handle surrounding space for author title when removing
+* [WRIT-336] - Adding author without UUID twice crashes author plugin
+* [WRIT-338] - When reloading a saved new article, the 'unsaved changes' warning pops up
+* [WRIT-339] - Cannot disable annotation tool for teaser
+* [WRIT-340] - Right column tabs hidden when overflowing on small screens
+* [WRIT-341] - Headline loose formatting on copy'n paste
+* [WRIT-342] - Missing translations in Image archive information dialog
 
 ### New Feature
 * [WRIT-137] - Add spellchecking capabilities to NPWriter
 * [WRIT-148] - Plugin should be able to load own stylesheet
 * [WRIT-150] - Create plugin bundle for our plugins
 * [WRIT-151] - Statusbar for UI tools like messages, local versioning etc
-* [WRIT-152] - Specify and load a template
+* [WRIT-152] - Specify and load a template 
 * [WRIT-158] - Implement support for validator registration in configurator
-* [WRIT-159] - Implement Save Article
-* [WRIT-161] - Enable config loading from S3
+* [WRIT-159] - Implement Save Article 
+* [WRIT-161] - Enable config loading from S3 
 * [WRIT-163] - Implement support for local versioning
 * [WRIT-164] - Allow plugins to register tools and commands
 * [WRIT-165] - Create build and deploy script
@@ -102,7 +110,7 @@ title: Newspilot Writer 3.0 release
 * [WRIT-168] - Configure i18n translation overrides
 * [WRIT-169] - Implement support for dialogs
 * [WRIT-170] - Use bootstrap 4
-* [WRIT-173] - Add a window.writer manager
+* [WRIT-173] - Add a window.writer manager 
 * [WRIT-174] - Implement publish plugin in new top bar
 * [WRIT-176] - Load plugin multiple times
 * [WRIT-178] - Expose lodash through API
@@ -145,7 +153,12 @@ title: Newspilot Writer 3.0 release
 * [WRIT-288] - Handle ETag and If-Match for all Editor Service requests
 * [WRIT-295] - Conflict handling due to optimistic lock
 * [WRIT-314] - Set initial selection when opening writer
+* [WRIT-328] - Allow regular file urls to be dropped in teaser
+* [WRIT-330] - Improve link handle
+* [WRIT-337] - Make temporary ids for article recognizable
 
 ### Task
 * [WRIT-196] - Plugin - Add Bootstrap list-groups for sds channel plugin
+* [WRIT-270] - GUI - fäll in dialogen efter knapptryck
 * [WRIT-318] - Add plugins.writer.infomaker.io domain to cloudfront
+

@@ -9,10 +9,9 @@ title: Release notes
     <ul>
         <li><a href="./writer30.html">Version 3.0</a></li>
     </ul>
-
     <h2>Newspilot Writer Plugins</h2>
     <ul>
-        <li><a href="./writerplugins10.html">Version 1.0</a></li>
+        <li><a href="./writerplugins30.html">Version 3.0</a></li>
     </ul>
 </div>
 
@@ -28,6 +27,8 @@ title: Release notes
     <h3>Editor Service</h3>
     <ul>
         <li><a href="./editorservice30.html">Version 3.0</a></li>
+        <li><a href="./editorservice31.html">Version 3.1</a></li>
+        <li><a href="./editorservice32.html">Version 3.2</a></li>
     </ul>
 </div>
 
