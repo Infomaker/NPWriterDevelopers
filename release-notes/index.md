@@ -18,17 +18,17 @@ title: Release notes
 <div class="release-notes">
     <h3>Concept Backend</h3>
     <ul>
-        <li><a href="./conceptbackend255.html">Version 2.5.5</a></li>
         <li><a href="./conceptbackend256.html">Version 2.5.6</a></li>
+        <li><a href="./conceptbackend255.html">Version 2.5.5</a></li>        
     </ul>
 </div>
 
 <div class="release-notes">
     <h3>Editor Service</h3>
     <ul>
-        <li><a href="./editorservice30.html">Version 3.0</a></li>
-        <li><a href="./editorservice31.html">Version 3.1</a></li>
         <li><a href="./editorservice32.html">Version 3.2</a></li>
+        <li><a href="./editorservice31.html">Version 3.1</a></li>
+        <li><a href="./editorservice30.html">Version 3.0</a></li>                
     </ul>
 </div>
 
