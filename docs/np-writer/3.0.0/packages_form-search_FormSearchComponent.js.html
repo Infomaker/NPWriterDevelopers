@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>packages/form-search/FormSearchComponent.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Api.html">Api</a><ul class='methods'><li data-type='method'><a href="Api.html#call">call</a></li><li data-type='method'><a href="Api.html#getConfigValue">getConfigValue</a></li><li data-type='method'><a href="Api.html#getPluginModule">getPluginModule</a></li><li data-type='method'><a href="Api.html#init">init</a></li></ul></li><li><a href="APIManager.html">APIManager</a><ul class='methods'><li data-type='method'><a href="APIManager.html#expose">expose</a></li></ul></li><li><a href="Article.html">Article</a><ul class='methods'><li data-type='method'><a href="Article.html#clear">clear</a></li><li data-type='method'><a href="Article.html#copy">copy</a></li></ul></li><li><a href="Browser.html">Browser</a><ul class='methods'><li data-type='method'><a href="Browser.html#addExternalScript">addExternalScript</a></li><li data-type='method'><a href="Browser.html#getHash">getHash</a></li><li data-type='method'><a href="Browser.html#isSupported">isSupported</a></li><li data-type='method'><a href="Browser.html#reload">reload</a></li><li data-type='method'><a href="Browser.html#setHash">setHash</a></li><li data-type='method'><a href="Browser.html#setTitle">setTitle</a></li><li data-type='method'><a href="Browser.html#setupHashHandler">setupHashHandler</a></li></ul></li><li><a href="Concept.html">Concept</a><ul class='methods'><li data-type='method'><a href="Concept.html#.getDefinitionForType">getDefinitionForType</a></li><li data-type='method'><a href="Concept.html#.setDefinitionDependingOnArrayOrObject">setDefinitionDependingOnArrayOrObject</a></li></ul></li><li><a href="Document.html">Document</a><ul class='methods'><li data-type='method'><a href="Document.html#deleteNode">deleteNode</a></li><li data-type='method'><a href="Document.html#getDocumentNodes">getDocumentNodes</a></li><li data-type='method'><a href="Document.html#getPreviousNode">getPreviousNode</a></li><li data-type='method'><a href="Document.html#insertBlockNode">insertBlockNode</a></li><li data-type='method'><a href="Document.html#insertInlineNode">insertInlineNode</a></li></ul></li><li><a href="EditLinkTool.html">EditLinkTool</a></li><li><a href="Events.html">Events</a><ul class='methods'><li data-type='method'><a href="Events.html#_triggerEvent">_triggerEvent</a></li><li data-type='method'><a href="Events.html#documentChanged">documentChanged</a></li><li data-type='method'><a href="Events.html#documentSaved">documentSaved</a></li><li data-type='method'><a href="Events.html#documentSaveFailed">documentSaveFailed</a></li><li data-type='method'><a href="Events.html#off">off</a></li><li data-type='method'><a href="Events.html#on">on</a></li><li data-type='method'><a href="Events.html#onDocumentStartSaving">onDocumentStartSaving</a></li><li data-type='method'><a href="Events.html#triggerEvent">triggerEvent</a></li></ul></li><li><a href="FormAddComponent.html">FormAddComponent</a><ul class='methods'><li data-type='method'><a href="FormAddComponent.html#getCreateNewItem">getCreateNewItem</a></li></ul></li><li><a href="FormSearchComponent.html">FormSearchComponent</a><ul class='methods'><li data-type='method'><a href="FormSearchComponent.html#getCreateNewItem">getCreateNewItem</a></li></ul></li><li><a href="History.html">History</a><ul class='methods'><li data-type='method'><a href="History.html#cleanOldVersions">cleanOldVersions</a></li><li data-type='method'><a href="History.html#deleteHistory">deleteHistory</a></li><li data-type='method'><a href="History.html#get">get</a></li><li data-type='method'><a href="History.html#getHistory">getHistory</a></li><li data-type='method'><a href="History.html#isAvailable">isAvailable</a></li><li data-type='method'><a href="History.html#saveHistory">saveHistory</a></li></ul></li><li><a href="LabelProvider.html">LabelProvider</a></li><li><a href="NewsItem.html">NewsItem</a><ul class='methods'><li data-type='method'><a href="NewsItem.html#_getItemMetaExtPropertyByType">_getItemMetaExtPropertyByType</a></li><li data-type='method'><a href="NewsItem.html#_getLinksByType">_getLinksByType</a></li><li data-type='method'><a href="NewsItem.html#_getServices">_getServices</a></li><li data-type='method'><a href="NewsItem.html#_getSignalNodeByQcode">_getSignalNodeByQcode</a></li><li data-type='method'><a href="NewsItem.html#addAuthor">addAuthor</a></li><li data-type='method'><a href="NewsItem.html#addCategory">addCategory</a></li><li data-type='method'><a href="NewsItem.html#addChannel">addChannel</a></li><li data-type='method'><a href="NewsItem.html#addConceptProfile">addConceptProfile</a></li><li data-type='method'><a href="NewsItem.html#addLink">addLink</a></li><li data-type='method'><a href="NewsItem.html#addLocation">addLocation</a></li><li data-type='method'><a href="NewsItem.html#addSimpleAuthor">addSimpleAuthor</a></li><li data-type='method'><a href="NewsItem.html#addStory">addStory</a></li><li data-type='method'><a href="NewsItem.html#addTag">addTag</a></li><li data-type='method'><a href="NewsItem.html#createNewsPriority">createNewsPriority</a></li><li data-type='method'><a href="NewsItem.html#getAuthors">getAuthors</a></li><li data-type='method'><a href="NewsItem.html#getCategories">getCategories</a></li><li data-type='method'><a href="NewsItem.html#getChannels">getChannels</a></li><li data-type='method'><a href="NewsItem.html#getContentMetaObjectById">getContentMetaObjectById</a></li><li data-type='method'><a href="NewsItem.html#getContentMetaObjectsByType">getContentMetaObjectsByType</a></li><li data-type='method'><a href="NewsItem.html#getContentProfiles">getContentProfiles</a></li><li data-type='method'><a href="NewsItem.html#getGuid">getGuid</a></li><li data-type='method'><a href="NewsItem.html#getLinkByType">getLinkByType</a></li><li data-type='method'><a href="NewsItem.html#getLinkByTypeAndRel">getLinkByTypeAndRel</a></li><li data-type='method'><a href="NewsItem.html#getLinksByType">getLinksByType</a></li><li data-type='method'><a href="NewsItem.html#getLocations">getLocations</a></li><li data-type='method'><a href="NewsItem.html#getMainChannel">getMainChannel</a></li><li data-type='method'><a href="NewsItem.html#getNewspilotArticleId">getNewspilotArticleId</a></li><li data-type='method'><a href="NewsItem.html#getNewsPriority">getNewsPriority</a></li><li data-type='method'><a href="NewsItem.html#getPubStart">getPubStart</a></li><li data-type='method'><a href="NewsItem.html#getPubStatus">getPubStatus</a></li><li data-type='method'><a href="NewsItem.html#getPubStop">getPubStop</a></li><li data-type='method'><a href="NewsItem.html#getSection">getSection</a></li><li data-type='method'><a href="NewsItem.html#getSections">getSections</a></li><li data-type='method'><a href="NewsItem.html#getStories">getStories</a></li><li data-type='method'><a href="NewsItem.html#getTags">getTags</a></li><li data-type='method'><a href="NewsItem.html#getTemporaryId">getTemporaryId</a></li><li data-type='method'><a href="NewsItem.html#hasTemporaryId">hasTemporaryId</a></li><li data-type='method'><a href="NewsItem.html#normalizeObject">normalizeObject</a></li><li data-type='method'><a href="NewsItem.html#removeAuthorByTitle">removeAuthorByTitle</a></li><li data-type='method'><a href="NewsItem.html#removeAuthorByUUID">removeAuthorByUUID</a></li><li data-type='method'><a href="NewsItem.html#removeChannel">removeChannel</a></li><li data-type='method'><a href="NewsItem.html#removeContentMetaObject">removeContentMetaObject</a></li><li data-type='method'><a href="NewsItem.html#removeLinkByUUID">removeLinkByUUID</a></li><li data-type='method'><a href="NewsItem.html#removeLinkByUUIDAndRel">removeLinkByUUIDAndRel</a></li><li data-type='method'><a href="NewsItem.html#removePubStart">removePubStart</a></li><li data-type='method'><a href="NewsItem.html#removePubStop">removePubStop</a></li><li data-type='method'><a href="NewsItem.html#removeSection">removeSection</a></li><li data-type='method'><a href="NewsItem.html#save">save</a></li><li data-type='method'><a href="NewsItem.html#setContentMetaObject">setContentMetaObject</a></li><li data-type='method'><a href="NewsItem.html#setGuid">setGuid</a></li><li data-type='method'><a href="NewsItem.html#setNewsPriority">setNewsPriority</a></li><li data-type='method'><a href="NewsItem.html#setPubStart">setPubStart</a></li><li data-type='method'><a href="NewsItem.html#setPubStatus">setPubStatus</a></li><li data-type='method'><a href="NewsItem.html#setPubStop">setPubStop</a></li><li data-type='method'><a href="NewsItem.html#setSource">setSource</a></li><li data-type='method'><a href="NewsItem.html#setTemporaryId">setTemporaryId</a></li><li data-type='method'><a href="NewsItem.html#updateAuthorWithUUID">updateAuthorWithUUID</a></li><li data-type='method'><a href="NewsItem.html#updateConceptProfile">updateConceptProfile</a></li><li data-type='method'><a href="NewsItem.html#updateLocation">updateLocation</a></li><li data-type='method'><a href="NewsItem.html#updateSection">updateSection</a></li><li data-type='method'><a href="NewsItem.html#updateStory">updateStory</a></li><li data-type='method'><a href="NewsItem.html#updateTag">updateTag</a></li></ul></li><li><a href="NewsMLArticle.html">NewsMLArticle</a></li><li><a href="NewsMLImporter.html">NewsMLImporter</a><ul class='methods'><li data-type='method'><a href="NewsMLImporter.html#getFirstElementWithTypeElement">getFirstElementWithTypeElement</a></li></ul></li><li><a href="NotFoundException.html">NotFoundException</a></li><li><a href="PluginManager.html">PluginManager</a><ul class='methods'><li data-type='method'><a href="PluginManager.html#_getValue">_getValue</a></li><li data-type='method'><a href="PluginManager.html#appendPluginScripts">appendPluginScripts</a></li><li data-type='method'><a href="PluginManager.html#getListOfPlugins">getListOfPlugins</a></li><li data-type='method'><a href="PluginManager.html#load">load</a></li><li data-type='method'><a href="PluginManager.html#registerPlugin">registerPlugin</a></li><li data-type='method'><a href="PluginManager.html#validatePluginPackage">validatePluginPackage</a></li></ul></li><li><a href="Router.html">Router</a><ul class='methods'><li data-type='method'><a href="Router.html#checkForOKStatus">checkForOKStatus</a></li><li data-type='method'><a href="Router.html#createConceptItem">createConceptItem</a></li><li data-type='method'><a href="Router.html#get">get</a></li><li data-type='method'><a href="Router.html#getConceptItem">getConceptItem</a></li><li data-type='method'><a href="Router.html#getEndpoint">getEndpoint</a></li><li data-type='method'><a href="Router.html#getNewsItem">getNewsItem</a></li><li data-type='method'><a href="Router.html#getQuerystringFromParameters">getQuerystringFromParameters</a></li><li data-type='method'><a href="Router.html#getRequestPropertiesForMethod">getRequestPropertiesForMethod</a></li><li data-type='method'><a href="Router.html#post">post</a></li><li data-type='method'><a href="Router.html#postBinary">postBinary</a></li><li data-type='method'><a href="Router.html#proxy">proxy</a></li><li data-type='method'><a href="Router.html#put">put</a></li><li data-type='method'><a href="Router.html#toJson">toJson</a></li><li data-type='method'><a href="Router.html#updateConceptItem">updateConceptItem</a></li></ul></li><li><a href="Ui.html">Ui</a><ul class='methods'><li data-type='method'><a href="Ui.html#getComponent">getComponent</a></li><li data-type='method'><a href="Ui.html#showDialog">showDialog</a></li><li data-type='method'><a href="Ui.html#showMessageDialog">showMessageDialog</a></li><li data-type='method'><a href="Ui.html#showNotification">showNotification</a></li></ul></li><li><a href="Upload.html">Upload</a></li><li><a href="Validator.html">Validator</a><ul class='methods'><li data-type='method'><a href="Validator.html#addError">addError</a></li><li data-type='method'><a href="Validator.html#addInfo">addInfo</a></li><li data-type='method'><a href="Validator.html#addWarning">addWarning</a></li><li data-type='method'><a href="Validator.html#getMessages">getMessages</a></li><li data-type='method'><a href="Validator.html#hasMessages">hasMessages</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#removeControlCodes">removeControlCodes</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">packages/form-search/FormSearchComponent.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>'use strict';
+
+var _ = require('lodash');
+
+import SpinnerComponent from "./SpinnerComponent";
+import {Component} from "substance";
+import clone from "lodash/clone";
+import debounce from "../../utils/Debounce";
+
+/**
+ * Props to pass:
+ * SearchUrl {string}
+ * onSelect {function}
+ * onCreate {function} If allowing to create new items - pass this function
+ * existingItems {array}
+ * placeholderText {string} Placehold text inside input
+ * createAllowed {bool} If creation of new elements is allowed
+ *
+ * When selecting this.props.onSelect
+ * @constructor
+ */
+
+class FormSearchComponent extends Component {
+
+    constructor(...args) {
+        super(...args)
+
+        if (this.props.createAllowed &amp;&amp; !this.props.onCreate) {
+            console.warn("Creation of items is allowed but onCreate method is missing");
+        }
+
+        this.searchFunction = debounce(() => this.lookup(), 300);
+    }
+
+    next() {
+        //noinspection JSJQueryEfficiency
+        const selectedDomItem = document.getElementById('item-' + this.currentSelectedItem.uuid)
+        let currentSelectedItem = this.currentSelectedItem &amp;&amp; selectedDomItem
+        if (currentSelectedItem) {
+            let searchResultElement = this.refs.searchResult.el.el;
+            let selectedItem = selectedDomItem
+            let items = this.state.items
+
+            if (this.state.currentSelectedIndex >= 0) {
+                let idx = parseInt(this.state.currentSelectedIndex)
+                idx++;
+
+                searchResultElement.scrollTop = selectedItem.offsetTop;
+                this.extendState({
+                    currentSelectedIndex: idx
+                });
+
+                if (idx === items.length) {
+                    this.extendState({
+                        currentSelectedIndex: 0
+                    });
+                    searchResultElement.scrollTop = 0
+                }
+            }
+        }
+    }
+
+    prev() {
+        //noinspection JSJQueryEfficiency
+        const selectedDomItem = document.getElementById('item-' + this.currentSelectedItem.uuid)
+        let currentSelectedItem = this.currentSelectedItem &amp;&amp; selectedDomItem
+        if (currentSelectedItem) {
+            let searchResultElement = this.refs.searchResult.el.el
+            let selectedItemPrevSibling = selectedDomItem.previousSibling
+
+            let items = this.state.items;
+            if (this.state.currentSelectedIndex >= 0) {
+                var idx = parseInt(this.state.currentSelectedIndex)
+
+                if (selectedItemPrevSibling === null) {
+                    searchResultElement.scrollTop = searchResultElement.lastChild.offsetTop
+                    this.extendState({
+                        currentSelectedIndex: items.length - 1
+                    });
+
+                } else {
+                    let offsetTop = selectedItemPrevSibling.offsetTop
+                    let offsetHeight = selectedItemPrevSibling.offsetHeight
+
+                    searchResultElement.scrollTop = offsetTop - offsetHeight
+                    idx--;
+
+                    this.extendState({
+                        currentSelectedIndex: idx
+                    });
+                }
+            }
+        }
+    }
+
+    search(e) {
+        switch (e.keyCode) {
+
+            case 38: // up arrow
+                if (e.shiftKey) return;
+                e.preventDefault();
+                this.prev();
+                break;
+
+            case 40: // down arrow
+                if (e.shiftKey) return;
+                e.preventDefault();
+                this.next();
+                break;
+
+            case 9: // tab
+            case 13: // enter
+                e.preventDefault();
+                e.stopPropagation();
+                if (this.state.items.length === 0) return;
+                this.select();
+                break;
+
+            case 27: // escape
+                this.hide();
+                break;
+            default:
+                this.searchFunction()
+        }
+    }
+
+    clearItems() {
+        this.extendState({
+            items: [],
+            isSearching: false,
+            currentSelectedIndex: 0
+        })
+    }
+
+    hide() {
+        this.refs.searchInput.val("");
+        this.clearItems()
+    }
+
+    select() {
+        this.doAction(this.currentSelectedItem);
+    }
+
+    lookup() {
+        var input = this.refs.searchInput.val().trim(),
+            originalInput = input;
+
+        if (input.length === 0) {
+            this.clearItems()
+            return;
+        }
+
+        this.extendState({
+            isSearching: true
+        });
+
+        // Might pass a boolean from parent to search with wildcard?
+        var wildcardSearch = true;
+        if (wildcardSearch) {
+            input += '*';
+        }
+
+        if (this.props.searchUrl === null) {
+            this.handleSearchResult([]);
+        }
+        else {
+            const fetchParameters = {
+                headers: {
+                    contentType: 'application/json',
+                    dataType: 'application/json'
+                }
+            }
+
+            this.context.api.router.get(this.props.searchUrl + input, fetchParameters)
+                .then(response => this.context.api.router.checkForOKStatus(response))
+                .then(response => this.context.api.router.toJson(response))
+                .then((json) => {
+                    if (originalInput === this.refs.searchInput.val().trim()) {
+                        // Search should be handled, it is the same input as when the request was sent
+                        this.handleSearchResult(json);
+                    } else {
+                        // input differs from search request, skip it.
+                        this.extendState({
+                            isSearching: false
+                        });
+                    }
+                })
+                .catch((e) => {
+                    console.error(e)
+                    this.extendState({
+                        isSearching: false
+                    });
+                })
+        }
+    }
+
+    handleSearchResult(data) {
+        this.extendState({
+            items: this.getItemsThatNotExisting(data),
+            isSearching: false
+        });
+    }
+
+    getInitialState() {
+        return {
+            items: [],
+            currentSelectedIndex: 0
+        };
+    }
+
+    /**
+     * Adds a dummy element to items list which contains a "create item" element
+     * @returns {{name: string[], uuid: string, shortDescription: string[]}}
+     */
+    getCreateNewItem() {
+        return {
+            name: [this.getLabel("Create") + ": " + this.refs.searchInput.val().trim()],
+            value: this.refs.searchInput.val().trim(),
+            uuid: "__create-new",
+            imType: ["x-im/template"],
+            shortDescription: [
+                ""
+            ]
+        };
+    }
+
+    getItemsThatNotExisting(data) {
+        var existingItems = this.props.existingItems;
+
+        if (this.props.onCreate &amp;&amp; this.props.createAllowed) {
+            data.push(this.getCreateNewItem());
+        }
+
+        var existingItemsMap = {};
+        if (existingItems) {
+            existingItems.forEach(function (item) {
+                existingItemsMap[item.uuid] = item.uuid;
+            });
+        }
+
+        data.forEach(function (item) {
+            if (existingItemsMap[item.uuid]) {
+                item.exists = true;
+            }
+        });
+
+        return data;
+
+        // return _.differenceWith(data, existingItems, function (a, b) {
+        //     return a.uuid === b.uuid;
+        // });
+    }
+
+
+    itemAlreadyExists(items, item) {
+
+        if (!items) {
+            return false;
+        }
+
+        for (var i = 0; i &lt; items.length; i++) {
+            let value = items[i].title || items[i].name[0]
+            let newValue = item.value || item.name[0]
+            if (items[i].uuid !== '__create-new' &amp;&amp; value.toLowerCase() === newValue.toLowerCase()) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    doAction(item) {
+        if (item.exists || this.itemAlreadyExists(this.props.existingItems, item)) {
+            this.context.api.ui.showNotification('formsearchcomponent', this.getLabel('formsearch.item-exists-label'), this.getLabel('formsearch.item-exists-description'))
+            return;
+        }
+        if (this.props.onCreate &amp;&amp; this.props.createAllowed &amp;&amp; item.uuid === '__create-new') {
+            this.props.onCreate(item, this.itemAlreadyExists(this.state.items, item));
+        } else {
+            this.props.onSelect(item);
+        }
+
+        this.hide();
+    }
+
+    render($$) {
+
+        var formGroup = $$('div').addClass('form-group').ref('formGroup');
+
+        var searchInput = $$('input')
+            .addClass('form-control')
+            .addClass('form__search')
+            .on('keydown', this.search)
+            .attr('autocomplete', 'off')
+            .attr({
+                type: 'text', id: 'formSearch', placeholder: this.getLabel(this.props.placeholderText)
+            })
+            .ref('searchInput');
+
+        var inlineIcon = $$(SpinnerComponent, {isSearching: this.state.isSearching});
+
+        formGroup.append(inlineIcon);
+        formGroup.append(searchInput);
+
+
+        var el = $$('div').addClass('search__container').ref('searchContainer');
+        var list = $$('ul').attr('id', 'searchResult').ref('searchResult');
+
+        if (this.state.items.length > 0) {
+            list.addClass('isSearching');
+        }
+
+        this.state.items.forEach(function (item, idx) {
+            var itemToSave = clone(item);
+
+            var name = item.name[0],
+                description = item.shortDescription ? item.shortDescription[0] : '',
+                itemId = 'item-' + item.uuid;
+
+            itemToSave.inputValue = this.refs.searchInput.val().trim();
+
+
+            var itemEl = $$('li');
+            if (item.exists === true) {
+                itemEl.addClass('item__exists');
+                itemEl.append($$('span').append("\u2713 ").addClass('item__found'));
+            }
+            itemEl.append($$('span').append(name).addClass('item__name'))
+                .append($$('span').append(description).addClass('item__short-description'))
+                .attr('id', itemId);
+
+            itemEl.on('mousedown', (e) => {
+                e.preventDefault()
+            })
+            
+            itemEl.on('click', function () {
+                this.doAction(itemToSave);
+            }.bind(this));
+
+            if (this.state.currentSelectedIndex === idx) {
+                this.currentSelectedItem = itemToSave;
+                itemEl.addClass('active');
+            }
+
+            list.append(itemEl);
+        }.bind(this));
+
+        el.append(formGroup);
+        el.append(list);
+        searchInput.on('blur', this.hide)
+
+        return el;
+    }
+
+}
+export default FormSearchComponent</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Tue Mar 14 2017 14:38:01 GMT+0100 (CET) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

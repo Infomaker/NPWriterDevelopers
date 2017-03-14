@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>api/Router.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Api.html">Api</a><ul class='methods'><li data-type='method'><a href="Api.html#call">call</a></li><li data-type='method'><a href="Api.html#getConfigValue">getConfigValue</a></li><li data-type='method'><a href="Api.html#getPluginModule">getPluginModule</a></li><li data-type='method'><a href="Api.html#init">init</a></li></ul></li><li><a href="APIManager.html">APIManager</a><ul class='methods'><li data-type='method'><a href="APIManager.html#expose">expose</a></li></ul></li><li><a href="Article.html">Article</a><ul class='methods'><li data-type='method'><a href="Article.html#clear">clear</a></li><li data-type='method'><a href="Article.html#copy">copy</a></li></ul></li><li><a href="Browser.html">Browser</a><ul class='methods'><li data-type='method'><a href="Browser.html#addExternalScript">addExternalScript</a></li><li data-type='method'><a href="Browser.html#getHash">getHash</a></li><li data-type='method'><a href="Browser.html#isSupported">isSupported</a></li><li data-type='method'><a href="Browser.html#reload">reload</a></li><li data-type='method'><a href="Browser.html#setHash">setHash</a></li><li data-type='method'><a href="Browser.html#setTitle">setTitle</a></li><li data-type='method'><a href="Browser.html#setupHashHandler">setupHashHandler</a></li></ul></li><li><a href="Concept.html">Concept</a><ul class='methods'><li data-type='method'><a href="Concept.html#.getDefinitionForType">getDefinitionForType</a></li><li data-type='method'><a href="Concept.html#.setDefinitionDependingOnArrayOrObject">setDefinitionDependingOnArrayOrObject</a></li></ul></li><li><a href="Document.html">Document</a><ul class='methods'><li data-type='method'><a href="Document.html#deleteNode">deleteNode</a></li><li data-type='method'><a href="Document.html#getDocumentNodes">getDocumentNodes</a></li><li data-type='method'><a href="Document.html#getPreviousNode">getPreviousNode</a></li><li data-type='method'><a href="Document.html#insertBlockNode">insertBlockNode</a></li><li data-type='method'><a href="Document.html#insertInlineNode">insertInlineNode</a></li></ul></li><li><a href="EditLinkTool.html">EditLinkTool</a></li><li><a href="Events.html">Events</a><ul class='methods'><li data-type='method'><a href="Events.html#_triggerEvent">_triggerEvent</a></li><li data-type='method'><a href="Events.html#documentChanged">documentChanged</a></li><li data-type='method'><a href="Events.html#documentSaved">documentSaved</a></li><li data-type='method'><a href="Events.html#documentSaveFailed">documentSaveFailed</a></li><li data-type='method'><a href="Events.html#off">off</a></li><li data-type='method'><a href="Events.html#on">on</a></li><li data-type='method'><a href="Events.html#onDocumentStartSaving">onDocumentStartSaving</a></li><li data-type='method'><a href="Events.html#triggerEvent">triggerEvent</a></li></ul></li><li><a href="FormAddComponent.html">FormAddComponent</a><ul class='methods'><li data-type='method'><a href="FormAddComponent.html#getCreateNewItem">getCreateNewItem</a></li></ul></li><li><a href="FormSearchComponent.html">FormSearchComponent</a><ul class='methods'><li data-type='method'><a href="FormSearchComponent.html#getCreateNewItem">getCreateNewItem</a></li></ul></li><li><a href="History.html">History</a><ul class='methods'><li data-type='method'><a href="History.html#cleanOldVersions">cleanOldVersions</a></li><li data-type='method'><a href="History.html#deleteHistory">deleteHistory</a></li><li data-type='method'><a href="History.html#get">get</a></li><li data-type='method'><a href="History.html#getHistory">getHistory</a></li><li data-type='method'><a href="History.html#isAvailable">isAvailable</a></li><li data-type='method'><a href="History.html#saveHistory">saveHistory</a></li></ul></li><li><a href="LabelProvider.html">LabelProvider</a></li><li><a href="NewsItem.html">NewsItem</a><ul class='methods'><li data-type='method'><a href="NewsItem.html#_getItemMetaExtPropertyByType">_getItemMetaExtPropertyByType</a></li><li data-type='method'><a href="NewsItem.html#_getLinksByType">_getLinksByType</a></li><li data-type='method'><a href="NewsItem.html#_getServices">_getServices</a></li><li data-type='method'><a href="NewsItem.html#_getSignalNodeByQcode">_getSignalNodeByQcode</a></li><li data-type='method'><a href="NewsItem.html#addAuthor">addAuthor</a></li><li data-type='method'><a href="NewsItem.html#addCategory">addCategory</a></li><li data-type='method'><a href="NewsItem.html#addChannel">addChannel</a></li><li data-type='method'><a href="NewsItem.html#addConceptProfile">addConceptProfile</a></li><li data-type='method'><a href="NewsItem.html#addLink">addLink</a></li><li data-type='method'><a href="NewsItem.html#addLocation">addLocation</a></li><li data-type='method'><a href="NewsItem.html#addSimpleAuthor">addSimpleAuthor</a></li><li data-type='method'><a href="NewsItem.html#addStory">addStory</a></li><li data-type='method'><a href="NewsItem.html#addTag">addTag</a></li><li data-type='method'><a href="NewsItem.html#createNewsPriority">createNewsPriority</a></li><li data-type='method'><a href="NewsItem.html#getAuthors">getAuthors</a></li><li data-type='method'><a href="NewsItem.html#getCategories">getCategories</a></li><li data-type='method'><a href="NewsItem.html#getChannels">getChannels</a></li><li data-type='method'><a href="NewsItem.html#getContentMetaObjectById">getContentMetaObjectById</a></li><li data-type='method'><a href="NewsItem.html#getContentMetaObjectsByType">getContentMetaObjectsByType</a></li><li data-type='method'><a href="NewsItem.html#getContentProfiles">getContentProfiles</a></li><li data-type='method'><a href="NewsItem.html#getGuid">getGuid</a></li><li data-type='method'><a href="NewsItem.html#getLinkByType">getLinkByType</a></li><li data-type='method'><a href="NewsItem.html#getLinkByTypeAndRel">getLinkByTypeAndRel</a></li><li data-type='method'><a href="NewsItem.html#getLinksByType">getLinksByType</a></li><li data-type='method'><a href="NewsItem.html#getLocations">getLocations</a></li><li data-type='method'><a href="NewsItem.html#getMainChannel">getMainChannel</a></li><li data-type='method'><a href="NewsItem.html#getNewspilotArticleId">getNewspilotArticleId</a></li><li data-type='method'><a href="NewsItem.html#getNewsPriority">getNewsPriority</a></li><li data-type='method'><a href="NewsItem.html#getPubStart">getPubStart</a></li><li data-type='method'><a href="NewsItem.html#getPubStatus">getPubStatus</a></li><li data-type='method'><a href="NewsItem.html#getPubStop">getPubStop</a></li><li data-type='method'><a href="NewsItem.html#getSection">getSection</a></li><li data-type='method'><a href="NewsItem.html#getSections">getSections</a></li><li data-type='method'><a href="NewsItem.html#getStories">getStories</a></li><li data-type='method'><a href="NewsItem.html#getTags">getTags</a></li><li data-type='method'><a href="NewsItem.html#getTemporaryId">getTemporaryId</a></li><li data-type='method'><a href="NewsItem.html#hasTemporaryId">hasTemporaryId</a></li><li data-type='method'><a href="NewsItem.html#normalizeObject">normalizeObject</a></li><li data-type='method'><a href="NewsItem.html#removeAuthorByTitle">removeAuthorByTitle</a></li><li data-type='method'><a href="NewsItem.html#removeAuthorByUUID">removeAuthorByUUID</a></li><li data-type='method'><a href="NewsItem.html#removeChannel">removeChannel</a></li><li data-type='method'><a href="NewsItem.html#removeContentMetaObject">removeContentMetaObject</a></li><li data-type='method'><a href="NewsItem.html#removeLinkByUUID">removeLinkByUUID</a></li><li data-type='method'><a href="NewsItem.html#removeLinkByUUIDAndRel">removeLinkByUUIDAndRel</a></li><li data-type='method'><a href="NewsItem.html#removePubStart">removePubStart</a></li><li data-type='method'><a href="NewsItem.html#removePubStop">removePubStop</a></li><li data-type='method'><a href="NewsItem.html#removeSection">removeSection</a></li><li data-type='method'><a href="NewsItem.html#save">save</a></li><li data-type='method'><a href="NewsItem.html#setContentMetaObject">setContentMetaObject</a></li><li data-type='method'><a href="NewsItem.html#setGuid">setGuid</a></li><li data-type='method'><a href="NewsItem.html#setNewsPriority">setNewsPriority</a></li><li data-type='method'><a href="NewsItem.html#setPubStart">setPubStart</a></li><li data-type='method'><a href="NewsItem.html#setPubStatus">setPubStatus</a></li><li data-type='method'><a href="NewsItem.html#setPubStop">setPubStop</a></li><li data-type='method'><a href="NewsItem.html#setSource">setSource</a></li><li data-type='method'><a href="NewsItem.html#setTemporaryId">setTemporaryId</a></li><li data-type='method'><a href="NewsItem.html#updateAuthorWithUUID">updateAuthorWithUUID</a></li><li data-type='method'><a href="NewsItem.html#updateConceptProfile">updateConceptProfile</a></li><li data-type='method'><a href="NewsItem.html#updateLocation">updateLocation</a></li><li data-type='method'><a href="NewsItem.html#updateSection">updateSection</a></li><li data-type='method'><a href="NewsItem.html#updateStory">updateStory</a></li><li data-type='method'><a href="NewsItem.html#updateTag">updateTag</a></li></ul></li><li><a href="NewsMLArticle.html">NewsMLArticle</a></li><li><a href="NewsMLImporter.html">NewsMLImporter</a><ul class='methods'><li data-type='method'><a href="NewsMLImporter.html#getFirstElementWithTypeElement">getFirstElementWithTypeElement</a></li></ul></li><li><a href="NotFoundException.html">NotFoundException</a></li><li><a href="PluginManager.html">PluginManager</a><ul class='methods'><li data-type='method'><a href="PluginManager.html#_getValue">_getValue</a></li><li data-type='method'><a href="PluginManager.html#appendPluginScripts">appendPluginScripts</a></li><li data-type='method'><a href="PluginManager.html#getListOfPlugins">getListOfPlugins</a></li><li data-type='method'><a href="PluginManager.html#load">load</a></li><li data-type='method'><a href="PluginManager.html#registerPlugin">registerPlugin</a></li><li data-type='method'><a href="PluginManager.html#validatePluginPackage">validatePluginPackage</a></li></ul></li><li><a href="Router.html">Router</a><ul class='methods'><li data-type='method'><a href="Router.html#checkForOKStatus">checkForOKStatus</a></li><li data-type='method'><a href="Router.html#createConceptItem">createConceptItem</a></li><li data-type='method'><a href="Router.html#get">get</a></li><li data-type='method'><a href="Router.html#getConceptItem">getConceptItem</a></li><li data-type='method'><a href="Router.html#getEndpoint">getEndpoint</a></li><li data-type='method'><a href="Router.html#getNewsItem">getNewsItem</a></li><li data-type='method'><a href="Router.html#getQuerystringFromParameters">getQuerystringFromParameters</a></li><li data-type='method'><a href="Router.html#getRequestPropertiesForMethod">getRequestPropertiesForMethod</a></li><li data-type='method'><a href="Router.html#post">post</a></li><li data-type='method'><a href="Router.html#postBinary">postBinary</a></li><li data-type='method'><a href="Router.html#proxy">proxy</a></li><li data-type='method'><a href="Router.html#put">put</a></li><li data-type='method'><a href="Router.html#toJson">toJson</a></li><li data-type='method'><a href="Router.html#updateConceptItem">updateConceptItem</a></li></ul></li><li><a href="Ui.html">Ui</a><ul class='methods'><li data-type='method'><a href="Ui.html#getComponent">getComponent</a></li><li data-type='method'><a href="Ui.html#showDialog">showDialog</a></li><li data-type='method'><a href="Ui.html#showMessageDialog">showMessageDialog</a></li><li data-type='method'><a href="Ui.html#showNotification">showNotification</a></li></ul></li><li><a href="Upload.html">Upload</a></li><li><a href="Validator.html">Validator</a><ul class='methods'><li data-type='method'><a href="Validator.html#addError">addError</a></li><li data-type='method'><a href="Validator.html#addInfo">addInfo</a></li><li data-type='method'><a href="Validator.html#addWarning">addWarning</a></li><li data-type='method'><a href="Validator.html#getMessages">getMessages</a></li><li data-type='method'><a href="Validator.html#hasMessages">hasMessages</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#removeControlCodes">removeControlCodes</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">api/Router.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import "whatwg-fetch";
+import isObject from "lodash/isObject";
+
+/**
+ * @class Api.Router
+ *
+ * Router api class with functions for communication with the backend.
+ * All router functions are available through the context.api.router object.
+ */
+class Router {
+
+    constructor(api) {
+        this.api = api;
+        this.etags = {};
+    }
+
+    /**
+     * Creates a querystring from an object, starting with a ?
+     * If a string is passed as parameter i will just be returned
+     *
+     * @note If parameters contains 'headers' it will not be added to the querystring
+     *
+     * @param {object} parameters
+     * @returns {string}
+     */
+    getQuerystringFromParameters(parameters) {
+        if (!parameters) return ''
+        if (!isObject(parameters)) return parameters
+
+        if (isObject(parameters)) {
+            let query = []
+
+            for (const name in parameters) {
+                if (name !== 'headers' &amp;&amp; name !== 'body') { // Dont add the headers key to the querystring
+                    query.push(name + '=' + encodeURIComponent(parameters[name]));
+                }
+            }
+
+            return query.length === 0 ? '' : '?' + query.join('&amp;')
+        }
+
+        throw new Error('Could not convert parameters of type', typeof parameters)
+    }
+
+
+    /**
+     *
+     * @param {string} method - GET, POST, PUT, DELETE, HEAD
+     * @param {object} parameters Object containing a headers-property
+     * @returns {{method: string}}
+     */
+    getRequestPropertiesForMethod(method, parameters) {
+
+        let requestProperties = {
+            method: method.toUpperCase()
+        }
+
+        // If headers is sent pass them
+        if (parameters &amp;&amp; parameters.headers) {
+            requestProperties['headers'] = parameters.headers
+        }
+
+        // Add a body if there is one provided
+        if (parameters &amp;&amp; parameters.body) {
+            requestProperties['body'] = parameters.body
+        }
+
+        if (!parameters || !parameters.credentials) {
+            requestProperties['credentials'] = 'same-origin'
+        }
+
+        return requestProperties
+    }
+
+    /**
+     * Post a binary file object to the backend
+     *
+     * @param {string} path
+     * @param {object} file File object from file input or file drop
+     * @param {Function} onProgress Callback function for progress event
+     * @param {Function} onLoad Callback function for onload event
+     */
+    postBinary(path, file, onProgress, onLoad, onError, params) {
+        var xhr = new XMLHttpRequest(); //jshint ignore:line
+
+        xhr.onload = onLoad;
+        xhr.onError = onError;
+        xhr.addEventListener('progress', onProgress);
+
+        xhr.open('POST', path, true);
+
+        xhr.setRequestHeader("x-infomaker-type", params.imType);
+        xhr.setRequestHeader("content-type", file.type);
+        xhr.setRequestHeader("x-filename", encodeURIComponent(file.name));
+        xhr.send(file);
+    }
+
+    /**
+     * Post data to specified backend endpoint
+     *
+     * @param {string} path
+     * @param {object} parameters
+     *
+     * @return {object} jQuery ajax object
+     */
+    post(path, parameters) {
+        let url = this.getEndpoint() + path + this.getQuerystringFromParameters(parameters)
+        let requestProperties = this.getRequestPropertiesForMethod('POST', parameters)
+        return fetch(url, requestProperties)
+
+    }
+
+    /**
+     * Put data to specified backend endpoint
+     *
+     * @param {string} path
+     * @param {object} parameters
+     *
+     * @return {object} jQuery ajax object
+     */
+    put(path, parameters) {
+        let url = this.getEndpoint() + path + this.getQuerystringFromParameters(parameters)
+        let requestProperties = this.getRequestPropertiesForMethod('PUT', parameters)
+
+        if (!requestProperties.headers) {
+            requestProperties['headers'] = {}
+        }
+
+        const uuid = parameters.uuid
+        if (uuid) {
+            const eTag = this.getEtag(uuid)
+            if (eTag) {
+                requestProperties.headers['If-Match'] = eTag
+            } else {
+                console.warn('PUT request without ETag is deprecated')
+            }
+        } else {
+            console.error('Bad PUT request. Missing uuid in parameters. Path was', path)
+        }
+
+        return fetch(url, requestProperties)
+
+    }
+
+    /**
+     * Get data from specified backend endpoint
+     *
+     *
+     *
+     * @param {string} path
+     * @param {object} parameters - Could contain headers that will be passed along parameters.headers
+     *
+     * @return {promise} window fetch promise
+     *
+     * @example
+     * this.context.api.router.get('/api/image/url/' + uuid)
+     *     .done(function (url) {
+ *         // Handle url
+ *     }.bind(this))
+     *     .error(function (error, xhr, text) {
+ *         console.error(error, xhr, text);
+ *     }.bind(this));
+     */
+    get(path, parameters) {
+        let url = this.getEndpoint() + path + this.getQuerystringFromParameters(parameters)
+        let requestProperties = this.getRequestPropertiesForMethod('GET', parameters)
+
+        return fetch(url, requestProperties)
+    }
+
+    del(path, parameters) {
+        let url = this.getEndpoint() + path + this.getQuerystringFromParameters(parameters)
+        let requestProperties = this.getRequestPropertiesForMethod('DELETE', parameters)
+
+        return fetch(url, requestProperties)
+    }
+
+
+    /**
+     * Return api backend url
+     * @todo Specify api endpoint in config file
+     *
+     * @return {string}
+     */
+    getEndpoint() {
+        const location = window.location;
+
+        let result = location.protocol + "//" + location.hostname
+
+        if (location.port) {
+            result += ":" + location.port
+        }
+
+        return result;
+    }
+
+
+    /**
+     * Proxy ajax call to external backend
+     *
+     * @param {string} path
+     * @param {object} op
+     *
+     * @return {object} jQuery ajax object
+     */
+    proxy(path, op) {
+        var url = this.getEndpoint();
+
+        if (typeof(path) !== 'undefined') {
+            url += path;
+        }
+
+        return $.ajax({
+            method: 'post',
+            dataType: 'text',
+            url: url,
+            headers: {
+                "Content-Type": "application/json"
+            },
+            data: JSON.stringify(op)
+        });
+    }
+
+    _getItem(uuid, imType) {
+        return this.get('/api/newsitem/' + uuid, {imType: imType, headers: {'Content-Type': 'text/xml'}}, null)
+            .then(response => this.checkForOKStatus(response))
+            .then(response => this.handleEtag(response, uuid))
+            .then(response => response.text())
+            .then(text => {
+                const parser = new DOMParser()
+                return parser.parseFromString(text, 'text/xml')
+            })
+    }
+
+    /**
+     * Fetch a ConceptItem from the backend
+     * @param id The id of the concept
+     * @param imType The x-im/type
+     * @return {*}
+     */
+    getConceptItem(id, imType) {
+        return this._getItem(id, imType)
+    }
+
+    /**
+     * Fetch a NewsItem from the backend
+     * @param id The id of the news item
+     * @param imType The x-im/type
+     * @return {*}
+     */
+    getNewsItem(id, imType) {
+        return this._getItem(id, imType)
+    }
+
+
+    /**
+     * Updates a Concept Item
+     * @param id The ID of the Concept Item to update
+     * @param concept The updated XML
+     * @return A promise with no data
+     */
+    updateConceptItem(id, concept) {
+        return this.put('/api/newsitem/' + id, {body: concept, uuid: id})
+            .then(response => this.checkForOKStatus(response))
+            .then(response => this.handleEtag(response, id))
+    }
+
+    /**
+     * Creates a Concept Item
+     * @param concept The concept to create
+     * @return {*|Promise.&lt;TResult>} containing the resulting UUID
+     */
+    createConceptItem(concept) {
+        return this.post('/api/newsitem', {body: concept})
+            .then(response => this.checkForOKStatus(response))
+            .then(response => this.handleEtag(response, null))
+            .then(response => response.text())
+    }
+
+    /**
+     * Method checks for a status code between 200 and 299
+     * Throws error if otherwise.
+     *
+     * Use for example when you want to reject a fetch promise
+     *
+     * * @example
+     * fetch(...)
+     *  .then(response => checkForOKStatus(response)
+     *  .then(response => toJson(response)
+     *  .then(json => ...)
+     *  .catch((error) => {
+     *
+     *  }
+     *
+     *
+     * @param response
+     * @returns {*}
+     */
+    checkForOKStatus(response) {
+        if (response.status >= 200 &amp;&amp; response.status &lt; 300) {
+            return response
+        } else if (response.status === 409) {
+            console.log("409 Conflict status")
+            return new Promise((resolve, reject) => {
+                response.text()
+                    .then(() => {
+                        reject({
+                            errors: [
+                                {error: this.api.getLabel('error-human-readable-409-conflict')}
+                            ],
+                            status: response.status,
+                            reason: "server.conflict"
+                        })
+                    })
+                    .catch(() => {
+                        reject(response.statusText)
+                    })
+            })
+        } else {
+            console.log("Not OK status: " + response.status)
+            return new Promise((resolve, reject) => {
+                response.text()
+                    .then(text => {
+                        if (text.startsWith("{")) {
+                            try {
+                                reject(JSON.parse(text))
+                            } catch (e) {
+                                console.log("Unparseable json in error message")
+                                reject(text)
+                            }
+                        } else {
+                            if (text.length === 0) {
+                                reject(response);
+                            } else {
+                                reject(text)
+                            }
+
+                        }
+                    })
+                    .then(message => reject(message))
+                    .catch(e => {
+                        reject(response.statusText)
+                    })
+            })
+        }
+    }
+
+
+    /**
+     * Tries to convert response to json and logs the result to console if it fails and throws
+     * original exception.
+     *
+     *
+     * @param response The response to convert to Json
+     * @return {*}
+     */
+    toJson(response) {
+        return new Promise((resolve, reject) => {
+            response.json()
+                .then(json => resolve(json))
+                .catch(e => {
+                        response.text()
+                            .then(text => {
+                                console.log(text)
+                                return text
+                            })
+                            .then(reject(e))
+                            .catch(e2 => reject(e))
+                    }
+                )
+        })
+    }
+
+    handleEtag(response, uuid) {
+        return new Promise((resolve, reject) => {
+            // If no uuid supplied, try to use "Location" header
+            uuid = uuid || this.getLocationFromHeaders(response)
+
+            if (!uuid) {
+                console.warn('Trying to set ETag for nil uuid')
+                return resolve(response)
+            }
+
+            if (response.headers.get('etag')) {
+                this.setEtag(uuid, response.headers.get('etag'))
+            } else {
+                console.warn('Missing ETag for document with uuid', uuid)
+            }
+            resolve(response);
+        })
+    }
+
+    getEtag(uuid) {
+        return this.etags[uuid]
+    }
+
+    setEtag(uuid, eTag) {
+        this.etags[uuid] = eTag
+    }
+
+    getLocationFromHeaders(response) {
+        if (response.headers &amp;&amp; response.headers.get('location')) {
+            return response.headers.get('location')
+        }
+        return null;
+    }
+}
+
+export default Router
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Tue Mar 14 2017 14:38:01 GMT+0100 (CET) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
