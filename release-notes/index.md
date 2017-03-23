@@ -7,10 +7,14 @@ title: Release notes
 <div class="release-notes">
     <h2>Newspilot Writer</h2>    
     <ul>
+        <li><a href="./writer302.html">Version 3.0.2</a></li>
+        <li><a href="./writer301.html">Version 3.0.1</a></li>
         <li><a href="./writer30.html">Version 3.0</a></li>
     </ul>
     <h2>Newspilot Writer Plugins</h2>
     <ul>
+        <li><a href="./writerplugins302.html">Version 3.0.2</a></li>
+        <li><a href="./writerplugins301.html">Version 3.0.1</a></li>
         <li><a href="./writerplugins30.html">Version 3.0</a></li>
     </ul>
 </div>
@@ -18,6 +22,7 @@ title: Release notes
 <div class="release-notes">
     <h3>Concept Backend</h3>
     <ul>
+        <li><a href="./conceptbackend26.html">Version 2.6</a></li>
         <li><a href="./conceptbackend256.html">Version 2.5.6</a></li>
         <li><a href="./conceptbackend255.html">Version 2.5.5</a></li>        
     </ul>
@@ -26,6 +31,9 @@ title: Release notes
 <div class="release-notes">
     <h3>Editor Service</h3>
     <ul>
+        <li><a href="./editorservice332.html">Version 3.3.2</a></li>
+        <li><a href="./editorservice331.html">Version 3.3.1</a></li>
+        <li><a href="./editorservice33.html">Version 3.3</a></li>
         <li><a href="./editorservice32.html">Version 3.2</a></li>
         <li><a href="./editorservice31.html">Version 3.1</a></li>
         <li><a href="./editorservice30.html">Version 3.0</a></li>                
