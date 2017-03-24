@@ -58,6 +58,7 @@ title: Release notes
 <div class="release-notes">
     <h3>Newspilot Writer Integration Service</h3>
     <ul>
+        <li><a href="./writerintegrationservice13.html">Version 1.3</a></li>
         <li><a href="./writerintegrationservice12.html">Version 1.2</a></li>
     </ul>
 </div>
