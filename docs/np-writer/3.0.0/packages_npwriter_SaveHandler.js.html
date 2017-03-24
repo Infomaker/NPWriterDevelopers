@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>packages/npwriter/SaveHandler.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Api.html">Api</a><ul class='methods'><li data-type='method'><a href="Api.html#call">call</a></li><li data-type='method'><a href="Api.html#getConfigValue">getConfigValue</a></li><li data-type='method'><a href="Api.html#getPluginModule">getPluginModule</a></li><li data-type='method'><a href="Api.html#init">init</a></li></ul></li><li><a href="APIManager.html">APIManager</a><ul class='methods'><li data-type='method'><a href="APIManager.html#expose">expose</a></li></ul></li><li><a href="Article.html">Article</a><ul class='methods'><li data-type='method'><a href="Article.html#clear">clear</a></li><li data-type='method'><a href="Article.html#copy">copy</a></li></ul></li><li><a href="Browser.html">Browser</a><ul class='methods'><li data-type='method'><a href="Browser.html#addExternalScript">addExternalScript</a></li><li data-type='method'><a href="Browser.html#getHash">getHash</a></li><li data-type='method'><a href="Browser.html#isSupported">isSupported</a></li><li data-type='method'><a href="Browser.html#reload">reload</a></li><li data-type='method'><a href="Browser.html#setHash">setHash</a></li><li data-type='method'><a href="Browser.html#setTitle">setTitle</a></li><li data-type='method'><a href="Browser.html#setupHashHandler">setupHashHandler</a></li></ul></li><li><a href="Concept.html">Concept</a><ul class='methods'><li data-type='method'><a href="Concept.html#.getDefinitionForType">getDefinitionForType</a></li><li data-type='method'><a href="Concept.html#.setDefinitionDependingOnArrayOrObject">setDefinitionDependingOnArrayOrObject</a></li></ul></li><li><a href="Document.html">Document</a><ul class='methods'><li data-type='method'><a href="Document.html#deleteNode">deleteNode</a></li><li data-type='method'><a href="Document.html#getDocumentNodes">getDocumentNodes</a></li><li data-type='method'><a href="Document.html#getPreviousNode">getPreviousNode</a></li><li data-type='method'><a href="Document.html#insertBlockNode">insertBlockNode</a></li><li data-type='method'><a href="Document.html#insertInlineNode">insertInlineNode</a></li></ul></li><li><a href="EditLinkTool.html">EditLinkTool</a></li><li><a href="Events.html">Events</a><ul class='methods'><li data-type='method'><a href="Events.html#_triggerEvent">_triggerEvent</a></li><li data-type='method'><a href="Events.html#documentChanged">documentChanged</a></li><li data-type='method'><a href="Events.html#documentSaved">documentSaved</a></li><li data-type='method'><a href="Events.html#documentSaveFailed">documentSaveFailed</a></li><li data-type='method'><a href="Events.html#off">off</a></li><li data-type='method'><a href="Events.html#on">on</a></li><li data-type='method'><a href="Events.html#onDocumentStartSaving">onDocumentStartSaving</a></li><li data-type='method'><a href="Events.html#triggerEvent">triggerEvent</a></li></ul></li><li><a href="FormAddComponent.html">FormAddComponent</a><ul class='methods'><li data-type='method'><a href="FormAddComponent.html#getCreateNewItem">getCreateNewItem</a></li></ul></li><li><a href="FormSearchComponent.html">FormSearchComponent</a><ul class='methods'><li data-type='method'><a href="FormSearchComponent.html#getCreateNewItem">getCreateNewItem</a></li></ul></li><li><a href="History.html">History</a><ul class='methods'><li data-type='method'><a href="History.html#cleanOldVersions">cleanOldVersions</a></li><li data-type='method'><a href="History.html#deleteHistory">deleteHistory</a></li><li data-type='method'><a href="History.html#get">get</a></li><li data-type='method'><a href="History.html#getHistory">getHistory</a></li><li data-type='method'><a href="History.html#isAvailable">isAvailable</a></li><li data-type='method'><a href="History.html#saveHistory">saveHistory</a></li></ul></li><li><a href="LabelProvider.html">LabelProvider</a></li><li><a href="NewsItem.html">NewsItem</a><ul class='methods'><li data-type='method'><a href="NewsItem.html#_getItemMetaExtPropertyByType">_getItemMetaExtPropertyByType</a></li><li data-type='method'><a href="NewsItem.html#_getLinksByType">_getLinksByType</a></li><li data-type='method'><a href="NewsItem.html#_getServices">_getServices</a></li><li data-type='method'><a href="NewsItem.html#_getSignalNodeByQcode">_getSignalNodeByQcode</a></li><li data-type='method'><a href="NewsItem.html#addAuthor">addAuthor</a></li><li data-type='method'><a href="NewsItem.html#addCategory">addCategory</a></li><li data-type='method'><a href="NewsItem.html#addChannel">addChannel</a></li><li data-type='method'><a href="NewsItem.html#addConceptProfile">addConceptProfile</a></li><li data-type='method'><a href="NewsItem.html#addLink">addLink</a></li><li data-type='method'><a href="NewsItem.html#addLocation">addLocation</a></li><li data-type='method'><a href="NewsItem.html#addSimpleAuthor">addSimpleAuthor</a></li><li data-type='method'><a href="NewsItem.html#addStory">addStory</a></li><li data-type='method'><a href="NewsItem.html#addTag">addTag</a></li><li data-type='method'><a href="NewsItem.html#createNewsPriority">createNewsPriority</a></li><li data-type='method'><a href="NewsItem.html#getAuthors">getAuthors</a></li><li data-type='method'><a href="NewsItem.html#getCategories">getCategories</a></li><li data-type='method'><a href="NewsItem.html#getChannels">getChannels</a></li><li data-type='method'><a href="NewsItem.html#getContentMetaObjectById">getContentMetaObjectById</a></li><li data-type='method'><a href="NewsItem.html#getContentMetaObjectsByType">getContentMetaObjectsByType</a></li><li data-type='method'><a href="NewsItem.html#getContentProfiles">getContentProfiles</a></li><li data-type='method'><a href="NewsItem.html#getGuid">getGuid</a></li><li data-type='method'><a href="NewsItem.html#getLinkByType">getLinkByType</a></li><li data-type='method'><a href="NewsItem.html#getLinkByTypeAndRel">getLinkByTypeAndRel</a></li><li data-type='method'><a href="NewsItem.html#getLinksByType">getLinksByType</a></li><li data-type='method'><a href="NewsItem.html#getLocations">getLocations</a></li><li data-type='method'><a href="NewsItem.html#getMainChannel">getMainChannel</a></li><li data-type='method'><a href="NewsItem.html#getNewspilotArticleId">getNewspilotArticleId</a></li><li data-type='method'><a href="NewsItem.html#getNewsPriority">getNewsPriority</a></li><li data-type='method'><a href="NewsItem.html#getPubStart">getPubStart</a></li><li data-type='method'><a href="NewsItem.html#getPubStatus">getPubStatus</a></li><li data-type='method'><a href="NewsItem.html#getPubStop">getPubStop</a></li><li data-type='method'><a href="NewsItem.html#getSection">getSection</a></li><li data-type='method'><a href="NewsItem.html#getSections">getSections</a></li><li data-type='method'><a href="NewsItem.html#getStories">getStories</a></li><li data-type='method'><a href="NewsItem.html#getTags">getTags</a></li><li data-type='method'><a href="NewsItem.html#getTemporaryId">getTemporaryId</a></li><li data-type='method'><a href="NewsItem.html#hasTemporaryId">hasTemporaryId</a></li><li data-type='method'><a href="NewsItem.html#normalizeObject">normalizeObject</a></li><li data-type='method'><a href="NewsItem.html#removeAuthorByTitle">removeAuthorByTitle</a></li><li data-type='method'><a href="NewsItem.html#removeAuthorByUUID">removeAuthorByUUID</a></li><li data-type='method'><a href="NewsItem.html#removeChannel">removeChannel</a></li><li data-type='method'><a href="NewsItem.html#removeContentMetaObject">removeContentMetaObject</a></li><li data-type='method'><a href="NewsItem.html#removeLinkByUUID">removeLinkByUUID</a></li><li data-type='method'><a href="NewsItem.html#removeLinkByUUIDAndRel">removeLinkByUUIDAndRel</a></li><li data-type='method'><a href="NewsItem.html#removePubStart">removePubStart</a></li><li data-type='method'><a href="NewsItem.html#removePubStop">removePubStop</a></li><li data-type='method'><a href="NewsItem.html#removeSection">removeSection</a></li><li data-type='method'><a href="NewsItem.html#save">save</a></li><li data-type='method'><a href="NewsItem.html#setContentMetaObject">setContentMetaObject</a></li><li data-type='method'><a href="NewsItem.html#setGuid">setGuid</a></li><li data-type='method'><a href="NewsItem.html#setNewsPriority">setNewsPriority</a></li><li data-type='method'><a href="NewsItem.html#setPubStart">setPubStart</a></li><li data-type='method'><a href="NewsItem.html#setPubStatus">setPubStatus</a></li><li data-type='method'><a href="NewsItem.html#setPubStop">setPubStop</a></li><li data-type='method'><a href="NewsItem.html#setSource">setSource</a></li><li data-type='method'><a href="NewsItem.html#setTemporaryId">setTemporaryId</a></li><li data-type='method'><a href="NewsItem.html#updateAuthorWithUUID">updateAuthorWithUUID</a></li><li data-type='method'><a href="NewsItem.html#updateConceptProfile">updateConceptProfile</a></li><li data-type='method'><a href="NewsItem.html#updateLocation">updateLocation</a></li><li data-type='method'><a href="NewsItem.html#updateSection">updateSection</a></li><li data-type='method'><a href="NewsItem.html#updateStory">updateStory</a></li><li data-type='method'><a href="NewsItem.html#updateTag">updateTag</a></li></ul></li><li><a href="NewsMLArticle.html">NewsMLArticle</a></li><li><a href="NewsMLImporter.html">NewsMLImporter</a><ul class='methods'><li data-type='method'><a href="NewsMLImporter.html#getFirstElementWithTypeElement">getFirstElementWithTypeElement</a></li></ul></li><li><a href="NotFoundException.html">NotFoundException</a></li><li><a href="PluginManager.html">PluginManager</a><ul class='methods'><li data-type='method'><a href="PluginManager.html#_getValue">_getValue</a></li><li data-type='method'><a href="PluginManager.html#appendPluginScripts">appendPluginScripts</a></li><li data-type='method'><a href="PluginManager.html#getListOfPlugins">getListOfPlugins</a></li><li data-type='method'><a href="PluginManager.html#load">load</a></li><li data-type='method'><a href="PluginManager.html#registerPlugin">registerPlugin</a></li><li data-type='method'><a href="PluginManager.html#validatePluginPackage">validatePluginPackage</a></li></ul></li><li><a href="Router.html">Router</a><ul class='methods'><li data-type='method'><a href="Router.html#checkForOKStatus">checkForOKStatus</a></li><li data-type='method'><a href="Router.html#createConceptItem">createConceptItem</a></li><li data-type='method'><a href="Router.html#get">get</a></li><li data-type='method'><a href="Router.html#getConceptItem">getConceptItem</a></li><li data-type='method'><a href="Router.html#getEndpoint">getEndpoint</a></li><li data-type='method'><a href="Router.html#getNewsItem">getNewsItem</a></li><li data-type='method'><a href="Router.html#getQuerystringFromParameters">getQuerystringFromParameters</a></li><li data-type='method'><a href="Router.html#getRequestPropertiesForMethod">getRequestPropertiesForMethod</a></li><li data-type='method'><a href="Router.html#post">post</a></li><li data-type='method'><a href="Router.html#postBinary">postBinary</a></li><li data-type='method'><a href="Router.html#proxy">proxy</a></li><li data-type='method'><a href="Router.html#put">put</a></li><li data-type='method'><a href="Router.html#toJson">toJson</a></li><li data-type='method'><a href="Router.html#updateConceptItem">updateConceptItem</a></li></ul></li><li><a href="Ui.html">Ui</a><ul class='methods'><li data-type='method'><a href="Ui.html#getComponent">getComponent</a></li><li data-type='method'><a href="Ui.html#showDialog">showDialog</a></li><li data-type='method'><a href="Ui.html#showMessageDialog">showMessageDialog</a></li><li data-type='method'><a href="Ui.html#showNotification">showNotification</a></li></ul></li><li><a href="Upload.html">Upload</a></li><li><a href="Validator.html">Validator</a><ul class='methods'><li data-type='method'><a href="Validator.html#addError">addError</a></li><li data-type='method'><a href="Validator.html#addInfo">addInfo</a></li><li data-type='method'><a href="Validator.html#addWarning">addWarning</a></li><li data-type='method'><a href="Validator.html#getMessages">getMessages</a></li><li data-type='method'><a href="Validator.html#hasMessages">hasMessages</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#removeControlCodes">removeControlCodes</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">packages/npwriter/SaveHandler.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import ValidationError from '../../utils/errors/ValidationError'
+import FileUploadError from '../../utils/errors/FileUploadError'
+
+class SaveHandler {
+
+    constructor({api, configurator}) {
+        this.api = api
+        this.configurator = configurator
+    }
+
+    /**
+     * Returns the newsItem after it has been processed by the exporter
+     * @returns {*|String}
+     */
+    getExportedDocument() {
+        const exporter = this.configurator.createExporter('newsml', { api: this.api })
+        return exporter.exportDocument(this.api.editorSession.getDocument(), this.api.newsItemArticle)
+    }
+
+
+    /**
+     *
+     * Runs validate method on all provided validators
+     *
+     * @param {Array} validators - An array with Validators
+     * @returns {Array} Messages - An array with messages objects
+     * @throws Error - Error is thrown is the validator class doesn't have a validate method
+     */
+    runValidatorsForDocument(validators, document) {
+        let messages = []
+
+        var parser = new DOMParser();
+        var newsItemArticle = parser.parseFromString(document, "text/xml")
+
+        validators.forEach((validatorClass) => {
+            const pluginValidator = new validatorClass(newsItemArticle)
+            if (pluginValidator.validate) {
+                pluginValidator.validate()
+
+                if (pluginValidator.hasMessages()) {
+                    messages = [...messages, ...pluginValidator.getMessages()]
+                }
+
+            } else {
+                throw new Error('Validator missing validate method')
+            }
+        })
+
+        return messages
+    }
+
+
+    /**
+     * Runs all validators and shows messages in a dialog
+     * Promise is resolved if user clicks continue
+     * Promise is rejected if user clicks cancel
+     *
+     * If no messages is found in the validators the promise is resolved immediately
+     * @param Exported newsItem as XMLString
+     * @returns {Promise}
+     */
+    validateDocument(document) {
+        return new Promise((resolve, reject) => {
+            const messages = this.runValidatorsForDocument(this.api.configurator.getValidators(), document)
+
+            if (messages.length === 0) {
+                resolve(document)
+                return
+            }
+
+            this.api.ui.showMessageDialog(messages,
+                () => {
+                    resolve(document)
+                },
+                () => {
+                    reject(new ValidationError(messages))
+                })
+        })
+
+
+    }
+
+    /**
+     * Saves the current document after run through the NewsML Exporter
+     * The UUID is selected from the NewsItem DOM
+     * @returns {*}
+     */
+    saveDocument() {
+
+        this.api.editorSession.fileManager.sync()
+            .then(() => {
+                const exportedArticle = this.getExportedDocument()
+                return this.validateDocument(exportedArticle)
+            })
+            .then((document) => {
+
+                const uuid = this.api.newsItemArticle.documentElement.getAttribute('guid');
+
+                if (uuid) {
+                    return this.updateNewsItem(uuid, document)
+                } else {
+                    return this.createNewsItem(document)
+                }
+            })
+            .catch((error) => {
+
+                if (error.name === 'ValidationError') {
+                    // User canceled the save when on validation errors
+                    this.api.events.userActionCancelSave()
+                    return;
+                }
+
+                this.api.events.documentSaveFailed(error);
+
+                 if (error.name === 'FileUploadError') {
+                    this.api.router.get('/api/err?error=' + JSON.stringify(error.message))
+                } else {
+                    this.api.router.get('/api/err?error=' + JSON.stringify(error.message))
+                }
+
+            })
+    }
+
+    createNewsItem(newsItemXmlString) {
+        return this.api.router.post('/api/newsitem', { body: newsItemXmlString })
+            .then(response => response.text())
+            .then((uuid) => {
+
+                // When creating a new article, fetch the newly created article from the
+                // backend and replace the document
+
+                this.api.router.get('/api/newsitem/' + uuid, { imType: 'x-im/article' })
+                    .then(response => this.api.router.checkForOKStatus(response))
+                    .then(response => this.api.router.handleEtag(response, uuid))
+                    .then(response => response.text())
+                    .then((xmlString) => {
+                        const result = this.api.newsItem.setSource(xmlString, {})
+                        this.api.browser.ignoreNextHashChange = true
+                        this.api.browser.setHash(uuid)
+
+                        // Remove history before resetting the temporary id
+                        this.api.history.deleteHistory(this.api.newsItem.getIdForArticle());
+                        this.api.newsItem.setTemporaryId(false)
+                        this.api.app.replaceDoc(result)
+                        this.api.events.documentSaved();
+                    })
+            })
+            .catch((error) => {
+                this.api.events.documentSaveFailed(error)
+            });
+    }
+
+    updateNewsItem(uuid, newsItemXmlString) {
+        return this.api.router.put('/api/newsitem/' + uuid, { body: newsItemXmlString, uuid: uuid })
+            .then(response => this.api.router.checkForOKStatus(response))
+            .then(response => this.api.router.handleEtag(response, uuid))
+            .then(() => {
+                this.api.events.documentSaved();
+            })
+            .catch((error) => {
+                error.uuid = uuid
+                this.api.events.documentSaveFailed(error)
+            })
+    }
+
+}
+
+export default SaveHandler
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Tue Mar 14 2017 14:38:01 GMT+0100 (CET) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
