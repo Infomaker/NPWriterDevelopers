@@ -7,6 +7,7 @@ title: Release notes
 <div class="release-notes">
     <h2>Newspilot Writer</h2>    
     <ul>
+        <li><a href="./writer303.html">Version 3.1</a></li>
         <li><a href="./writer303.html">Version 3.0.3</a></li>
         <li><a href="./writer302.html">Version 3.0.2</a></li>
         <li><a href="./writer301.html">Version 3.0.1</a></li>
