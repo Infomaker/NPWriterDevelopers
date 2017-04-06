@@ -31,12 +31,9 @@ The code resides on github, hence you also need to have Git installed.
 
 ---
 
-## Clone and start Newspilot Writer
+## Clone  Newspilot Writer
 
 Download and clone from Github
-<video src="{{site.url}}{{site.baseurl}}/getting-started/get-started.mp4" width="70%" controls="true">
-</video>
-
 
 ~~~text
 
@@ -44,11 +41,20 @@ git clone https://github.com/Infomaker/NPWriter.git
 cd NPWriter
 npm install
 npm run build-dep
-npm run dev
 
 ~~~
 
+## Add your API key to the Writer backend
 
+The development backend requires an API key in order to enable acces to it. The api key should be specified in the `server/config/server.json` file. 
+
+## Start the writer backend
+
+~~~text
+
+npm run dev
+
+~~~
 
 You can now open thw writer with a demo document [localhost:5000/#demo](http://localhost:5000/#demo) or just 
 [localhost:5000/](http://localhost:5000/) to create a new article
@@ -69,17 +75,17 @@ We have provided you with a developers kit which is supplied with an example plu
 git clone https://github.com/Infomaker/NPWriterDevKit.git
 cd NPWriterDevKit
 npm install 
-npm run dev
+npm start
 
 ~~~ 
 
 Plugin server started at [localhost:3000](http://localhost:3000)
 
 
-To enable plugin open NPWriter and edit server/config/writer.json
+To enable plugin open NPWriter and edit server/config/writer.json, the plugin url should be `http://localhost:3000/index.js`
 
 
-
+[More information about plugin config is found here]({{site.url}}{{site.baseurl}}/guides/plugin-configuration.html)
 
 
 
