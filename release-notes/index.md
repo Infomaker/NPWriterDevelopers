@@ -36,6 +36,8 @@ title: Release notes
 <div class="release-notes">
     <h3>Editor Service</h3>
     <ul>
+        <li><a href="./editorservice34.html">Version 3.4</a></li>
+        <li><a href="./editorservice333.html">Version 3.3.3</a></li>
         <li><a href="./editorservice332.html">Version 3.3.2</a></li>
         <li><a href="./editorservice331.html">Version 3.3.1</a></li>
         <li><a href="./editorservice33.html">Version 3.3</a></li>

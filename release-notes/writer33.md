@@ -6,6 +6,8 @@ title: Newspilot Writer 3.3 release
     <h1>Newspilot Writer 3.3</h1>    
     <h2>Compatibility</h2>
     <ul>
+        <li>Editor Service <code>&gt;= 3.0</code><code>&lt; 4.0</code></li>
+        <li>Concept Backend <code>&gt;= 2.6</code><code>&lt; 3.0</code></li>
     </ul>
 </div>
 
