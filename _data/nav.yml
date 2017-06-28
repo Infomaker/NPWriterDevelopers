@@ -36,6 +36,9 @@
       description: "Learn how to open and configure modal with buttons and callbacks"
       subhref: "open-modal/"
 
+    - subtitle: "Add settings for a plugin to the writer"
+      description: "Learn how to create plugin components and let the writer handle plugin settings"
+      subhref: "settings/"
 
     - subtitle: "Handle File and URI drops"
       description: "Register to handle when user dropping a file or an uri"
