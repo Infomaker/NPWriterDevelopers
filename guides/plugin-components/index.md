@@ -279,3 +279,43 @@ import SampleValidation from './SampleValidation'
 ...
 
 ~~~
+
+
+## Adding a Hook
+
+Available hook can be found at: [github.com/Infomaker/NPWriter/blob/develop/writer/utils/Hook.js](https://github.com/Infomaker/NPWriter/blob/develop/writer/utils/Hook.js)
+
+Add Hook is added in the package file by specifying Hookname and a class.
+
+By returning a promise from `execute` the action that executed the hook is paused until the promise is resolved or rejected.
+
+~~~ javascript
+
+class BeforeSaveHook {
+    execute(hookname) {
+        return new Promise(resolve => {
+            setTimeout(() => {
+                resolve()
+            }, 1000)
+        })
+    }
+}
+
+
+~~~
+
+__PackageFile__
+
+~~~ javascript
+
+import BeforeSaveHook from './BeforeSaveHook'
+import {hook} from 'writer'
+
+...
+    configure: function(configurator) {
+        configurator.addHook(hook.BEFORE_SAVE, BeforeSaveHook)
+    }
+...
+
+~~~
+
