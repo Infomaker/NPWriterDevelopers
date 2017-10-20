@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>api/Router.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="ContentMenu.html">ContentMenu</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="DatetimeFieldEditorComponent.html">DatetimeFieldEditorComponent</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="EditLinkTool.html">EditLinkTool</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="FieldEditorComponent.html">FieldEditorComponent</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="FormAddComponent.html">FormAddComponent</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="FormSearchComponent.html">FormSearchComponent</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-Api_Article-Article.html">Article</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Article-Article.html#clear">clear</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Article-Article.html#copy">copy</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-Api_Browser-Browser.html">Browser</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Browser-Browser.html#addExternalScript">addExternalScript</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Browser-Browser.html#getHash">getHash</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Browser-Browser.html#isSupported">isSupported</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Browser-Browser.html#reload">reload</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Browser-Browser.html#setHash">setHash</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Browser-Browser.html#setTitle">setTitle</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Browser-Browser.html#setupHashHandler">setupHashHandler</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-Api_Concept-Concept.html">Concept</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Concept-Concept.html#.getDefinitionForType">getDefinitionForType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Concept-Concept.html#.setDefinitionDependingOnArrayOrObject">setDefinitionDependingOnArrayOrObject</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-Api_Document-Document.html">Document</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Document-Document.html#deleteNode">deleteNode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Document-Document.html#getDocumentNodes">getDocumentNodes</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Document-Document.html#getPreviousNode">getPreviousNode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Document-Document.html#insertBlockNode">insertBlockNode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Document-Document.html#insertInlineNode">insertInlineNode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Document-Document.html#triggerFetchResourceNode">triggerFetchResourceNode</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-Api_Events-Events.html">Events</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Events-Events.html#_triggerEvent">_triggerEvent</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Events-Events.html#documentChanged">documentChanged</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Events-Events.html#documentSaved">documentSaved</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Events-Events.html#documentSaveFailed">documentSaveFailed</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Events-Events.html#off">off</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Events-Events.html#on">on</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Events-Events.html#onDocumentStartSaving">onDocumentStartSaving</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-Api_History-History.html">History</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_History-History.html#cleanOldVersions">cleanOldVersions</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_History-History.html#deleteHistory">deleteHistory</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_History-History.html#get">get</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_History-History.html#getHistory">getHistory</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_History-History.html#isAvailable">isAvailable</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_History-History.html#saveHistory">saveHistory</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html">NewsItem</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#addAuthor">addAuthor</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#addCategory">addCategory</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#addChannel">addChannel</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#addConceptProfile">addConceptProfile</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#addContentMetaLink">addContentMetaLink</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#addContentProfile">addContentProfile</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#addLink">addLink</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#addLocation">addLocation</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#addSimpleAuthor">addSimpleAuthor</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#addStory">addStory</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#addTag">addTag</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#createNewsPriority">createNewsPriority</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#getAuthors">getAuthors</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#getCategories">getCategories</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#getChannels">getChannels</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#getContentMetaLinkByType">getContentMetaLinkByType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#getContentMetaObjectById">getContentMetaObjectById</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#getContentMetaObjectsByType">getContentMetaObjectsByType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#getContentProfiles">getContentProfiles</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#getGuid">getGuid</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#getIdForArticle">getIdForArticle</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#getLinkByType">getLinkByType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#getLinkByTypeAndRel">getLinkByTypeAndRel</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#getLinksByType">getLinksByType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#getLocations">getLocations</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#getMainChannel">getMainChannel</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#getNewspilotArticleId">getNewspilotArticleId</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#getNewsPriority">getNewsPriority</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#getPubStart">getPubStart</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#getPubStatus">getPubStatus</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#getPubStop">getPubStop</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#getSection">getSection</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#getSections">getSections</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#getStories">getStories</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#getTags">getTags</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#getTemporaryId">getTemporaryId</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#hasTemporaryId">hasTemporaryId</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#invalidate">invalidate</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#removeAuthorByTitle">removeAuthorByTitle</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#removeAuthorByUUID">removeAuthorByUUID</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#removeChannel">removeChannel</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#removeContentMetaObject">removeContentMetaObject</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#removeLinkByUUID">removeLinkByUUID</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#removeLinkByUUIDAndRel">removeLinkByUUIDAndRel</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#removeLinkContentMetaByTypeAndMatchingFilter">removeLinkContentMetaByTypeAndMatchingFilter</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#removeLinkContentMetaByTypeAndRel">removeLinkContentMetaByTypeAndRel</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#removePubStart">removePubStart</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#removePubStop">removePubStop</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#removeSection">removeSection</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#save">save</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#setContentMetaObject">setContentMetaObject</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#setGuid">setGuid</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#setNewsPriority">setNewsPriority</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#setPubStart">setPubStart</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#setPubStatus">setPubStatus</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#setPubStop">setPubStop</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#setSource">setSource</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#setTemporaryId">setTemporaryId</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#updateAuthorWithUUID">updateAuthorWithUUID</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#updateConceptProfile">updateConceptProfile</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#updateContentProfile">updateContentProfile</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#updateLocation">updateLocation</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#updateSection">updateSection</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#updateStory">updateStory</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_NewsItem-NewsItem.html#updateTag">updateTag</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-Api_Router-Router.html">Router</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Router-Router.html#checkForOKStatus">checkForOKStatus</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Router-Router.html#createConceptItem">createConceptItem</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Router-Router.html#get">get</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Router-Router.html#getConceptItem">getConceptItem</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Router-Router.html#getEndpoint">getEndpoint</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Router-Router.html#getNewsItem">getNewsItem</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Router-Router.html#getQuerystringFromParameters">getQuerystringFromParameters</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Router-Router.html#getRequestPropertiesForMethod">getRequestPropertiesForMethod</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Router-Router.html#post">post</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Router-Router.html#postBinary">postBinary</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Router-Router.html#proxy">proxy</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Router-Router.html#put">put</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Router-Router.html#toJson">toJson</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Router-Router.html#updateConceptItem">updateConceptItem</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-Api_Settings-Settings.html">Settings</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Settings-Settings.html#delete">delete</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Settings-Settings.html#get">get</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Settings-Settings.html#getAllSettings">getAllSettings</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Settings-Settings.html#isAvailable">isAvailable</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Settings-Settings.html#set">set</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-Api_Ui-Ui.html">Ui</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Ui-Ui.html#getComponent">getComponent</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Ui-Ui.html#showDialog">showDialog</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Ui-Ui.html#showMessageDialog">showMessageDialog</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Ui-Ui.html#showNotification">showNotification</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-Api_Upload-Upload.html">Upload</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api_Upload-Upload.html#uploadFile">uploadFile</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-Api-Api.html">Api</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api-Api.html#call">call</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api-Api.html#executeHook">executeHook</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api-Api.html#getConfigValue">getConfigValue</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api-Api.html#getPluginModule">getPluginModule</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api-Api.html#getPluginModulesForTarget">getPluginModulesForTarget</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Api-Api.html#init">init</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="NewsMLArticle.html">NewsMLArticle</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="NewsMLImporter.html">NewsMLImporter</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="NewsMLImporter.html#getFirstElementWithTypeElement">getFirstElementWithTypeElement</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="NotFoundException.html">NotFoundException</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="PlaceholderComponent.html">PlaceholderComponent</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="PluginManager.html">PluginManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="PluginManager.html#_getValue">_getValue</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="PluginManager.html#appendPluginScripts">appendPluginScripts</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="PluginManager.html#getListOfPlugins">getListOfPlugins</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="PluginManager.html#load">load</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="PluginManager.html#registerPlugin">registerPlugin</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="PluginManager.html#validatePluginPackage">validatePluginPackage</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="SelectComponent.html">SelectComponent</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="SelectComponent.html#renderButtonList">renderButtonList</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="SelectComponent.html#renderDropDownList">renderDropDownList</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="SelectComponent.html#renderList">renderList</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="SelectComponent.html#renderToggleList">renderToggleList</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="ToggleComponent.html">ToggleComponent</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Validator.html">Validator</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Validator.html#addError">addError</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Validator.html#addInfo">addInfo</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Validator.html#addWarning">addWarning</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Validator.html#getMessages">getMessages</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Validator.html#hasMessages">hasMessages</a></span></li><li class="nav-heading">Modules</li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Api.html">Api</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Api_APIManager.html">Api/APIManager</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Api_Article.html">Api/Article</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Api_Browser.html">Api/Browser</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Api_Concept.html">Api/Concept</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Api_Document.html">Api/Document</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Api_Events.html">Api/Events</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Api_History.html">Api/History</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Api_NewsItem.html">Api/NewsItem</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Api_Router.html">Api/Router</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Api_Settings.html">Api/Settings</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Api_Ui.html">Api/Ui</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Api_Upload.html">Api/Upload</a></span></li><li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#removeControlCodes">removeControlCodes</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#removeEmptyNamespaces">removeEmptyNamespaces</a></span></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">api/Router.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/** @module Api/Router */
+
+import "whatwg-fetch";
+import isObject from "lodash/isObject";
+import ServerError from "../utils/errors/ServerError";
+import ConflictError from "../utils/errors/ConflictError";
+
+/**
+ * @class Api.Router
+ *
+ * Router api class with functions for communication with the backend.
+ * All router functions are available through the context.api.router object.
+ */
+class Router {
+
+    constructor(api) {
+        this.api = api;
+        this.etags = {};
+    }
+
+    /**
+     * Creates a querystring from an object, starting with a ?
+     * If a string is passed as parameter i will just be returned
+     *
+     * @note If parameters contains 'headers' it will not be added to the querystring
+     *
+     * @param {object} parameters
+     * @returns {string}
+     */
+    getQuerystringFromParameters(parameters) {
+        if (!parameters) return ''
+        if (!isObject(parameters)) return parameters
+
+        if (isObject(parameters)) {
+            let query = []
+
+            for (const name in parameters) {
+                if (name !== 'headers' &amp;&amp; name !== 'body') { // Dont add the headers key to the querystring
+                    query.push(name + '=' + encodeURIComponent(parameters[name]));
+                }
+            }
+
+            return query.length === 0 ? '' : '?' + query.join('&amp;')
+        }
+
+        throw new Error('Could not convert parameters of type', typeof parameters)
+    }
+
+
+    /**
+     *
+     * @param {string} method - GET, POST, PUT, DELETE, HEAD
+     * @param {object} parameters Object containing a headers-property
+     * @returns {{method: string}}
+     */
+    getRequestPropertiesForMethod(method, parameters) {
+
+        let requestProperties = {
+            method: method.toUpperCase()
+        }
+
+        // If headers is sent pass them
+        if (parameters &amp;&amp; parameters.headers) {
+            requestProperties['headers'] = parameters.headers
+        }
+
+        // Add a body if there is one provided
+        if (parameters &amp;&amp; parameters.body) {
+            requestProperties['body'] = parameters.body
+        }
+
+        if (!parameters || !parameters.credentials) {
+            requestProperties['credentials'] = 'same-origin'
+        }
+
+        return requestProperties
+    }
+
+    /**
+     * Post a binary file object to the backend
+     *
+     * @param {string} path
+     * @param {object} file File object from file input or file drop
+     * @param {Function} onProgress Callback function for progress event
+     * @param {Function} onLoad Callback function for onload event
+     */
+    postBinary(path, file, onProgress, onLoad, onError, params) {
+        var xhr = new XMLHttpRequest(); //jshint ignore:line
+
+        xhr.onload = onLoad;
+        xhr.onError = onError;
+        xhr.addEventListener('progress', onProgress);
+
+        xhr.open('POST', path, true);
+
+        xhr.setRequestHeader("x-infomaker-type", params.imType);
+        xhr.setRequestHeader("content-type", file.type);
+        xhr.setRequestHeader("x-filename", encodeURIComponent(file.name));
+        xhr.send(file);
+    }
+
+    /**
+     * Post data to specified backend endpoint
+     *
+     * @param {string} path
+     * @param {object} parameters
+     *
+     * @return {object} jQuery ajax object
+     */
+    post(path, parameters) {
+        let url = this.getEndpoint() + path + this.getQuerystringFromParameters(parameters)
+        let requestProperties = this.getRequestPropertiesForMethod('POST', parameters)
+        return fetch(url, requestProperties)
+
+    }
+
+    /**
+     * Put data to specified backend endpoint
+     *
+     * @param {string} path
+     * @param {object} parameters
+     *
+     * @return {object} jQuery ajax object
+     */
+    put(path, parameters) {
+        let url = this.getEndpoint() + path + this.getQuerystringFromParameters(parameters)
+        let requestProperties = this.getRequestPropertiesForMethod('PUT', parameters)
+
+        if (!requestProperties.headers) {
+            requestProperties['headers'] = {}
+        }
+
+        const uuid = parameters.uuid
+        if (uuid) {
+            const eTag = this.getEtag(uuid)
+            if (eTag) {
+                requestProperties.headers['If-Match'] = eTag
+            } else {
+                console.warn('PUT request without ETag is deprecated')
+            }
+        } else {
+            console.error('Bad PUT request. Missing uuid in parameters. Path was', path)
+        }
+
+        return fetch(url, requestProperties)
+
+    }
+
+    /**
+     * Get data from specified backend endpoint
+     *
+     *
+     *
+     * @param {string} path
+     * @param {object} parameters - Could contain headers that will be passed along parameters.headers
+     *
+     * @return {promise} window fetch promise
+     *
+     * @example
+     * this.context.api.router.get('/api/binary/url/' + uuid)
+     *     .done(function (url) {
+ *         // Handle url
+ *     }.bind(this))
+     *     .error(function (error, xhr, text) {
+ *         console.error(error, xhr, text);
+ *     }.bind(this));
+     */
+    get(path, parameters) {
+        let url = this.getEndpoint() + path + this.getQuerystringFromParameters(parameters)
+        let requestProperties = this.getRequestPropertiesForMethod('GET', parameters)
+
+        return fetch(url, requestProperties)
+    }
+
+    del(path, parameters) {
+        let url = this.getEndpoint() + path + this.getQuerystringFromParameters(parameters)
+        let requestProperties = this.getRequestPropertiesForMethod('DELETE', parameters)
+
+        return fetch(url, requestProperties)
+    }
+
+
+    /**
+     * Return api backend url
+     * @todo Specify api endpoint in config file
+     *
+     * @return {string}
+     */
+    getEndpoint() {
+        const location = window.location;
+
+        let result = location.protocol + "//" + location.hostname
+
+        if (location.port) {
+            result += ":" + location.port
+        }
+
+        return result;
+    }
+
+
+    /**
+     * Proxy ajax call to external backend
+     *
+     * @param {string} path
+     * @param {object} op
+     *
+     * @return {object} jQuery ajax object
+     */
+    proxy(path, op) {
+        var url = this.getEndpoint();
+
+        if (typeof(path) !== 'undefined') {
+            url += path;
+        }
+
+        return $.ajax({
+            method: 'post',
+            dataType: 'text',
+            url: url,
+            headers: {
+                "Content-Type": "application/json"
+            },
+            data: JSON.stringify(op)
+        });
+    }
+
+    /**
+     * Gets a newsItem of specified type from server.
+     * @param uuid      Uuid for newsItem.
+     * @param imType    Infomaker type, e.g. x-im/image.
+     * @returns {Promise.&lt;T>|*}
+     * @private
+     */
+    _getItem(uuid, imType) {
+        return this.get('/api/newsitem/' + uuid, {imType: imType, headers: {'Content-Type': 'text/xml'}}, null)
+            .then(response => this.checkForOKStatus(response))
+            .then(response => this.handleEtag(response, uuid))
+            .then(response => response.text())
+            .then(text => {
+                const parser = new DOMParser()
+                return parser.parseFromString(text, 'text/xml')
+            })
+            .catch(e => {
+                return Promise.reject(e)
+            })
+    }
+
+    /**
+     * Fetch a ConceptItem from the backend
+     * @param id The id of the concept
+     * @param imType The x-im/type
+     * @return {*}
+     */
+    getConceptItem(id, imType) {
+        return this._getItem(id, imType)
+    }
+
+    /**
+     * Fetch a NewsItem from the backend
+     * @param id The id of the news item
+     * @param imType The x-im/type
+     * @return {*}
+     */
+    getNewsItem(id, imType) {
+        return this._getItem(id, imType)
+    }
+
+
+    /**
+     * Updates a Concept Item
+     * @param id The ID of the Concept Item to update
+     * @param concept The updated XML
+     * @return A promise with no data
+     */
+    updateConceptItem(id, concept) {
+        return this.put('/api/newsitem/' + id, {body: concept, uuid: id})
+            .then(response => this.checkForOKStatus(response))
+            .then(response => this.handleEtag(response, id))
+            .catch(e => {
+                return Promise.reject(e)
+            })
+    }
+
+    /**
+     * Creates a Concept Item
+     * @param concept The concept to create
+     * @return {*|Promise.&lt;TResult>} containing the resulting UUID
+     */
+    createConceptItem(concept) {
+        return this.post('/api/newsitem', {body: concept})
+            .then(response => this.checkForOKStatus(response))
+            .then(response => this.handleEtag(response, null))
+            .then(response => response.text())
+            .catch(e => {
+                return Promise.reject(e)
+            })
+    }
+
+    /**
+     * Method checks for a status code between 200 and 299
+     * Throws error if otherwise.
+     *
+     * Use for example when you want to reject a fetch promise
+     *
+     * * @example
+     * fetch(...)
+     *  .then(response => checkForOKStatus(response)
+     *  .then(response => toJson(response)
+     *  .then(json => ...)
+     *  .catch((error) => {
+     *
+     *  }
+     *
+     *
+     * @param response
+     * @returns {*}
+     */
+    checkForOKStatus(response) {
+        if (response.status >= 200 &amp;&amp; response.status &lt; 300) {
+            return response
+        } else if (response.status === 409) {
+            console.log("409 Conflict status")
+            return new Promise((resolve, reject) => {
+                reject(new ConflictError(this.api.getLabel('error-human-readable-409-conflict')))
+            })
+        } else {
+            console.log("Not OK status: " + response.status)
+            return new Promise((resolve, reject) => {
+                response.text()
+                    .then(text => {
+                        reject(new ServerError(text))
+                    })
+                    .catch(e => {
+                        reject(e)
+                    })
+            })
+        }
+    }
+
+
+    /**
+     * Tries to convert response to json and logs the result to console if it fails and throws
+     * original exception.
+     *
+     *
+     * @param response The response to convert to Json
+     * @return {*}
+     */
+    toJson(response) {
+        return new Promise((resolve, reject) => {
+            response.json()
+                .then(json => resolve(json))
+                .catch(e => {
+                        response.text()
+                            .then(text => {
+                                console.log(text)
+                                return text
+                            })
+                            .then(reject(e))
+                            .catch(e2 => reject(e))
+                    }
+                )
+        })
+    }
+
+    handleEtag(response, uuid) {
+        return new Promise((resolve, reject) => {
+            // If no uuid supplied, try to use "Location" header
+            uuid = uuid || this.getLocationFromHeaders(response)
+
+            if (!uuid) {
+                console.warn('Trying to set ETag for nil uuid')
+                return resolve(response)
+            }
+
+            if (response.headers.get('etag')) {
+                this.setEtag(uuid, response.headers.get('etag'))
+            } else {
+                console.warn('Missing ETag for document with uuid', uuid)
+            }
+            resolve(response);
+        })
+    }
+
+    getEtag(uuid) {
+        return this.etags[uuid]
+    }
+
+    setEtag(uuid, eTag) {
+        this.etags[uuid] = eTag
+    }
+
+    getLocationFromHeaders(response) {
+        if (response.headers &amp;&amp; response.headers.get('location')) {
+            return response.headers.get('location')
+        }
+        return null;
+    }
+}
+
+export default Router
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.4</a> on Fri Oct 20 2017 15:45:22 GMT+0200 (CEST) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
