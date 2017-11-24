@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>packages/dialog-image/DialogImageComponent.js - Documentation</title>
+    <script src="scripts/prettify/prettify.js"></script>
+    <!-- <link rel="stylesheet" href="styles/prism.css"> -->
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul class=namespaces><li><a href="Api.html">Api</a></li><li><a href="Component.html">Component</a></li></ul><h3>Classes</h3><ul class=classes><li><a href="Api.html">Api</a><ul class='methods'><li data-type='method'><a href="Api.html#call">call</a></li><li data-type='method'><a href="Api.html#executeHook">executeHook</a></li><li data-type='method'><a href="Api.html#getConfigValue">getConfigValue</a></li><li data-type='method'><a href="Api.html#getPluginModule">getPluginModule</a></li><li data-type='method'><a href="Api.html#getPluginModulesForTarget">getPluginModulesForTarget</a></li><li data-type='method'><a href="Api.html#hasLocalConfiguration">hasLocalConfiguration</a></li><li data-type='method'><a href="Api.html#init">init</a></li></ul></li><li><a href="Api.Article.html"><span class="member-of">Api.</span>Article</a><ul class='methods'><li data-type='method'><a href="Api.Article.html#clear">clear</a></li><li data-type='method'><a href="Api.Article.html#copy">copy</a></li></ul></li><li><a href="Api.Browser.html"><span class="member-of">Api.</span>Browser</a><ul class='methods'><li data-type='method'><a href="Api.Browser.html#addExternalScript">addExternalScript</a></li><li data-type='method'><a href="Api.Browser.html#getHash">getHash</a></li><li data-type='method'><a href="Api.Browser.html#getUrl">getUrl</a></li><li data-type='method'><a href="Api.Browser.html#isSupported">isSupported</a></li><li data-type='method'><a href="Api.Browser.html#openInNewWindow">openInNewWindow</a></li><li data-type='method'><a href="Api.Browser.html#reload">reload</a></li><li data-type='method'><a href="Api.Browser.html#setHash">setHash</a></li><li data-type='method'><a href="Api.Browser.html#setTitle">setTitle</a></li><li data-type='method'><a href="Api.Browser.html#setupHashHandler">setupHashHandler</a></li></ul></li><li><a href="Api.Concept.html"><span class="member-of">Api.</span>Concept</a><ul class='methods'><li data-type='method'><a href="Api.Concept.html#.getDefinitionForType">getDefinitionForType</a></li><li data-type='method'><a href="Api.Concept.html#.setDefinitionDependingOnArrayOrObject">setDefinitionDependingOnArrayOrObject</a></li></ul></li><li><a href="Api.Document.html"><span class="member-of">Api.</span>Document</a><ul class='methods'><li data-type='method'><a href="Api.Document.html#deleteNode">deleteNode</a></li><li data-type='method'><a href="Api.Document.html#getDocumentNodes">getDocumentNodes</a></li><li data-type='method'><a href="Api.Document.html#getPreviousNode">getPreviousNode</a></li><li data-type='method'><a href="Api.Document.html#insertBlockNode">insertBlockNode</a></li><li data-type='method'><a href="Api.Document.html#insertInlineNode">insertInlineNode</a></li><li data-type='method'><a href="Api.Document.html#triggerFetchResourceNode">triggerFetchResourceNode</a></li></ul></li><li><a href="Api.Events.html"><span class="member-of">Api.</span>Events</a><ul class='methods'><li data-type='method'><a href="Api.Events.html#_triggerEvent">_triggerEvent</a></li><li data-type='method'><a href="Api.Events.html#documentChanged">documentChanged</a></li><li data-type='method'><a href="Api.Events.html#documentSaved">documentSaved</a></li><li data-type='method'><a href="Api.Events.html#documentSaveFailed">documentSaveFailed</a></li><li data-type='method'><a href="Api.Events.html#off">off</a></li><li data-type='method'><a href="Api.Events.html#on">on</a></li><li data-type='method'><a href="Api.Events.html#onDocumentStartSaving">onDocumentStartSaving</a></li></ul></li><li><a href="Api.History.html"><span class="member-of">Api.</span>History</a><ul class='methods'><li data-type='method'><a href="Api.History.html#cleanOldVersions">cleanOldVersions</a></li><li data-type='method'><a href="Api.History.html#cleanVersionsOlderThanMaxDays">cleanVersionsOlderThanMaxDays</a></li><li data-type='method'><a href="Api.History.html#deleteHistory">deleteHistory</a></li><li data-type='method'><a href="Api.History.html#get">get</a></li><li data-type='method'><a href="Api.History.html#getHistory">getHistory</a></li><li data-type='method'><a href="Api.History.html#isAvailable">isAvailable</a></li><li data-type='method'><a href="Api.History.html#saveHistory">saveHistory</a></li></ul></li><li><a href="Api.NewsItem.html"><span class="member-of">Api.</span>NewsItem</a><ul class='methods'><li data-type='method'><a href="Api.NewsItem.html#addAuthor">addAuthor</a></li><li data-type='method'><a href="Api.NewsItem.html#addCategory">addCategory</a></li><li data-type='method'><a href="Api.NewsItem.html#addChannel">addChannel</a></li><li data-type='method'><a href="Api.NewsItem.html#addConceptProfile">addConceptProfile</a></li><li data-type='method'><a href="Api.NewsItem.html#addContentMetaLink">addContentMetaLink</a></li><li data-type='method'><a href="Api.NewsItem.html#addContentProfile">addContentProfile</a></li><li data-type='method'><a href="Api.NewsItem.html#addLink">addLink</a></li><li data-type='method'><a href="Api.NewsItem.html#addLocation">addLocation</a></li><li data-type='method'><a href="Api.NewsItem.html#addSimpleAuthor">addSimpleAuthor</a></li><li data-type='method'><a href="Api.NewsItem.html#addStory">addStory</a></li><li data-type='method'><a href="Api.NewsItem.html#addTag">addTag</a></li><li data-type='method'><a href="Api.NewsItem.html#createNewsPriority">createNewsPriority</a></li><li data-type='method'><a href="Api.NewsItem.html#getAuthors">getAuthors</a></li><li data-type='method'><a href="Api.NewsItem.html#getCategories">getCategories</a></li><li data-type='method'><a href="Api.NewsItem.html#getChannels">getChannels</a></li><li data-type='method'><a href="Api.NewsItem.html#getContentCreated">getContentCreated</a></li><li data-type='method'><a href="Api.NewsItem.html#getContentMetaLinkByType">getContentMetaLinkByType</a></li><li data-type='method'><a href="Api.NewsItem.html#getContentMetaObjectById">getContentMetaObjectById</a></li><li data-type='method'><a href="Api.NewsItem.html#getContentMetaObjectsByType">getContentMetaObjectsByType</a></li><li data-type='method'><a href="Api.NewsItem.html#getContentModified">getContentModified</a></li><li data-type='method'><a href="Api.NewsItem.html#getContentProfiles">getContentProfiles</a></li><li data-type='method'><a href="Api.NewsItem.html#getEdNote">getEdNote</a></li><li data-type='method'><a href="Api.NewsItem.html#getFirstCreated">getFirstCreated</a></li><li data-type='method'><a href="Api.NewsItem.html#getGuid">getGuid</a></li><li data-type='method'><a href="Api.NewsItem.html#getIdForArticle">getIdForArticle</a></li><li data-type='method'><a href="Api.NewsItem.html#getLinkByType">getLinkByType</a></li><li data-type='method'><a href="Api.NewsItem.html#getLinkByTypeAndRel">getLinkByTypeAndRel</a></li><li data-type='method'><a href="Api.NewsItem.html#getLinksByType">getLinksByType</a></li><li data-type='method'><a href="Api.NewsItem.html#getLocations">getLocations</a></li><li data-type='method'><a href="Api.NewsItem.html#getMainChannel">getMainChannel</a></li><li data-type='method'><a href="Api.NewsItem.html#getNewspilotArticleId">getNewspilotArticleId</a></li><li data-type='method'><a href="Api.NewsItem.html#getNewsPriority">getNewsPriority</a></li><li data-type='method'><a href="Api.NewsItem.html#getPubStart">getPubStart</a></li><li data-type='method'><a href="Api.NewsItem.html#getPubStatus">getPubStatus</a></li><li data-type='method'><a href="Api.NewsItem.html#getPubStop">getPubStop</a></li><li data-type='method'><a href="Api.NewsItem.html#getSection">getSection</a></li><li data-type='method'><a href="Api.NewsItem.html#getSections">getSections</a></li><li data-type='method'><a href="Api.NewsItem.html#getStories">getStories</a></li><li data-type='method'><a href="Api.NewsItem.html#getTags">getTags</a></li><li data-type='method'><a href="Api.NewsItem.html#getTemporaryId">getTemporaryId</a></li><li data-type='method'><a href="Api.NewsItem.html#getVersionCreated">getVersionCreated</a></li><li data-type='method'><a href="Api.NewsItem.html#hasTemporaryId">hasTemporaryId</a></li><li data-type='method'><a href="Api.NewsItem.html#invalidate">invalidate</a></li><li data-type='method'><a href="Api.NewsItem.html#removeAuthorByTitle">removeAuthorByTitle</a></li><li data-type='method'><a href="Api.NewsItem.html#removeAuthorByUUID">removeAuthorByUUID</a></li><li data-type='method'><a href="Api.NewsItem.html#removeChannel">removeChannel</a></li><li data-type='method'><a href="Api.NewsItem.html#removeContentMetaObject">removeContentMetaObject</a></li><li data-type='method'><a href="Api.NewsItem.html#removeLinkByUUID">removeLinkByUUID</a></li><li data-type='method'><a href="Api.NewsItem.html#removeLinkByUUIDAndRel">removeLinkByUUIDAndRel</a></li><li data-type='method'><a href="Api.NewsItem.html#removeLinkContentMetaByTypeAndMatchingFilter">removeLinkContentMetaByTypeAndMatchingFilter</a></li><li data-type='method'><a href="Api.NewsItem.html#removeLinkContentMetaByTypeAndRel">removeLinkContentMetaByTypeAndRel</a></li><li data-type='method'><a href="Api.NewsItem.html#removePubStart">removePubStart</a></li><li data-type='method'><a href="Api.NewsItem.html#removePubStop">removePubStop</a></li><li data-type='method'><a href="Api.NewsItem.html#removeSection">removeSection</a></li><li data-type='method'><a href="Api.NewsItem.html#save">save</a></li><li data-type='method'><a href="Api.NewsItem.html#setContentMetaObject">setContentMetaObject</a></li><li data-type='method'><a href="Api.NewsItem.html#setEdNote">setEdNote</a></li><li data-type='method'><a href="Api.NewsItem.html#setGuid">setGuid</a></li><li data-type='method'><a href="Api.NewsItem.html#setNewsPriority">setNewsPriority</a></li><li data-type='method'><a href="Api.NewsItem.html#setPubStart">setPubStart</a></li><li data-type='method'><a href="Api.NewsItem.html#setPubStatus">setPubStatus</a></li><li data-type='method'><a href="Api.NewsItem.html#setPubStop">setPubStop</a></li><li data-type='method'><a href="Api.NewsItem.html#setSource">setSource</a></li><li data-type='method'><a href="Api.NewsItem.html#setTemporaryId">setTemporaryId</a></li><li data-type='method'><a href="Api.NewsItem.html#updateAuthorWithUUID">updateAuthorWithUUID</a></li><li data-type='method'><a href="Api.NewsItem.html#updateConceptProfile">updateConceptProfile</a></li><li data-type='method'><a href="Api.NewsItem.html#updateContentProfile">updateContentProfile</a></li><li data-type='method'><a href="Api.NewsItem.html#updateLocation">updateLocation</a></li><li data-type='method'><a href="Api.NewsItem.html#updateSection">updateSection</a></li><li data-type='method'><a href="Api.NewsItem.html#updateStory">updateStory</a></li><li data-type='method'><a href="Api.NewsItem.html#updateTag">updateTag</a></li></ul></li><li><a href="Api.Router.html"><span class="member-of">Api.</span>Router</a><ul class='methods'><li data-type='method'><a href="Api.Router.html#checkForOKStatus">checkForOKStatus</a></li><li data-type='method'><a href="Api.Router.html#createConceptItem">createConceptItem</a></li><li data-type='method'><a href="Api.Router.html#get">get</a></li><li data-type='method'><a href="Api.Router.html#getConceptItem">getConceptItem</a></li><li data-type='method'><a href="Api.Router.html#getEndpoint">getEndpoint</a></li><li data-type='method'><a href="Api.Router.html#getNewsItem">getNewsItem</a></li><li data-type='method'><a href="Api.Router.html#getQuerystringFromParameters">getQuerystringFromParameters</a></li><li data-type='method'><a href="Api.Router.html#getRequestPropertiesForMethod">getRequestPropertiesForMethod</a></li><li data-type='method'><a href="Api.Router.html#post">post</a></li><li data-type='method'><a href="Api.Router.html#postBinary">postBinary</a></li><li data-type='method'><a href="Api.Router.html#proxy">proxy</a></li><li data-type='method'><a href="Api.Router.html#put">put</a></li><li data-type='method'><a href="Api.Router.html#toJson">toJson</a></li><li data-type='method'><a href="Api.Router.html#updateConceptItem">updateConceptItem</a></li></ul></li><li><a href="Api.Settings.html"><span class="member-of">Api.</span>Settings</a><ul class='methods'><li data-type='method'><a href="Api.Settings.html#delete">delete</a></li><li data-type='method'><a href="Api.Settings.html#get">get</a></li><li data-type='method'><a href="Api.Settings.html#getAllSettings">getAllSettings</a></li><li data-type='method'><a href="Api.Settings.html#isAvailable">isAvailable</a></li><li data-type='method'><a href="Api.Settings.html#set">set</a></li></ul></li><li><a href="Api.Ui.html"><span class="member-of">Api.</span>Ui</a><ul class='methods'><li data-type='method'><a href="Api.Ui.html#getComponent">getComponent</a></li><li data-type='method'><a href="Api.Ui.html#showDialog">showDialog</a></li><li data-type='method'><a href="Api.Ui.html#showMessageDialog">showMessageDialog</a></li><li data-type='method'><a href="Api.Ui.html#showNotification">showNotification</a></li></ul></li><li><a href="Api.Upload.html"><span class="member-of">Api.</span>Upload</a><ul class='methods'><li data-type='method'><a href="Api.Upload.html#uploadFile">uploadFile</a></li></ul></li><li><a href="Component.AvatarComponent.html"><span class="member-of">Component.</span>AvatarComponent</a><ul class='methods'><li data-type='method'><a href="Component.AvatarComponent.html#loadAvatarUrlForAvatarId">loadAvatarUrlForAvatarId</a></li></ul></li><li><a href="Component.BylineComponent.html"><span class="member-of">Component.</span>BylineComponent</a></li><li><a href="Component.DatetimeFieldEditorComponent.html"><span class="member-of">Component.</span>DatetimeFieldEditorComponent</a></li><li><a href="Component.DialogComponent.html"><span class="member-of">Component.</span>DialogComponent</a><ul class='methods'><li data-type='method'><a href="Component.DialogComponent.html#changeModalHeight">changeModalHeight</a></li></ul></li><li><a href="Component.DialogImageComponent.html"><span class="member-of">Component.</span>DialogImageComponent</a><ul class='methods'><li data-type='method'><a href="Component.DialogImageComponent.html#renderAuthor">renderAuthor</a></li><li data-type='method'><a href="Component.DialogImageComponent.html#saveImageData">saveImageData</a></li><li data-type='method'><a href="Component.DialogImageComponent.html#syncPhotoDate">syncPhotoDate</a></li></ul></li><li><a href="Component.FieldEditorComponent.html"><span class="member-of">Component.</span>FieldEditorComponent</a></li><li><a href="Component.FormAddComponent.html"><span class="member-of">Component.</span>FormAddComponent</a></li><li><a href="Component.FormSearchComponent.html"><span class="member-of">Component.</span>FormSearchComponent</a></li><li><a href="Component.InlineImageComponent.html"><span class="member-of">Component.</span>InlineImageComponent</a></li><li><a href="Component.LinkComponent.html"><span class="member-of">Component.</span>LinkComponent</a></li><li><a href="Component.Notification.html"><span class="member-of">Component.</span>Notification</a></li><li><a href="Component.NotificationListComponent.html"><span class="member-of">Component.</span>NotificationListComponent</a></li><li><a href="Component.PlaceholderComponent.html"><span class="member-of">Component.</span>PlaceholderComponent</a></li><li><a href="Component.SelectComponent.html"><span class="member-of">Component.</span>SelectComponent</a><ul class='methods'><li data-type='method'><a href="Component.SelectComponent.html#renderButtonList">renderButtonList</a></li><li data-type='method'><a href="Component.SelectComponent.html#renderDropDownList">renderDropDownList</a></li><li data-type='method'><a href="Component.SelectComponent.html#renderList">renderList</a></li><li data-type='method'><a href="Component.SelectComponent.html#renderToggleList">renderToggleList</a></li></ul></li><li><a href="Component.ToggleComponent.html"><span class="member-of">Component.</span>ToggleComponent</a></li><li><a href="Component.TooltipComponent.html"><span class="member-of">Component.</span>TooltipComponent</a></li><li><a href="ConfigEditorComponent.html">ConfigEditorComponent</a></li><li><a href="NewsMLArticle.html">NewsMLArticle</a></li><li><a href="NewsMLImporter.html">NewsMLImporter</a><ul class='methods'><li data-type='method'><a href="NewsMLImporter.html#getFirstElementWithTypeElement">getFirstElementWithTypeElement</a></li></ul></li><li><a href="NotFoundException.html">NotFoundException</a></li><li><a href="PluginManager.html">PluginManager</a><ul class='methods'><li data-type='method'><a href="PluginManager.html#_getValue">_getValue</a></li><li data-type='method'><a href="PluginManager.html#appendPluginScripts">appendPluginScripts</a></li><li data-type='method'><a href="PluginManager.html#getListOfPlugins">getListOfPlugins</a></li><li data-type='method'><a href="PluginManager.html#load">load</a></li><li data-type='method'><a href="PluginManager.html#registerPlugin">registerPlugin</a></li><li data-type='method'><a href="PluginManager.html#validatePluginPackage">validatePluginPackage</a></li></ul></li><li><a href="Validator.html">Validator</a><ul class='methods'><li data-type='method'><a href="Validator.html#addError">addError</a></li><li data-type='method'><a href="Validator.html#addInfo">addInfo</a></li><li data-type='method'><a href="Validator.html#addWarning">addWarning</a></li><li data-type='method'><a href="Validator.html#getMessages">getMessages</a></li><li data-type='method'><a href="Validator.html#hasMessages">hasMessages</a></li></ul></li></ul><h3>Externals</h3><ul class=externals><li><a href="external-Substance.html">Substance</a></li></ul><h3>Global</h3><ul><li><a href="global.html#removeControlCodes">removeControlCodes</a></li><li><a href="global.html#removeEmptyNamespaces">removeEmptyNamespaces</a></li></ul>
+</nav>
+
+<div id="main">
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import {Component, FontAwesomeIcon} from "substance";
+import moment from "moment";
+import jxon from "jxon";
+import NilUUID from "../../utils/NilUUID";
+import './scss/extensiontabs.scss'
+
+/**
+ * @typedef Component.DialogImageComponent.Props
+ * @property {Node} node - The node
+ * @property {Boolean} disablebylinesearch
+ * @property {Object} newsItem
+ * @property {string} url
+ */
+
+/**
+ * @typedef Component.DialogImageComponent.State
+ * @property {string} tab -  `"main"`, `"active"`, or `"extended"`
+ */
+
+/**
+ * A dialog image component
+ *
+ * Used to display and edit image metadata in a dialog window.
+ * @memberof Component
+ *
+ * @param {Component.DialogImageComponent.Props} props
+ * @property {Component.DialogImageComponent.Props} props
+ * @property {Component.DialogImageComponent.State} state
+ */
+class DialogImageComponent extends Component {
+    constructor(...args) {
+        super(...args)
+
+        this.authors = []
+        this.data = null
+        this.parsing = false
+    }
+
+    getInitialState() {
+        return {
+            tab: 'main'
+        }
+    }
+
+    dispose() {
+        Component.prototype.dispose.call(this)
+    }
+
+    render($$) {
+        var el = $$('div')
+
+        if (this.parsing === false) {
+            this.parseData()
+        }
+
+        var p = $$('p')
+
+        if (this.data.width) {
+            p.append($$('span').addClass('dialog-image-width').append(
+                this.data.width + ' px'
+            ))
+        }
+
+        if (this.data.height) {
+            p.append($$('span').addClass('dialog-image-height').append(
+                this.data.height + ' px'
+            ))
+        }
+
+        var dt = new Date(this.data.photoDateTime)
+        p.append([
+            $$('strong').append(this.getLabel("Photo date")),
+            $$('span').addClass('dialog-image-photo-date').append(
+                $$('input').attr('id', 'dialog-image-photo-date').attr('type', 'date').val(
+                    !isNaN(dt.getTime()) ? dt.toLocaleDateString() : ''
+                ).on('change', function () {
+                    this.syncPhotoDate();
+                }.bind(this))
+            ),
+            $$('span').addClass('dialog-image-photo-time').append(
+                $$('input').attr('id', 'dialog-image-photo-time').attr('type', 'time').val(
+                    !isNaN(dt.getTime()) ? dt.toLocaleTimeString() : ''
+                ).on('change', function () {
+                    this.syncPhotoDate();
+                }.bind(this))
+            )
+        ])
+
+        dt = new Date(this.data.firstCreated);
+        if (!isNaN(dt.getTime())) {
+            p.append([
+                $$('strong').append(this.getLabel("Imported")),
+                $$('span').addClass('dialog-image-create-date').append(
+                    dt.toLocaleDateString()
+                ),
+                $$('span').addClass('dialog-image-create-time').append(
+                    dt.toLocaleTimeString()
+                )
+            ])
+        }
+
+        p.append(
+            this.renderStatus($$, this.data.pubStatus)
+        )
+
+        el.append(
+            $$('div').append(
+                $$('img').attr('src', this.data.url)
+            ).append(p)
+        )
+
+        const form = $$('form')
+        const mainMetadata = $$('div').append(
+            $$('fieldset').addClass('form-group').append([
+                $$('div').addClass('form-group').append(
+                    $$('textarea')
+                        .on('change', (evt) => {
+                            this.data.text = evt.target.value;
+                        })
+                        .attr('id', 'dialog-image-info-caption')
+                        .addClass('form-control')
+                        .attr({
+                            rows: 3,
+                            placeholder: this.getLabel("Image description")
+                        })
+                        .append(
+                            this.data.text
+                        )
+                ),
+
+                this.renderAuthorContainer($$),
+
+                $$('div').addClass('form-group flexible-label').append(
+                    $$('input')
+                        .on('change', (evt) => {
+                            this.data.credit = evt.target.value;
+                        })
+                        .addClass('form-control')
+                        .attr({
+                            required: 'required',
+                            type: 'text',
+                            id: 'dialog-image-info-credit',
+                            placeholder: this.getLabel('Credit')
+                        })
+                        .val(this.data.credit),
+                    $$('label')
+                        .attr('for', 'dialog-image-info-credit')
+                        .append(
+                            this.getLabel('Credit')
+                        )
+                ),
+
+                $$('div').addClass('form-group flexible-label').append(
+                    $$('input')
+                        .on('change', (evt) => {
+                            this.data.instructions = evt.target.value;
+                        })
+                        .addClass('form-control')
+                        .attr({
+                            required: 'required',
+                            type: 'text',
+                            id: 'dialog-image-info-instructions',
+                            placeholder: this.getLabel('Instructions')
+                        })
+                        .val(this.data.instructions),
+                    $$('label')
+                        .attr('for', 'dialog-image-info-instructions')
+                        .append(
+                            this.getLabel('Instructions')
+                        )
+                ),
+
+                $$('div').addClass('form-group flexible-label').append(
+                    $$('input')
+                        .on('change', (evt) => {
+                            this.data.objectName = evt.target.value;
+                        })
+                        .addClass('form-control')
+                        .attr({
+                            required: 'required',
+                            type: 'text',
+                            id: 'dialog-image-info-objectname',
+                            placeholder: this.getLabel('Object name')
+                        })
+                        .val(this.data.objectName),
+                    $$('label')
+                        .attr('for', 'dialog-image-info-objectname')
+                        .append(
+                            this.getLabel('Object name')
+                        )
+                )
+            ])
+        )
+
+        const extensionsEl = this.renderExtensions($$, mainMetadata)
+        if (extensionsEl) {
+            form.append(extensionsEl)
+        }
+        else {
+            form.append(mainMetadata)
+        }
+
+        el.addClass('dialog-image-info')
+        el.append(form)
+
+        return el
+    }
+
+    renderExtensions($$, mainEl) {
+        const extensionEls = []
+        const extensionModules = this.context.api.getPluginModulesForTarget(
+                'se.infomaker.npwriter.dialogimage'
+            )
+
+        if (!Array.isArray(extensionModules) || extensionModules.length === 0) {
+            return null
+        }
+
+        extensionModules.forEach(extension => {
+            extensionEls.push($$(extension, {
+                properties: this.data.extended || {},
+                onChange: (id, value) => {
+                    if (!this.data.extended) {
+                        this.data.extended = {}
+                    }
+                    this.data.extended[id] = value
+                }
+            }))
+        })
+
+        return $$('fieldset').addClass('form-group').append(
+            $$('div').addClass('form-group').append(
+                this.renderExtensionsTab($$, mainEl, extensionEls)
+            )
+        )
+    }
+
+    renderExtensionsTab($$, mainEl, extensionEls) {
+        const tabsEl = $$('div').addClass('ui-extensiontabs').append([
+            $$('div').append([
+                $$('a').append('Image meta data')
+                .addClass(this.state.tab === 'main' ? 'active' : '')
+                .on('click', () => {
+                    this.extendState({tab: 'main'})
+                }),
+                $$('a').append('Extended meta data')
+                .addClass(this.state.tab === 'extended' ? 'active' : '')
+                .on('click', () => {
+                    this.extendState({tab: 'extended'})
+                })
+            ])
+        ])
+
+        if (this.state.tab === 'main') {
+            tabsEl.append(
+                $$('div').append(mainEl)
+            )
+        }
+        else {
+            tabsEl.append(
+                $$('div').append(extensionEls)
+            )
+        }
+
+        return tabsEl
+    }
+
+    renderAuthorContainer($$) {
+        const el = $$('div')
+            .ref('authorContainer')
+            .addClass('authors dialog-image-info clearfix')
+
+        let searchComponent
+
+        if (this.props.disablebylinesearch) {
+            const AuthorAddComponent = this.context.componentRegistry.get('form-add')
+
+            searchComponent = $$(AuthorAddComponent, {
+                existingItems: this.authors,
+                onSelect: this.addAuthor.bind(this),
+                onCreate: (authorItem) => {
+                    this.createAuthor(authorItem, false)
+                },
+                createAllowed: true,
+                placeholderText: this.getLabel("Add creator")
+            }).ref('FormSearchComponent')
+
+        } else {
+            const AuthorSearchComponent = this.context.componentRegistry.get('form-search')
+            searchComponent = $$(AuthorSearchComponent, {
+                existingItems: this.authors,
+                searchUrl: '/api/search/concepts/authors?q=',
+                onSelect: this.addAuthor.bind(this),
+                onCreate: (authorItem) => {
+                    this.createAuthor(authorItem, false)
+                },
+                createAllowed: true,
+                placeholderText: this.getLabel("Add creator")
+            }).ref('FormSearchComponent')
+        }
+
+        return el.append([
+            searchComponent,
+            this.renderAuthors($$)
+        ])
+    }
+
+
+    renderAuthors($$) {
+        const authorList = $$('ul')
+            .addClass('dialog-image-authorlist')
+            .attr('contenteditable', false)
+
+        for (let n = 0; n &lt; this.authors.length; n++) {
+            const authorItem = this.renderAuthor($$, this.authors[n])
+            if (authorItem) {
+                authorList.append(authorItem)
+            }
+        }
+
+        return $$('div')
+            .addClass('dialog-image-authors')
+            .append(
+                authorList
+            )
+    }
+
+    /**
+     * TODO: Implement byline search
+     */
+    renderAuthor($$, author) {
+        const avatar = $$('span')
+        let ref
+
+        if (author.uuid &amp;&amp; !NilUUID.isNilUUID(author.uuid)) {
+            ref = 'item-' + author.uuid
+        }
+        else {
+            ref = 'item-' + author.name
+        }
+
+        return $$('li').append(
+            $$('div').append([
+                avatar,
+                $$('div').append([
+                    $$('strong').append(author.name),
+                    $$('em').append(author.data &amp;&amp; author.data.email ? author.data.email : '')
+                ]),
+                $$('span').append(
+                    $$('a').append(
+                        $$(FontAwesomeIcon, {icon: 'fa-times'})
+                    )
+                        .attr('title', this.getLabel('Remove'))
+                        .on('click', function () {
+                            this.removeAuthor(author);
+                        }.bind(this))
+                )
+            ])
+        ).ref(ref)
+    }
+
+    renderStatus($$, pubStatus) {
+        var txtStatus = ''
+
+        switch (pubStatus) {
+            case 'stat:withheld':
+                txtStatus = 'Not published'
+                break
+
+            case 'imext:done':
+                txtStatus = 'Pending approval'
+                break
+
+            case 'stat:usable':
+                txtStatus = 'Published'
+                break
+
+            case 'stat:canceled':
+                txtStatus = 'Unpublished'
+                break
+
+            default:
+                txtStatus = 'Not published'
+        }
+
+        return $$('div').append(
+            $$('strong')
+                .addClass('dialog-image-status')
+                .append(
+                    this.getLabel(txtStatus)
+                )
+        )
+    }
+
+    addAuthor(authorItem) {
+        this.fetchAuthor(authorItem.uuid, function (author) {
+            this.authors.push(author)
+            this.rerender()
+        }.bind(this), true)
+    }
+
+    createAuthor(authorItem, skipRender) {
+        var name = authorItem.inputValue ? authorItem.inputValue : authorItem.name
+        var author = {
+            uuid: NilUUID.getNilUUID(),
+            name: name,
+            data: {
+                email: ''
+            }
+        }
+
+        this.authors.push(author)
+
+        if (!skipRender) {
+            this.rerender()
+        }
+    }
+
+    removeAuthor(author) {
+        let ref,
+            id
+
+        if (author.uuid &amp;&amp; !NilUUID.isNilUUID(author.uuid)) {
+            ref = 'item-' + author.uuid
+            id = author.uuid
+        }
+        else {
+            ref = 'item-' + author.name
+            id = author.name
+        }
+
+
+        delete this.refs[ref]
+        for (let n = 0; n &lt; this.authors.length; n++) {
+            let cmpid
+            let author = this.authors[n]
+            if (author.uuid &amp;&amp; !NilUUID.isNilUUID(author.uuid)) {
+                cmpid = author.uuid
+            }
+            else {
+                cmpid = author.name
+            }
+            if (cmpid === id) {
+                this.authors.splice(n, 1)
+                break;
+            }
+        }
+
+        this.rerender();
+    }
+
+    /**
+     * @todo: Use current time zone offset, not preset to Stockholm
+     */
+    syncPhotoDate() {
+        var photoDate = document.getElementById('dialog-image-photo-date').value,
+            photoTime = document.getElementById('dialog-image-photo-time').value,
+            dt = new moment(photoDate + 'T' + photoTime)
+
+        if (typeof dt === 'string') {
+            return null
+        }
+
+        try {
+            this.data.photoDateTime = dt.format()
+        }
+        catch (ex) {
+            return null
+        }
+
+        return this.data.photoDateTime
+    }
+
+    onClose(status) {
+        if (status !== 'save') {
+            return
+        }
+
+        const dom = this.props.newsItem
+        var xmlSerializer = new XMLSerializer(), /* jshint ignore:line */
+            text = dom.querySelector('contentMeta > metadata > object > data > text'),
+            credit = dom.querySelector('contentMeta > metadata > object > data > credit'),
+            objectName = dom.querySelector('contentMeta > metadata > object > data > objectName'),
+            instructions = dom.querySelector('contentMeta > metadata > object > data > instructions'),
+            photoDateTime = dom.querySelector('contentMeta > metadata > object > data > photoDateTime'),
+            itemMeta = dom.querySelectorAll('itemMeta'),
+            links = dom.querySelectorAll('itemMeta > links'),
+            authors = dom.querySelectorAll('itemMeta > links > link[rel="author"]')
+
+        if (!links || !links.length) {
+            links = dom.createElement('links')
+            itemMeta[0].appendChild(links)
+        }
+        else {
+            links = links[0]
+        }
+
+        var data = dom.querySelector('contentMeta > metadata > object > data')
+        this.addOrUpdateSimpleNode(dom, data, text, 'text', this.data.text) // document.getElementById('dialog-image-info-caption').value)
+        this.addOrUpdateSimpleNode(dom, data, credit, 'credit', this.data.credit) // document.getElementById('dialog-image-info-credit').value)
+        this.addOrUpdateSimpleNode(dom, data, instructions, 'instructions', this.data.instructions) // document.getElementById('dialog-image-info-instructions').value)
+        this.addOrUpdateSimpleNode(dom, data, objectName, 'objectName', this.data.objectName) // document.getElementById('dialog-image-info-objectname').value)
+
+        this.addOrUpdateExtendedData(dom, data)
+
+        var dtString = this.syncPhotoDate()
+        if (null === dtString) {
+            if (photoDateTime) {
+                data.removeChild(photoDateTime)
+            }
+        }
+        else {
+            this.addOrUpdateSimpleNode(dom, data, photoDateTime, 'photoDateTime', dtString)
+        }
+
+        for (var x = 0; x &lt; authors.length; x++) {
+            links.removeChild(authors[x])
+        }
+
+        for (var n = 0; n &lt; this.authors.length; n++) {
+            var link = dom.createElement('link')
+            link.setAttribute('rel', 'author')
+            link.setAttribute('title', this.authors[n].name)
+            link.setAttribute('type', 'x-im/author')
+
+            if (this.authors[n].uuid &amp;&amp; !NilUUID.isNilUUID(this.authors[n].uuid)) {
+
+                link.setAttribute('uuid', this.authors[n].uuid)
+            }
+            else {
+                link.setAttribute('uuid', NilUUID.getNilUUID())
+            }
+
+            links.appendChild(link)
+        }
+
+        var xml = xmlSerializer.serializeToString(dom)
+        this.saveImageData(
+            this.data.uuid,
+            xml
+        )
+    }
+
+    addOrUpdateExtendedData(dom, data) {
+        let extended = false
+        if (!this.data.extended) {
+            return
+        }
+
+        let extEl = dom.querySelector('contentMeta > metadata > object > data > extended')
+        if (!extEl) {
+            extEl = dom.createElement('extended')
+        }
+
+        for (var key in this.data.extended) {
+            extended = true
+            this.addOrUpdateSimpleNode(
+                dom,
+                extEl,
+                null,
+                key,
+                this.data.extended[key]
+            )
+        }
+
+        if (extended) {
+            data.appendChild(extEl)
+        }
+    }
+
+    addOrUpdateSimpleNode(dom, parent, node, name, value) {
+        if (node) {
+            node.textContent = value
+        }
+        else {
+            node = dom.createElement(name)
+            node.textContent = value
+            parent.appendChild(node)
+        }
+    }
+
+    /* globals DOMParser */
+    parseData() {
+        this.parsing = true
+
+        const dom = this.props.newsItem,
+            newsItem = dom.querySelector('newsItem'),
+            authors = dom.querySelectorAll('itemMeta > links > link[rel="author"]'),
+            text = dom.querySelector('contentMeta > metadata > object > data > text'),
+            credit = dom.querySelector('contentMeta > metadata > object > data > credit'),
+            objectName = dom.querySelector('contentMeta > metadata > object > data > objectName'),
+            instructions = dom.querySelector('contentMeta > metadata > object > data > instructions'),
+            photoDateTime = dom.querySelector('contentMeta > metadata > object > data > photoDateTime'),
+            pubStatus = dom.querySelector('itemMeta > pubStatus'),
+            width = dom.querySelector('contentMeta > metadata > object > data > width'),
+            height = dom.querySelector('contentMeta > metadata > object > data > height'),
+            firstCreated = dom.querySelector('itemMeta > firstCreated')
+
+        const extendedEls = dom.querySelector('contentMeta > metadata > object > data > extended')
+        const extended = {}
+        if (extendedEls &amp;&amp; extendedEls.children &amp;&amp; extendedEls.children.length) {
+            for (var i = 0; i &lt; extendedEls.children.length; i++) {
+                extended[extendedEls.children[i].tagName] = extendedEls.children[i].textContent
+            }
+        }
+
+        if (authors &amp;&amp; authors.length > 0) {
+            for (var n = 0; n &lt; authors.length; n++) {
+                var author = {
+                    uuid: authors[n].getAttribute('uuid'),
+                    name: authors[n].getAttribute('title'),
+                    data: {
+                        email: ''
+                    }
+                }
+
+                if (!author.name) {
+                    author.name = this.getLabel('Unknown name')
+                }
+
+                if (author.uuid === null) {
+                    author.uuid = NilUUID.getNilUUID()
+                }
+
+                if (NilUUID.isNilUUID(author.uuid)) {
+                    this.createAuthor(author, true)
+                }
+                else {
+                    this.addAuthor(author)
+                }
+            }
+        }
+
+        this.data = {
+            uuid: newsItem.getAttribute('guid'),
+            url: this.props.url,
+            text: text ? text.textContent : '',
+            credit: credit ? credit.textContent : '',
+            objectName: objectName ? objectName.textContent : '',
+            instructions: instructions ? instructions.textContent : '',
+            pubStatus: pubStatus.getAttribute('qcode'),
+            firstCreated: firstCreated ? firstCreated.textContent : '',
+            photoDateTime: photoDateTime ? photoDateTime.textContent : '',
+            width: width ? width.textContent : null,
+            height: height ? height.textContent : null,
+            authors: this.authors,
+            extended: extended
+        }
+    }
+
+
+    fetchAuthor(uuid, cbDone, fetchOnly) {
+        this.context.api.router.getNewsItem(uuid, 'x-im/author')
+            .then((data) => {
+                var conceptXML = data.querySelector('concept')
+                var jsonFormat = jxon.build(conceptXML)
+                var authorLinks = []
+
+                try {
+                    authorLinks = jxon.build(data.querySelector('itemMeta links'))
+                } catch (e) {
+                }
+
+                var author = {
+                    uuid: uuid,
+                    name: jsonFormat.name,
+                    data: jsonFormat.metadata.object.data,
+                    json: jsonFormat,
+                    links: authorLinks
+                }
+
+                if (fetchOnly === true) {
+                    cbDone(author)
+                }
+                else {
+                    // Check that we don't already have this
+                    for (var n = 0; n &lt; this.authors.length; n++) {
+                        if (this.authors[n].uuid === uuid) {
+                            return
+                        }
+                    }
+
+                    this.authors.push(author)
+                    if (cbDone) {
+                        cbDone(this.authors)
+                    }
+                    this.rerender()
+                }
+            })
+    }
+
+    /**
+     * Save image news item, called from image archive dialog
+     */
+    saveImageData(uuid, xml) {
+        this.context.api.router.put('/api/newsitem/' + uuid, {body: xml, uuid: uuid})
+            .then((response) => this.context.api.router.checkForOKStatus(response))
+            .then(() => {
+                this.context.api.ui.showNotification('', '', this.getLabel('Image data saved to archive'))
+            })
+            .catch((error) => {
+                console.log(error)
+                this.context.api.ui.showNotification('', '', this.getLabel('Error! Image data could not be saved.'))
+            })
+    }
+}
+
+export default DialogImageComponent
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Fri Nov 24 2017 09:13:07 GMT+0100 (CET) using a modified version of the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+<!-- <script src="scripts/prism.js"></script> -->
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

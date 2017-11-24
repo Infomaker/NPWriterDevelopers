@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>packages/npwriter/NPWriterConfigurator.js - Documentation</title>
+    <script src="scripts/prettify/prettify.js"></script>
+    <!-- <link rel="stylesheet" href="styles/prism.css"> -->
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul class=namespaces><li><a href="Api.html">Api</a></li><li><a href="Component.html">Component</a></li></ul><h3>Classes</h3><ul class=classes><li><a href="Api.html">Api</a><ul class='methods'><li data-type='method'><a href="Api.html#call">call</a></li><li data-type='method'><a href="Api.html#executeHook">executeHook</a></li><li data-type='method'><a href="Api.html#getConfigValue">getConfigValue</a></li><li data-type='method'><a href="Api.html#getPluginModule">getPluginModule</a></li><li data-type='method'><a href="Api.html#getPluginModulesForTarget">getPluginModulesForTarget</a></li><li data-type='method'><a href="Api.html#hasLocalConfiguration">hasLocalConfiguration</a></li><li data-type='method'><a href="Api.html#init">init</a></li></ul></li><li><a href="Api.Article.html"><span class="member-of">Api.</span>Article</a><ul class='methods'><li data-type='method'><a href="Api.Article.html#clear">clear</a></li><li data-type='method'><a href="Api.Article.html#copy">copy</a></li></ul></li><li><a href="Api.Browser.html"><span class="member-of">Api.</span>Browser</a><ul class='methods'><li data-type='method'><a href="Api.Browser.html#addExternalScript">addExternalScript</a></li><li data-type='method'><a href="Api.Browser.html#getHash">getHash</a></li><li data-type='method'><a href="Api.Browser.html#getUrl">getUrl</a></li><li data-type='method'><a href="Api.Browser.html#isSupported">isSupported</a></li><li data-type='method'><a href="Api.Browser.html#openInNewWindow">openInNewWindow</a></li><li data-type='method'><a href="Api.Browser.html#reload">reload</a></li><li data-type='method'><a href="Api.Browser.html#setHash">setHash</a></li><li data-type='method'><a href="Api.Browser.html#setTitle">setTitle</a></li><li data-type='method'><a href="Api.Browser.html#setupHashHandler">setupHashHandler</a></li></ul></li><li><a href="Api.Concept.html"><span class="member-of">Api.</span>Concept</a><ul class='methods'><li data-type='method'><a href="Api.Concept.html#.getDefinitionForType">getDefinitionForType</a></li><li data-type='method'><a href="Api.Concept.html#.setDefinitionDependingOnArrayOrObject">setDefinitionDependingOnArrayOrObject</a></li></ul></li><li><a href="Api.Document.html"><span class="member-of">Api.</span>Document</a><ul class='methods'><li data-type='method'><a href="Api.Document.html#deleteNode">deleteNode</a></li><li data-type='method'><a href="Api.Document.html#getDocumentNodes">getDocumentNodes</a></li><li data-type='method'><a href="Api.Document.html#getPreviousNode">getPreviousNode</a></li><li data-type='method'><a href="Api.Document.html#insertBlockNode">insertBlockNode</a></li><li data-type='method'><a href="Api.Document.html#insertInlineNode">insertInlineNode</a></li><li data-type='method'><a href="Api.Document.html#triggerFetchResourceNode">triggerFetchResourceNode</a></li></ul></li><li><a href="Api.Events.html"><span class="member-of">Api.</span>Events</a><ul class='methods'><li data-type='method'><a href="Api.Events.html#_triggerEvent">_triggerEvent</a></li><li data-type='method'><a href="Api.Events.html#documentChanged">documentChanged</a></li><li data-type='method'><a href="Api.Events.html#documentSaved">documentSaved</a></li><li data-type='method'><a href="Api.Events.html#documentSaveFailed">documentSaveFailed</a></li><li data-type='method'><a href="Api.Events.html#off">off</a></li><li data-type='method'><a href="Api.Events.html#on">on</a></li><li data-type='method'><a href="Api.Events.html#onDocumentStartSaving">onDocumentStartSaving</a></li></ul></li><li><a href="Api.History.html"><span class="member-of">Api.</span>History</a><ul class='methods'><li data-type='method'><a href="Api.History.html#cleanOldVersions">cleanOldVersions</a></li><li data-type='method'><a href="Api.History.html#cleanVersionsOlderThanMaxDays">cleanVersionsOlderThanMaxDays</a></li><li data-type='method'><a href="Api.History.html#deleteHistory">deleteHistory</a></li><li data-type='method'><a href="Api.History.html#get">get</a></li><li data-type='method'><a href="Api.History.html#getHistory">getHistory</a></li><li data-type='method'><a href="Api.History.html#isAvailable">isAvailable</a></li><li data-type='method'><a href="Api.History.html#saveHistory">saveHistory</a></li></ul></li><li><a href="Api.NewsItem.html"><span class="member-of">Api.</span>NewsItem</a><ul class='methods'><li data-type='method'><a href="Api.NewsItem.html#addAuthor">addAuthor</a></li><li data-type='method'><a href="Api.NewsItem.html#addCategory">addCategory</a></li><li data-type='method'><a href="Api.NewsItem.html#addChannel">addChannel</a></li><li data-type='method'><a href="Api.NewsItem.html#addConceptProfile">addConceptProfile</a></li><li data-type='method'><a href="Api.NewsItem.html#addContentMetaLink">addContentMetaLink</a></li><li data-type='method'><a href="Api.NewsItem.html#addContentProfile">addContentProfile</a></li><li data-type='method'><a href="Api.NewsItem.html#addLink">addLink</a></li><li data-type='method'><a href="Api.NewsItem.html#addLocation">addLocation</a></li><li data-type='method'><a href="Api.NewsItem.html#addSimpleAuthor">addSimpleAuthor</a></li><li data-type='method'><a href="Api.NewsItem.html#addStory">addStory</a></li><li data-type='method'><a href="Api.NewsItem.html#addTag">addTag</a></li><li data-type='method'><a href="Api.NewsItem.html#createNewsPriority">createNewsPriority</a></li><li data-type='method'><a href="Api.NewsItem.html#getAuthors">getAuthors</a></li><li data-type='method'><a href="Api.NewsItem.html#getCategories">getCategories</a></li><li data-type='method'><a href="Api.NewsItem.html#getChannels">getChannels</a></li><li data-type='method'><a href="Api.NewsItem.html#getContentCreated">getContentCreated</a></li><li data-type='method'><a href="Api.NewsItem.html#getContentMetaLinkByType">getContentMetaLinkByType</a></li><li data-type='method'><a href="Api.NewsItem.html#getContentMetaObjectById">getContentMetaObjectById</a></li><li data-type='method'><a href="Api.NewsItem.html#getContentMetaObjectsByType">getContentMetaObjectsByType</a></li><li data-type='method'><a href="Api.NewsItem.html#getContentModified">getContentModified</a></li><li data-type='method'><a href="Api.NewsItem.html#getContentProfiles">getContentProfiles</a></li><li data-type='method'><a href="Api.NewsItem.html#getEdNote">getEdNote</a></li><li data-type='method'><a href="Api.NewsItem.html#getFirstCreated">getFirstCreated</a></li><li data-type='method'><a href="Api.NewsItem.html#getGuid">getGuid</a></li><li data-type='method'><a href="Api.NewsItem.html#getIdForArticle">getIdForArticle</a></li><li data-type='method'><a href="Api.NewsItem.html#getLinkByType">getLinkByType</a></li><li data-type='method'><a href="Api.NewsItem.html#getLinkByTypeAndRel">getLinkByTypeAndRel</a></li><li data-type='method'><a href="Api.NewsItem.html#getLinksByType">getLinksByType</a></li><li data-type='method'><a href="Api.NewsItem.html#getLocations">getLocations</a></li><li data-type='method'><a href="Api.NewsItem.html#getMainChannel">getMainChannel</a></li><li data-type='method'><a href="Api.NewsItem.html#getNewspilotArticleId">getNewspilotArticleId</a></li><li data-type='method'><a href="Api.NewsItem.html#getNewsPriority">getNewsPriority</a></li><li data-type='method'><a href="Api.NewsItem.html#getPubStart">getPubStart</a></li><li data-type='method'><a href="Api.NewsItem.html#getPubStatus">getPubStatus</a></li><li data-type='method'><a href="Api.NewsItem.html#getPubStop">getPubStop</a></li><li data-type='method'><a href="Api.NewsItem.html#getSection">getSection</a></li><li data-type='method'><a href="Api.NewsItem.html#getSections">getSections</a></li><li data-type='method'><a href="Api.NewsItem.html#getStories">getStories</a></li><li data-type='method'><a href="Api.NewsItem.html#getTags">getTags</a></li><li data-type='method'><a href="Api.NewsItem.html#getTemporaryId">getTemporaryId</a></li><li data-type='method'><a href="Api.NewsItem.html#getVersionCreated">getVersionCreated</a></li><li data-type='method'><a href="Api.NewsItem.html#hasTemporaryId">hasTemporaryId</a></li><li data-type='method'><a href="Api.NewsItem.html#invalidate">invalidate</a></li><li data-type='method'><a href="Api.NewsItem.html#removeAuthorByTitle">removeAuthorByTitle</a></li><li data-type='method'><a href="Api.NewsItem.html#removeAuthorByUUID">removeAuthorByUUID</a></li><li data-type='method'><a href="Api.NewsItem.html#removeChannel">removeChannel</a></li><li data-type='method'><a href="Api.NewsItem.html#removeContentMetaObject">removeContentMetaObject</a></li><li data-type='method'><a href="Api.NewsItem.html#removeLinkByUUID">removeLinkByUUID</a></li><li data-type='method'><a href="Api.NewsItem.html#removeLinkByUUIDAndRel">removeLinkByUUIDAndRel</a></li><li data-type='method'><a href="Api.NewsItem.html#removeLinkContentMetaByTypeAndMatchingFilter">removeLinkContentMetaByTypeAndMatchingFilter</a></li><li data-type='method'><a href="Api.NewsItem.html#removeLinkContentMetaByTypeAndRel">removeLinkContentMetaByTypeAndRel</a></li><li data-type='method'><a href="Api.NewsItem.html#removePubStart">removePubStart</a></li><li data-type='method'><a href="Api.NewsItem.html#removePubStop">removePubStop</a></li><li data-type='method'><a href="Api.NewsItem.html#removeSection">removeSection</a></li><li data-type='method'><a href="Api.NewsItem.html#save">save</a></li><li data-type='method'><a href="Api.NewsItem.html#setContentMetaObject">setContentMetaObject</a></li><li data-type='method'><a href="Api.NewsItem.html#setEdNote">setEdNote</a></li><li data-type='method'><a href="Api.NewsItem.html#setGuid">setGuid</a></li><li data-type='method'><a href="Api.NewsItem.html#setNewsPriority">setNewsPriority</a></li><li data-type='method'><a href="Api.NewsItem.html#setPubStart">setPubStart</a></li><li data-type='method'><a href="Api.NewsItem.html#setPubStatus">setPubStatus</a></li><li data-type='method'><a href="Api.NewsItem.html#setPubStop">setPubStop</a></li><li data-type='method'><a href="Api.NewsItem.html#setSource">setSource</a></li><li data-type='method'><a href="Api.NewsItem.html#setTemporaryId">setTemporaryId</a></li><li data-type='method'><a href="Api.NewsItem.html#updateAuthorWithUUID">updateAuthorWithUUID</a></li><li data-type='method'><a href="Api.NewsItem.html#updateConceptProfile">updateConceptProfile</a></li><li data-type='method'><a href="Api.NewsItem.html#updateContentProfile">updateContentProfile</a></li><li data-type='method'><a href="Api.NewsItem.html#updateLocation">updateLocation</a></li><li data-type='method'><a href="Api.NewsItem.html#updateSection">updateSection</a></li><li data-type='method'><a href="Api.NewsItem.html#updateStory">updateStory</a></li><li data-type='method'><a href="Api.NewsItem.html#updateTag">updateTag</a></li></ul></li><li><a href="Api.Router.html"><span class="member-of">Api.</span>Router</a><ul class='methods'><li data-type='method'><a href="Api.Router.html#checkForOKStatus">checkForOKStatus</a></li><li data-type='method'><a href="Api.Router.html#createConceptItem">createConceptItem</a></li><li data-type='method'><a href="Api.Router.html#get">get</a></li><li data-type='method'><a href="Api.Router.html#getConceptItem">getConceptItem</a></li><li data-type='method'><a href="Api.Router.html#getEndpoint">getEndpoint</a></li><li data-type='method'><a href="Api.Router.html#getNewsItem">getNewsItem</a></li><li data-type='method'><a href="Api.Router.html#getQuerystringFromParameters">getQuerystringFromParameters</a></li><li data-type='method'><a href="Api.Router.html#getRequestPropertiesForMethod">getRequestPropertiesForMethod</a></li><li data-type='method'><a href="Api.Router.html#post">post</a></li><li data-type='method'><a href="Api.Router.html#postBinary">postBinary</a></li><li data-type='method'><a href="Api.Router.html#proxy">proxy</a></li><li data-type='method'><a href="Api.Router.html#put">put</a></li><li data-type='method'><a href="Api.Router.html#toJson">toJson</a></li><li data-type='method'><a href="Api.Router.html#updateConceptItem">updateConceptItem</a></li></ul></li><li><a href="Api.Settings.html"><span class="member-of">Api.</span>Settings</a><ul class='methods'><li data-type='method'><a href="Api.Settings.html#delete">delete</a></li><li data-type='method'><a href="Api.Settings.html#get">get</a></li><li data-type='method'><a href="Api.Settings.html#getAllSettings">getAllSettings</a></li><li data-type='method'><a href="Api.Settings.html#isAvailable">isAvailable</a></li><li data-type='method'><a href="Api.Settings.html#set">set</a></li></ul></li><li><a href="Api.Ui.html"><span class="member-of">Api.</span>Ui</a><ul class='methods'><li data-type='method'><a href="Api.Ui.html#getComponent">getComponent</a></li><li data-type='method'><a href="Api.Ui.html#showDialog">showDialog</a></li><li data-type='method'><a href="Api.Ui.html#showMessageDialog">showMessageDialog</a></li><li data-type='method'><a href="Api.Ui.html#showNotification">showNotification</a></li></ul></li><li><a href="Api.Upload.html"><span class="member-of">Api.</span>Upload</a><ul class='methods'><li data-type='method'><a href="Api.Upload.html#uploadFile">uploadFile</a></li></ul></li><li><a href="Component.AvatarComponent.html"><span class="member-of">Component.</span>AvatarComponent</a><ul class='methods'><li data-type='method'><a href="Component.AvatarComponent.html#loadAvatarUrlForAvatarId">loadAvatarUrlForAvatarId</a></li></ul></li><li><a href="Component.BylineComponent.html"><span class="member-of">Component.</span>BylineComponent</a></li><li><a href="Component.DatetimeFieldEditorComponent.html"><span class="member-of">Component.</span>DatetimeFieldEditorComponent</a></li><li><a href="Component.DialogComponent.html"><span class="member-of">Component.</span>DialogComponent</a><ul class='methods'><li data-type='method'><a href="Component.DialogComponent.html#changeModalHeight">changeModalHeight</a></li></ul></li><li><a href="Component.DialogImageComponent.html"><span class="member-of">Component.</span>DialogImageComponent</a><ul class='methods'><li data-type='method'><a href="Component.DialogImageComponent.html#renderAuthor">renderAuthor</a></li><li data-type='method'><a href="Component.DialogImageComponent.html#saveImageData">saveImageData</a></li><li data-type='method'><a href="Component.DialogImageComponent.html#syncPhotoDate">syncPhotoDate</a></li></ul></li><li><a href="Component.FieldEditorComponent.html"><span class="member-of">Component.</span>FieldEditorComponent</a></li><li><a href="Component.FormAddComponent.html"><span class="member-of">Component.</span>FormAddComponent</a></li><li><a href="Component.FormSearchComponent.html"><span class="member-of">Component.</span>FormSearchComponent</a></li><li><a href="Component.InlineImageComponent.html"><span class="member-of">Component.</span>InlineImageComponent</a></li><li><a href="Component.LinkComponent.html"><span class="member-of">Component.</span>LinkComponent</a></li><li><a href="Component.Notification.html"><span class="member-of">Component.</span>Notification</a></li><li><a href="Component.NotificationListComponent.html"><span class="member-of">Component.</span>NotificationListComponent</a></li><li><a href="Component.PlaceholderComponent.html"><span class="member-of">Component.</span>PlaceholderComponent</a></li><li><a href="Component.SelectComponent.html"><span class="member-of">Component.</span>SelectComponent</a><ul class='methods'><li data-type='method'><a href="Component.SelectComponent.html#renderButtonList">renderButtonList</a></li><li data-type='method'><a href="Component.SelectComponent.html#renderDropDownList">renderDropDownList</a></li><li data-type='method'><a href="Component.SelectComponent.html#renderList">renderList</a></li><li data-type='method'><a href="Component.SelectComponent.html#renderToggleList">renderToggleList</a></li></ul></li><li><a href="Component.ToggleComponent.html"><span class="member-of">Component.</span>ToggleComponent</a></li><li><a href="Component.TooltipComponent.html"><span class="member-of">Component.</span>TooltipComponent</a></li><li><a href="ConfigEditorComponent.html">ConfigEditorComponent</a></li><li><a href="NewsMLArticle.html">NewsMLArticle</a></li><li><a href="NewsMLImporter.html">NewsMLImporter</a><ul class='methods'><li data-type='method'><a href="NewsMLImporter.html#getFirstElementWithTypeElement">getFirstElementWithTypeElement</a></li></ul></li><li><a href="NotFoundException.html">NotFoundException</a></li><li><a href="PluginManager.html">PluginManager</a><ul class='methods'><li data-type='method'><a href="PluginManager.html#_getValue">_getValue</a></li><li data-type='method'><a href="PluginManager.html#appendPluginScripts">appendPluginScripts</a></li><li data-type='method'><a href="PluginManager.html#getListOfPlugins">getListOfPlugins</a></li><li data-type='method'><a href="PluginManager.html#load">load</a></li><li data-type='method'><a href="PluginManager.html#registerPlugin">registerPlugin</a></li><li data-type='method'><a href="PluginManager.html#validatePluginPackage">validatePluginPackage</a></li></ul></li><li><a href="Validator.html">Validator</a><ul class='methods'><li data-type='method'><a href="Validator.html#addError">addError</a></li><li data-type='method'><a href="Validator.html#addInfo">addInfo</a></li><li data-type='method'><a href="Validator.html#addWarning">addWarning</a></li><li data-type='method'><a href="Validator.html#getMessages">getMessages</a></li><li data-type='method'><a href="Validator.html#hasMessages">hasMessages</a></li></ul></li></ul><h3>Externals</h3><ul class=externals><li><a href="external-Substance.html">Substance</a></li></ul><h3>Global</h3><ul><li><a href="global.html#removeControlCodes">removeControlCodes</a></li><li><a href="global.html#removeEmptyNamespaces">removeEmptyNamespaces</a></li></ul>
+</nav>
+
+<div id="main">
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import {Configurator, Component} from 'substance'
+import NPKeyboardManager from './NPKeyboardManager'
+import LabelProvider from './LabelProvider'
+import Validator from './Validator'
+import 'whatwg-fetch'
+
+class NPWriterConfigurator extends Configurator {
+
+    constructor(...args) {
+        super(...args)
+
+        // Copy of original config loaded from server
+        this.originalConfig = null
+        this.originalConfigOverridden = false
+
+        this.config.textEditComponents = []
+        this.config.popovers = []
+        this.config.topBarComponents = []
+        this.config.validators = []
+        this.config.hooks = []
+        this.config.sidebarTopBar = []
+        this.config.sidebarTabs = []
+        this.config.sidebarPanels = []
+        this.config.uis = new Map()
+        this.config.pluginHandlers = {}
+        this.config.modules = {
+            provided: {},
+            targeted: {}
+        }
+        this.config.configItems = {}
+        this.config.conflictResolvers = new Map()
+        this.npKeyboardManager = new NPKeyboardManager()
+    }
+
+    /**
+     * @Todo Handle how to configure writer.json
+     * @returns {LabelProvider}
+     */
+    getLabelProvider() {
+        let labelLanguage = 'en'
+        if (this.config.writerConfigFile &amp;&amp; this.config.writerConfigFile.labelLanguage) {
+            labelLanguage = this.config.writerConfigFile.labelLanguage
+        }
+
+        if (!this.labelProvider) {
+            this.labelProvider = new LabelProvider(this.config.labels, labelLanguage)
+        }
+        return this.labelProvider
+
+    }
+
+    /**
+     * Get current configured locale
+     */
+    getLocale() {
+        if (!this.config.writerConfigFile.language) {
+            return 'en_US'
+        }
+
+        return this.config.writerConfigFile.language
+    }
+
+    getPluginLoadTimeout() {
+        return (this.config &amp;&amp; this.config.writerConfigFile &amp;&amp; this.config.writerConfigFile.pluginLoadTimeout) || 5000
+    }
+
+    /**
+     * Register a plugin provided module (class) that can be used to export
+     * specific plugin functionality to other plugins. If a consumerPluginId
+     * is provided only that plugin will consume, or use, this module. This
+     * is used for when a plugin provides well defined extension points.
+     *
+     * @param {string} Provided module id
+     * @param {object} Actual module
+     * @param {object} Optional target id that identifieds the consumer of this module
+     */
+    addPluginModule(moduleId, module, targetId) {
+        if (!targetId) {
+            this.config.modules.provided[moduleId] = module
+        }
+        else {
+            const targeted = this.config.modules.targeted
+            module.__namespace = moduleId
+            if (!targeted[targetId]) {
+                targeted[targetId] = {}
+            }
+
+            targeted[targetId][moduleId] = module
+        }
+    }
+
+    /**
+     * Return a fresh instance of a specific plugin provided module
+     *
+     * @param {string} Module id
+     * @param {string} Name of the module
+     *
+     * @return {object}
+     */
+    getPluginModule(moduleId) {
+        if (!this.config.modules.provided[moduleId]) {
+            return null
+        }
+
+        const module = this.config.modules.provided[moduleId]
+        if (typeof module === 'function' &amp;&amp; /^\s*class\s+/.test(module.toString())) { // Is class
+            return new module(this)
+        }
+        else {
+            return module
+        }
+    }
+
+    /**
+     * Get modules targeted at a specific consumer
+     *
+     * @param {string} Target id of the consumer
+     */
+    getPluginModulesForTarget(targetId) {
+        const modules = []
+
+        if (!this.config.modules.targeted[targetId]) {
+            return null
+        }
+
+        let moduleId = null
+        for (moduleId in this.config.modules.targeted[targetId]) {
+            const module = this.config.modules.targeted[targetId][moduleId]
+
+            if (typeof module === 'function' &amp;&amp; /^\s*class\s+/.test(module.toString())) { // Is class
+                if (Object.getPrototypeOf(module).name === 'Component') {
+                    modules.push(module)
+                }
+                else {
+                    modules.push(new module(this))
+                }
+            }
+            else {
+                modules.push(module)
+            }
+        }
+
+        return modules
+    }
+
+    /**
+     * Add a substance Component in a popover that is triggered by an
+     * icon in the top bar.
+     *
+     * @param {string} id Package id
+     * @param {object} def Definition for the popover trigger icon or button
+     * @param {Component} component Substance component
+     *
+     * @example
+     * config.addPopover(
+     *      'mypopover-2001',     // Unique id for this popover
+     *      {
+     *          icon: 'fa-plane', // Font awesome icon class or image url
+     *          align: 'left'     // Left or right aligned
+     *      },
+     *      AboutComponent        // Component to render in popover
+     * )
+     */
+    addPopover(id, def, component) {
+        def.align = def.align === 'left' ? 'left' : 'right'
+        def.button = def.button || false
+
+        if (!def.icon) {
+            throw new Error('Popover trigger must have a default icon')
+        }
+
+        // Props handed over to popover when created
+        this.config.topBarComponents.push({
+            id: id,
+            type: 'popover',
+            icon: def.icon,
+            button: def.button,
+            align: def.align,
+            sticky: def.sticky || false,
+            css: def.css || {},
+            component: component
+        })
+    }
+
+    /**
+     * Add a substance Component that is displayed in the top bar.
+     *
+     * @param {string} id Package id
+     * @param {object} def Definition top bar component
+     * @param {Component} component Substance component
+     *
+     * @example
+     * config.addTopBarComponent(
+     *      'mytopbarcomponent-2001',     // Unique id for this popover
+     *      {
+     *          align: 'left'     // Left or right aligned
+     *      },
+     *      AboutComponent        // Component to render in popover
+     * )
+     */
+    addTopBarComponent(id, def, component) {
+        def.align = def.align === 'left' ? 'left' : 'right'
+
+        // Props handed over to popover when created
+        this.config.topBarComponents.push({
+            id: id,
+            type: 'component',
+            align: def.align,
+            component: component
+        })
+    }
+
+    /**
+     * Adds a tab to the right sidebar
+     * @param id
+     * @param name
+     */
+    addSidebarTab(id, name) {
+        if (!this.config.sidebarTabs.find((tab) => {return tab.id === id})) {
+            this.config.sidebarTabs.push({
+                id: id,
+                name: name
+            })
+        }
+    }
+
+    /**
+     * Adds a Substance Component to a a panel by specifying the tabId
+     * @param id
+     * @param tabId
+     * @param component
+     * @param {object} pluginConfigObject Pass the plugin config object
+     */
+    addComponentToSidebarWithTabId(id, tabId, component, pluginConfigObject) {
+        if (typeof component.render !== 'function') {
+            throw new Error('Ui must be an instance of Component and have a render function')
+        }
+
+        this.addComponent(id + "-tab", component)
+        this.config.sidebarPanels.push({
+            id: id,
+            tabId: tabId,
+            component: component,
+            pluginConfigObject: pluginConfigObject,
+            getCSSFriendlyName: () => {
+                return id.replace(/\./g, '-')
+            }
+        })
+    }
+
+
+    /**
+     * Returns a registered sidebarPanels
+     * @returns {Array}
+     */
+    getSidebarPanels() {
+        return this.config.sidebarPanels
+    }
+
+
+    addComponentToSidebarTop(pluginId, component) {
+        this.addComponent(pluginId + "-topbar", component)
+
+        this.config.sidebarTopBar.push({
+            id: pluginId,
+            component: component,
+            getCSSFriendlyName: () => {
+                return pluginId.replace(/\./g, '-')
+            }
+
+        })
+    }
+
+    /**
+     * Add validator class to list of validators run when saving an article
+     * @param {class} pluginValidator
+     */
+    addValidator(Validator) {
+        for (let n = 0; n &lt; this.config.validators.length; n++) {
+            if (this.config.validators[n].name === Validator.name) {
+                return
+            }
+        }
+
+        this.config.validators.push(Validator)
+    }
+
+    /**
+     * Return an array with all registered validators
+     * @return {Array}
+     */
+    getValidators() {
+        return this.config.validators
+    }
+
+
+    /**
+     * Adds a action class provided by plugin for a certain hook
+     * @param {string} hookName
+     * @param pluginHook
+     */
+    addHook(hookName, pluginHook) {
+        for (let n = 0; n &lt; this.config.hooks.length; n++) {
+            if (this.config.hooks[n].name === hookName) {
+                return
+            }
+        }
+
+        this.config.hooks.push({
+            name: hookName,
+            hook: pluginHook
+        })
+    }
+
+    /**
+     * Get all registered hooks for a name
+     * @param {string} name
+     * @returns {Array.&lt;*>}
+     */
+    getHooksForName(name) {
+        return this.config.hooks.filter((hook) => {
+            return hook.name === name
+        })
+    }
+
+
+    /**
+     * Register a conflict resolver in the writer.
+     * The conflict resolver will be called when the server responds with &lt;pre>409 Conflict&lt;/pre>
+     * when an article is saved.
+     * @param resolver The resolver
+     */
+    registerConflictHandler(reason, resolver) {
+        this.config.conflictResolvers.set(reason, resolver)
+    }
+
+    getConflictHandler(reason) {
+        return this.config.conflictResolvers.get(reason)
+    }
+
+    /**
+     * Add fileproxy to handle binaries of a certain type
+     * @param {class} FileProxyClass
+     */
+    addFileProxy(FileProxyClass) {
+        for (let n = 0; n &lt; this.config.fileProxies.length; n++) {
+            if (this.config.fileProxies[n].name === FileProxyClass.name) {
+                return
+            }
+        }
+
+        super.addFileProxy(FileProxyClass)
+    }
+
+    /**
+     * Add keyboard shortcut and connect to a command
+     * @param {string} combo Key combination, ie "cmd+alt+h"
+     * @param {object} spec Command to run ie "{command: Mycommand}"
+     * @param {bool} globalCombo Optional, if true key combination works outside the editor surface
+     */
+    addKeyboardShortcut(combo, spec, globalCombo) {
+        if (globalCombo === true) {
+            this.npKeyboardManager.addKeyboardShortcut(combo, spec)
+        }
+        else {
+            super.addKeyboardShortcut(combo, spec)
+        }
+    }
+
+    /**
+     * Loads /api/config endpoint and stores it in configurator. Checks if
+     * http status code is 200 otherwise throw an exception. Stores a copy
+     * of the originally loaded configuration as comparison if the config
+     * is overridden in a later stage.
+     *
+     * @param {string} configURL The URL to the config endpoint
+     * @returns {Promise.&lt;TResult>|*}
+     * @throws Error
+     */
+    loadWriterConfiguration(configURL) {
+        return fetch(configURL, {
+            credentials: "same-origin"
+        })
+        .then((response) => {
+            if (response.status === 200) {
+                return response
+            }
+            else {
+                var error = new Error("Failed to load config file")
+                error.response = response
+                throw error
+            }
+        })
+        .then(response => response.json())
+        .then((json) => {
+            // Force deep copies of configuration loaded from server
+            const strJson = JSON.stringify(json)
+            this.originalConfig = JSON.parse(strJson)
+            this.config.writerConfigFile = JSON.parse(strJson)
+
+            return this.config.writerConfigFile
+        })
+    }
+
+    /**
+     * Set the configuration json to specified configuration
+     *
+     * @param {object} config Configuration object structure
+     */
+    setWriterConfiguration(config) {
+        this.config.writerConfigFile = config
+        this.originalConfigOverridden = true
+    }
+
+    /**
+     * Fetch current configuration structure.
+     * @param {boolean} originalOnly Optional, if set to true return only the original loaded from server
+     * @return {object} The configuration structure
+     */
+    getWriterConfiguration(originalOnly = false) {
+        if (originalOnly) {
+            return this.originalConfig
+        }
+
+        return this.config.writerConfigFile
+    }
+
+    /**
+     * Returns the newsItemTemplateId from the configFile
+     * @returns {*}
+     */
+    getNewsItemTemplateId() {
+        try {
+            return this.config.writerConfigFile.newsItemTemplateId
+        }
+        catch (_) {
+            throw new Error('Could not find newsItemTemplateId in configuration')
+        }
+
+    }
+
+    // Custom tools registration
+
+    /**
+     * Adds a tool component to the content menu, aka. pen icon
+     * @param toolName
+     * @param ToolClass
+     */
+    addContentMenuTool(toolName, ToolClass) {
+        const options = {
+            toolGroup: 'content-menu'
+        }
+
+        super.addTool(toolName, ToolClass, options)
+    }
+
+    addContentMenuTopTool(toolName, ToolClass) {
+        const options = {
+            toolGroup: 'content-top-menu'
+        }
+
+        super.addTool(toolName, ToolClass, options)
+    }
+
+    addContextMenuTool(toolName, ToolClass) {
+        const options = {
+            toolGroup: 'context-menu-primary'
+        }
+
+        super.addTool(toolName, ToolClass, options)
+    }
+
+    /**
+     * Adds a tool that will displayed in overlay/annotations
+     * @param toolName
+     * @param ToolClass
+     */
+    addOverlayTool(toolName, ToolClass) {
+        const options = {
+            toolGroup: 'overlay'
+        }
+
+        super.addTool(toolName, ToolClass, options)
+    }
+
+    addConfigItem(key, options) {
+        if(!this.config.configItems[key]) {
+            this.config.configItems[key] = []
+        }
+        this.config.configItems[key].push(options)
+    }
+
+
+    /**
+     * Adds a text edit component placed above or below the editor
+     * Will be exported into the header group in IDF section
+     * @param name
+     * @param componentClass
+     */
+    addTextEditComponent(nodeType, componentClass, options) {
+
+        this.config.textEditComponents.push({
+            nodeType: nodeType,
+            componentClass: componentClass,
+            options: options
+        })
+
+        super.addComponent(nodeType, componentClass)
+    }
+
+    getTextEditComponents() {
+        return this.config.textEditComponents
+    }
+
+}
+
+export default NPWriterConfigurator
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Fri Nov 24 2017 09:13:07 GMT+0100 (CET) using a modified version of the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+<!-- <script src="scripts/prism.js"></script> -->
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

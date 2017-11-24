@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>api/Api.js - Documentation</title>
+    <script src="scripts/prettify/prettify.js"></script>
+    <!-- <link rel="stylesheet" href="styles/prism.css"> -->
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul class=namespaces><li><a href="Api.html">Api</a></li><li><a href="Component.html">Component</a></li></ul><h3>Classes</h3><ul class=classes><li><a href="Api.html">Api</a><ul class='methods'><li data-type='method'><a href="Api.html#call">call</a></li><li data-type='method'><a href="Api.html#executeHook">executeHook</a></li><li data-type='method'><a href="Api.html#getConfigValue">getConfigValue</a></li><li data-type='method'><a href="Api.html#getPluginModule">getPluginModule</a></li><li data-type='method'><a href="Api.html#getPluginModulesForTarget">getPluginModulesForTarget</a></li><li data-type='method'><a href="Api.html#hasLocalConfiguration">hasLocalConfiguration</a></li><li data-type='method'><a href="Api.html#init">init</a></li></ul></li><li><a href="Api.Article.html"><span class="member-of">Api.</span>Article</a><ul class='methods'><li data-type='method'><a href="Api.Article.html#clear">clear</a></li><li data-type='method'><a href="Api.Article.html#copy">copy</a></li></ul></li><li><a href="Api.Browser.html"><span class="member-of">Api.</span>Browser</a><ul class='methods'><li data-type='method'><a href="Api.Browser.html#addExternalScript">addExternalScript</a></li><li data-type='method'><a href="Api.Browser.html#getHash">getHash</a></li><li data-type='method'><a href="Api.Browser.html#getUrl">getUrl</a></li><li data-type='method'><a href="Api.Browser.html#isSupported">isSupported</a></li><li data-type='method'><a href="Api.Browser.html#openInNewWindow">openInNewWindow</a></li><li data-type='method'><a href="Api.Browser.html#reload">reload</a></li><li data-type='method'><a href="Api.Browser.html#setHash">setHash</a></li><li data-type='method'><a href="Api.Browser.html#setTitle">setTitle</a></li><li data-type='method'><a href="Api.Browser.html#setupHashHandler">setupHashHandler</a></li></ul></li><li><a href="Api.Concept.html"><span class="member-of">Api.</span>Concept</a><ul class='methods'><li data-type='method'><a href="Api.Concept.html#.getDefinitionForType">getDefinitionForType</a></li><li data-type='method'><a href="Api.Concept.html#.setDefinitionDependingOnArrayOrObject">setDefinitionDependingOnArrayOrObject</a></li></ul></li><li><a href="Api.Document.html"><span class="member-of">Api.</span>Document</a><ul class='methods'><li data-type='method'><a href="Api.Document.html#deleteNode">deleteNode</a></li><li data-type='method'><a href="Api.Document.html#getDocumentNodes">getDocumentNodes</a></li><li data-type='method'><a href="Api.Document.html#getPreviousNode">getPreviousNode</a></li><li data-type='method'><a href="Api.Document.html#insertBlockNode">insertBlockNode</a></li><li data-type='method'><a href="Api.Document.html#insertInlineNode">insertInlineNode</a></li><li data-type='method'><a href="Api.Document.html#triggerFetchResourceNode">triggerFetchResourceNode</a></li></ul></li><li><a href="Api.Events.html"><span class="member-of">Api.</span>Events</a><ul class='methods'><li data-type='method'><a href="Api.Events.html#_triggerEvent">_triggerEvent</a></li><li data-type='method'><a href="Api.Events.html#documentChanged">documentChanged</a></li><li data-type='method'><a href="Api.Events.html#documentSaved">documentSaved</a></li><li data-type='method'><a href="Api.Events.html#documentSaveFailed">documentSaveFailed</a></li><li data-type='method'><a href="Api.Events.html#off">off</a></li><li data-type='method'><a href="Api.Events.html#on">on</a></li><li data-type='method'><a href="Api.Events.html#onDocumentStartSaving">onDocumentStartSaving</a></li></ul></li><li><a href="Api.History.html"><span class="member-of">Api.</span>History</a><ul class='methods'><li data-type='method'><a href="Api.History.html#cleanOldVersions">cleanOldVersions</a></li><li data-type='method'><a href="Api.History.html#cleanVersionsOlderThanMaxDays">cleanVersionsOlderThanMaxDays</a></li><li data-type='method'><a href="Api.History.html#deleteHistory">deleteHistory</a></li><li data-type='method'><a href="Api.History.html#get">get</a></li><li data-type='method'><a href="Api.History.html#getHistory">getHistory</a></li><li data-type='method'><a href="Api.History.html#isAvailable">isAvailable</a></li><li data-type='method'><a href="Api.History.html#saveHistory">saveHistory</a></li></ul></li><li><a href="Api.NewsItem.html"><span class="member-of">Api.</span>NewsItem</a><ul class='methods'><li data-type='method'><a href="Api.NewsItem.html#addAuthor">addAuthor</a></li><li data-type='method'><a href="Api.NewsItem.html#addCategory">addCategory</a></li><li data-type='method'><a href="Api.NewsItem.html#addChannel">addChannel</a></li><li data-type='method'><a href="Api.NewsItem.html#addConceptProfile">addConceptProfile</a></li><li data-type='method'><a href="Api.NewsItem.html#addContentMetaLink">addContentMetaLink</a></li><li data-type='method'><a href="Api.NewsItem.html#addContentProfile">addContentProfile</a></li><li data-type='method'><a href="Api.NewsItem.html#addLink">addLink</a></li><li data-type='method'><a href="Api.NewsItem.html#addLocation">addLocation</a></li><li data-type='method'><a href="Api.NewsItem.html#addSimpleAuthor">addSimpleAuthor</a></li><li data-type='method'><a href="Api.NewsItem.html#addStory">addStory</a></li><li data-type='method'><a href="Api.NewsItem.html#addTag">addTag</a></li><li data-type='method'><a href="Api.NewsItem.html#createNewsPriority">createNewsPriority</a></li><li data-type='method'><a href="Api.NewsItem.html#getAuthors">getAuthors</a></li><li data-type='method'><a href="Api.NewsItem.html#getCategories">getCategories</a></li><li data-type='method'><a href="Api.NewsItem.html#getChannels">getChannels</a></li><li data-type='method'><a href="Api.NewsItem.html#getContentCreated">getContentCreated</a></li><li data-type='method'><a href="Api.NewsItem.html#getContentMetaLinkByType">getContentMetaLinkByType</a></li><li data-type='method'><a href="Api.NewsItem.html#getContentMetaObjectById">getContentMetaObjectById</a></li><li data-type='method'><a href="Api.NewsItem.html#getContentMetaObjectsByType">getContentMetaObjectsByType</a></li><li data-type='method'><a href="Api.NewsItem.html#getContentModified">getContentModified</a></li><li data-type='method'><a href="Api.NewsItem.html#getContentProfiles">getContentProfiles</a></li><li data-type='method'><a href="Api.NewsItem.html#getEdNote">getEdNote</a></li><li data-type='method'><a href="Api.NewsItem.html#getFirstCreated">getFirstCreated</a></li><li data-type='method'><a href="Api.NewsItem.html#getGuid">getGuid</a></li><li data-type='method'><a href="Api.NewsItem.html#getIdForArticle">getIdForArticle</a></li><li data-type='method'><a href="Api.NewsItem.html#getLinkByType">getLinkByType</a></li><li data-type='method'><a href="Api.NewsItem.html#getLinkByTypeAndRel">getLinkByTypeAndRel</a></li><li data-type='method'><a href="Api.NewsItem.html#getLinksByType">getLinksByType</a></li><li data-type='method'><a href="Api.NewsItem.html#getLocations">getLocations</a></li><li data-type='method'><a href="Api.NewsItem.html#getMainChannel">getMainChannel</a></li><li data-type='method'><a href="Api.NewsItem.html#getNewspilotArticleId">getNewspilotArticleId</a></li><li data-type='method'><a href="Api.NewsItem.html#getNewsPriority">getNewsPriority</a></li><li data-type='method'><a href="Api.NewsItem.html#getPubStart">getPubStart</a></li><li data-type='method'><a href="Api.NewsItem.html#getPubStatus">getPubStatus</a></li><li data-type='method'><a href="Api.NewsItem.html#getPubStop">getPubStop</a></li><li data-type='method'><a href="Api.NewsItem.html#getSection">getSection</a></li><li data-type='method'><a href="Api.NewsItem.html#getSections">getSections</a></li><li data-type='method'><a href="Api.NewsItem.html#getStories">getStories</a></li><li data-type='method'><a href="Api.NewsItem.html#getTags">getTags</a></li><li data-type='method'><a href="Api.NewsItem.html#getTemporaryId">getTemporaryId</a></li><li data-type='method'><a href="Api.NewsItem.html#getVersionCreated">getVersionCreated</a></li><li data-type='method'><a href="Api.NewsItem.html#hasTemporaryId">hasTemporaryId</a></li><li data-type='method'><a href="Api.NewsItem.html#invalidate">invalidate</a></li><li data-type='method'><a href="Api.NewsItem.html#removeAuthorByTitle">removeAuthorByTitle</a></li><li data-type='method'><a href="Api.NewsItem.html#removeAuthorByUUID">removeAuthorByUUID</a></li><li data-type='method'><a href="Api.NewsItem.html#removeChannel">removeChannel</a></li><li data-type='method'><a href="Api.NewsItem.html#removeContentMetaObject">removeContentMetaObject</a></li><li data-type='method'><a href="Api.NewsItem.html#removeLinkByUUID">removeLinkByUUID</a></li><li data-type='method'><a href="Api.NewsItem.html#removeLinkByUUIDAndRel">removeLinkByUUIDAndRel</a></li><li data-type='method'><a href="Api.NewsItem.html#removeLinkContentMetaByTypeAndMatchingFilter">removeLinkContentMetaByTypeAndMatchingFilter</a></li><li data-type='method'><a href="Api.NewsItem.html#removeLinkContentMetaByTypeAndRel">removeLinkContentMetaByTypeAndRel</a></li><li data-type='method'><a href="Api.NewsItem.html#removePubStart">removePubStart</a></li><li data-type='method'><a href="Api.NewsItem.html#removePubStop">removePubStop</a></li><li data-type='method'><a href="Api.NewsItem.html#removeSection">removeSection</a></li><li data-type='method'><a href="Api.NewsItem.html#save">save</a></li><li data-type='method'><a href="Api.NewsItem.html#setContentMetaObject">setContentMetaObject</a></li><li data-type='method'><a href="Api.NewsItem.html#setEdNote">setEdNote</a></li><li data-type='method'><a href="Api.NewsItem.html#setGuid">setGuid</a></li><li data-type='method'><a href="Api.NewsItem.html#setNewsPriority">setNewsPriority</a></li><li data-type='method'><a href="Api.NewsItem.html#setPubStart">setPubStart</a></li><li data-type='method'><a href="Api.NewsItem.html#setPubStatus">setPubStatus</a></li><li data-type='method'><a href="Api.NewsItem.html#setPubStop">setPubStop</a></li><li data-type='method'><a href="Api.NewsItem.html#setSource">setSource</a></li><li data-type='method'><a href="Api.NewsItem.html#setTemporaryId">setTemporaryId</a></li><li data-type='method'><a href="Api.NewsItem.html#updateAuthorWithUUID">updateAuthorWithUUID</a></li><li data-type='method'><a href="Api.NewsItem.html#updateConceptProfile">updateConceptProfile</a></li><li data-type='method'><a href="Api.NewsItem.html#updateContentProfile">updateContentProfile</a></li><li data-type='method'><a href="Api.NewsItem.html#updateLocation">updateLocation</a></li><li data-type='method'><a href="Api.NewsItem.html#updateSection">updateSection</a></li><li data-type='method'><a href="Api.NewsItem.html#updateStory">updateStory</a></li><li data-type='method'><a href="Api.NewsItem.html#updateTag">updateTag</a></li></ul></li><li><a href="Api.Router.html"><span class="member-of">Api.</span>Router</a><ul class='methods'><li data-type='method'><a href="Api.Router.html#checkForOKStatus">checkForOKStatus</a></li><li data-type='method'><a href="Api.Router.html#createConceptItem">createConceptItem</a></li><li data-type='method'><a href="Api.Router.html#get">get</a></li><li data-type='method'><a href="Api.Router.html#getConceptItem">getConceptItem</a></li><li data-type='method'><a href="Api.Router.html#getEndpoint">getEndpoint</a></li><li data-type='method'><a href="Api.Router.html#getNewsItem">getNewsItem</a></li><li data-type='method'><a href="Api.Router.html#getQuerystringFromParameters">getQuerystringFromParameters</a></li><li data-type='method'><a href="Api.Router.html#getRequestPropertiesForMethod">getRequestPropertiesForMethod</a></li><li data-type='method'><a href="Api.Router.html#post">post</a></li><li data-type='method'><a href="Api.Router.html#postBinary">postBinary</a></li><li data-type='method'><a href="Api.Router.html#proxy">proxy</a></li><li data-type='method'><a href="Api.Router.html#put">put</a></li><li data-type='method'><a href="Api.Router.html#toJson">toJson</a></li><li data-type='method'><a href="Api.Router.html#updateConceptItem">updateConceptItem</a></li></ul></li><li><a href="Api.Settings.html"><span class="member-of">Api.</span>Settings</a><ul class='methods'><li data-type='method'><a href="Api.Settings.html#delete">delete</a></li><li data-type='method'><a href="Api.Settings.html#get">get</a></li><li data-type='method'><a href="Api.Settings.html#getAllSettings">getAllSettings</a></li><li data-type='method'><a href="Api.Settings.html#isAvailable">isAvailable</a></li><li data-type='method'><a href="Api.Settings.html#set">set</a></li></ul></li><li><a href="Api.Ui.html"><span class="member-of">Api.</span>Ui</a><ul class='methods'><li data-type='method'><a href="Api.Ui.html#getComponent">getComponent</a></li><li data-type='method'><a href="Api.Ui.html#showDialog">showDialog</a></li><li data-type='method'><a href="Api.Ui.html#showMessageDialog">showMessageDialog</a></li><li data-type='method'><a href="Api.Ui.html#showNotification">showNotification</a></li></ul></li><li><a href="Api.Upload.html"><span class="member-of">Api.</span>Upload</a><ul class='methods'><li data-type='method'><a href="Api.Upload.html#uploadFile">uploadFile</a></li></ul></li><li><a href="Component.AvatarComponent.html"><span class="member-of">Component.</span>AvatarComponent</a><ul class='methods'><li data-type='method'><a href="Component.AvatarComponent.html#loadAvatarUrlForAvatarId">loadAvatarUrlForAvatarId</a></li></ul></li><li><a href="Component.BylineComponent.html"><span class="member-of">Component.</span>BylineComponent</a></li><li><a href="Component.DatetimeFieldEditorComponent.html"><span class="member-of">Component.</span>DatetimeFieldEditorComponent</a></li><li><a href="Component.DialogComponent.html"><span class="member-of">Component.</span>DialogComponent</a><ul class='methods'><li data-type='method'><a href="Component.DialogComponent.html#changeModalHeight">changeModalHeight</a></li></ul></li><li><a href="Component.DialogImageComponent.html"><span class="member-of">Component.</span>DialogImageComponent</a><ul class='methods'><li data-type='method'><a href="Component.DialogImageComponent.html#renderAuthor">renderAuthor</a></li><li data-type='method'><a href="Component.DialogImageComponent.html#saveImageData">saveImageData</a></li><li data-type='method'><a href="Component.DialogImageComponent.html#syncPhotoDate">syncPhotoDate</a></li></ul></li><li><a href="Component.FieldEditorComponent.html"><span class="member-of">Component.</span>FieldEditorComponent</a></li><li><a href="Component.FormAddComponent.html"><span class="member-of">Component.</span>FormAddComponent</a></li><li><a href="Component.FormSearchComponent.html"><span class="member-of">Component.</span>FormSearchComponent</a></li><li><a href="Component.InlineImageComponent.html"><span class="member-of">Component.</span>InlineImageComponent</a></li><li><a href="Component.LinkComponent.html"><span class="member-of">Component.</span>LinkComponent</a></li><li><a href="Component.Notification.html"><span class="member-of">Component.</span>Notification</a></li><li><a href="Component.NotificationListComponent.html"><span class="member-of">Component.</span>NotificationListComponent</a></li><li><a href="Component.PlaceholderComponent.html"><span class="member-of">Component.</span>PlaceholderComponent</a></li><li><a href="Component.SelectComponent.html"><span class="member-of">Component.</span>SelectComponent</a><ul class='methods'><li data-type='method'><a href="Component.SelectComponent.html#renderButtonList">renderButtonList</a></li><li data-type='method'><a href="Component.SelectComponent.html#renderDropDownList">renderDropDownList</a></li><li data-type='method'><a href="Component.SelectComponent.html#renderList">renderList</a></li><li data-type='method'><a href="Component.SelectComponent.html#renderToggleList">renderToggleList</a></li></ul></li><li><a href="Component.ToggleComponent.html"><span class="member-of">Component.</span>ToggleComponent</a></li><li><a href="Component.TooltipComponent.html"><span class="member-of">Component.</span>TooltipComponent</a></li><li><a href="ConfigEditorComponent.html">ConfigEditorComponent</a></li><li><a href="NewsMLArticle.html">NewsMLArticle</a></li><li><a href="NewsMLImporter.html">NewsMLImporter</a><ul class='methods'><li data-type='method'><a href="NewsMLImporter.html#getFirstElementWithTypeElement">getFirstElementWithTypeElement</a></li></ul></li><li><a href="NotFoundException.html">NotFoundException</a></li><li><a href="PluginManager.html">PluginManager</a><ul class='methods'><li data-type='method'><a href="PluginManager.html#_getValue">_getValue</a></li><li data-type='method'><a href="PluginManager.html#appendPluginScripts">appendPluginScripts</a></li><li data-type='method'><a href="PluginManager.html#getListOfPlugins">getListOfPlugins</a></li><li data-type='method'><a href="PluginManager.html#load">load</a></li><li data-type='method'><a href="PluginManager.html#registerPlugin">registerPlugin</a></li><li data-type='method'><a href="PluginManager.html#validatePluginPackage">validatePluginPackage</a></li></ul></li><li><a href="Validator.html">Validator</a><ul class='methods'><li data-type='method'><a href="Validator.html#addError">addError</a></li><li data-type='method'><a href="Validator.html#addInfo">addInfo</a></li><li data-type='method'><a href="Validator.html#addWarning">addWarning</a></li><li data-type='method'><a href="Validator.html#getMessages">getMessages</a></li><li data-type='method'><a href="Validator.html#hasMessages">hasMessages</a></li></ul></li></ul><h3>Externals</h3><ul class=externals><li><a href="external-Substance.html">Substance</a></li></ul><h3>Global</h3><ul><li><a href="global.html#removeControlCodes">removeControlCodes</a></li><li><a href="global.html#removeEmptyNamespaces">removeEmptyNamespaces</a></li></ul>
+</nav>
+
+<div id="main">
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * Api base class
+ *
+ * @namespace Api
+ */
+
+import jxon from 'jxon'
+import isPlainObject from 'lodash/isPlainObject'
+import isString from 'lodash/isString'
+
+import Events from './Events'
+import Document from './Document'
+import NewsItem from './NewsItem'
+import Exceptions from './Exceptions'
+import Upload from './Upload'
+import Article from './Article'
+import Browser from './Browser'
+import Router from './Router'
+import Concept from './Concept'
+import Ui from './Ui'
+import History from './History'
+import Settings from './Settings'
+
+jxon.config({
+    autoDate: false,
+    parseValues: false
+});
+
+/**
+ * @class
+ */
+class Api {
+    constructor(pluginManager, configurator, apiManager) {
+        this.pluginManager = pluginManager
+        this.eventListeners = []
+
+        this.document = new Document(this)
+        this.newsItem = new NewsItem(this)
+        this.events = new Events()
+        this.router = new Router(this)
+        this.article = new Article(this)
+        this.browser = new Browser(this)
+        this.ui = new Ui(this)
+        this.upload = new Upload(this)
+        this.exceptions = Exceptions
+        this.configurator = configurator
+        this.concept = Concept
+        this.apiManager = apiManager
+        this.history = new History(this)
+        this.settings = new Settings(this)
+        this.resourceManager = null
+    }
+
+    /**
+     * Initialize api and provide it with the current newsItem.
+     *
+     * @param newsItemArticle
+     * @param editorSession
+     */
+
+    init(newsItemArticle, editorSession) {
+        this.newsItemArticle = newsItemArticle
+        this.editorSession = editorSession
+        this.doc = editorSession.getDocument()
+    }
+
+    setAppReference(app) {
+        this.app = app
+    }
+
+    setModalReference(modal) {
+        this.modal = modal
+    }
+
+    setResourceManager(resourceManager) {
+        this.resourceManager = resourceManager
+    }
+
+    /**
+     * Get configuration value in a plugins local configuration data section.
+     * If no path is given the full configuration object for the plugin instance
+     * is returned.
+     *
+     * @example
+     * {
+     *    "vendor": "vendor.tld",
+     *    "name": "myplugin",
+     *    "enabled": true,
+     *    "data": {
+     *      "mykey": "Configuration value"
+     *    }
+     *  },
+     * @example
+     * var apiEndpoint = this.context.api.getConfigValue('myplugin', 'mykey');`
+     *
+     * @param {string} id Plugin id to fetch configuration value for
+     * @param {string} path Optional configuration path in the data section
+     * @param {*} defaultValue Optional default value if no value is found
+     * @return {*} The value of the wanted configuration path or default value
+     */
+    getConfigValue(id, path, defaultValue) {
+        return this.pluginManager.getConfigValue(id, path, defaultValue);
+    }
+
+    /**
+     * Check if the configuration has been overridden with local configuration
+     * @returns {Boolean}
+     */
+    hasLocalConfiguration() {
+        return this.configurator.originalConfigOverridden
+    }
+
+    getLabel(name) {
+        var labelProvider = this.configurator.labelProvider
+        if (!labelProvider) { throw new Error('Missing labelProvider.') }
+        return labelProvider.getLabel(name)
+    }
+
+
+    /**
+     * Return a fresh instance of a specific plugin provided module
+     *
+     * @param {string} Module id
+     * @param {string} Name of the module
+     *
+     * @return {Object}
+     */
+    getPluginModule(moduleId) {
+        return this.configurator.getPluginModule(moduleId)
+    }
+
+    /**
+     * Get modules targeted at a specific consumer
+     *
+     * @param {string} Target id of the consumer
+     */
+    getPluginModulesForTarget(targetId) {
+        return this.configurator.getPluginModulesForTarget(targetId)
+    }
+
+    /**
+     * Make a call to a named external backend using provided call configuration.
+     *
+     * @param {string} name - Backend name
+     * @param {Object} config
+     * @param {string} [config.method='GET'] - HTTP method used to call backend
+     * @param {string} [config.contentType='application/json'] - Set contentType of data to send to backend
+     * @param {Object} [config.headers={}] - Object with extra http headers in backend call {"headername" : "headervalue"}
+     * @param {string} [config.path='/'] - Virtual path, endpoint, in backend
+     * @param {Object} [config.query={}] - HTTP query parameters as object. {"param1": "value1", "param2", "value1"}
+     * @param {string|Object} [config.body=null] - Object or text with body data to send with the request to backend
+     */
+    call(name, config) {
+        var op = {
+            method: 'get',
+            contentType: 'application/json',
+            headers: {},
+            path: '/',
+            query: {},
+            body: null
+        };
+
+        if (/[^a-zA-Z0-9]/.test(name)) {
+            throw new Error('Backend name must be alphanumeric');
+        }
+
+        if (isPlainObject(config)) {
+            // HTTP METHOD
+            if (isString(config.method) &amp;&amp; ['get', 'post', 'put', 'delete'].includes(config.method.toLowerCase())) {
+                op.method = config.method.toLowerCase();
+            }
+
+            // HTTP ContentType
+            if (isString(config.contentType)) {
+                op.contentType = config.contentType;
+            }
+
+            // Headers
+            if (isPlainObject(config.headers)) {
+                op.headers = config.headers;
+            }
+
+            // HTTP ContentType
+            if (isString(config.path)) {
+                op.path = config.path;
+            }
+
+            // Query parameters
+            if (isPlainObject(config.query)) {
+                op.query = config.query;
+            }
+
+            // Body content
+            // TODO: Investigate arrays, numericals and other objects
+            if (isPlainObject(config.body)) {
+                op.body = btoa(JSON.stringify(config.body));
+            }
+            else if (isString(config.body)) {
+                op.body = btoa(config.body);
+            }
+            else {
+                console.warn('Payload not object or string. Payload ignored');
+                op.body = null;
+            }
+        }
+
+
+        return this.router.proxy('/api/external/' + name, op);
+    }
+
+    /**
+     * Executes a certain hook
+     * @param hookname
+     * @returns {Promise.&lt;*>}
+     */
+    executeHook(hookname) {
+
+        const hookPromises = []
+
+        const hooks = this.configurator.getHooksForName(hookname)
+
+        hooks.forEach((actionClass) => {
+            console.log(`actionClass`, actionClass)
+            const classDefinition = actionClass.hook
+            if(!classDefinition) {
+                hookPromises.push(Promise.reject('No valid hook handler provided'))
+            }
+            const action = new classDefinition()
+            if (action.execute) {
+                try {
+                    const hookPromise = action.execute(hookname)
+                    if (hookPromise &amp;&amp; hookPromise.constructor.name  !== 'Promise') {
+                        console.warn(`Hook returned ${hookPromise.constructor.name}. Return value must be a Promise`)
+                    } else if (hookPromise &amp;&amp; hookPromise.constructor.name === 'Promise') {
+                        hookPromises.push(hookPromise)
+                    } else {
+                        hookPromises.push(Promise.resolve())
+                    }
+
+                } catch(e) {
+                    hookPromises.push(Promise.reject(e))
+                }
+
+            } else {
+                console.error(`Hook action ${actionClass.hook} is missing execute method`)
+            }
+        })
+
+        return Promise.all(hookPromises)
+
+    }
+}
+
+export default Api
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Fri Nov 24 2017 09:13:07 GMT+0100 (CET) using a modified version of the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+<!-- <script src="scripts/prism.js"></script> -->
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

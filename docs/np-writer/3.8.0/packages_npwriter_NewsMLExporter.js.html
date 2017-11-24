@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>packages/npwriter/NewsMLExporter.js - Documentation</title>
+    <script src="scripts/prettify/prettify.js"></script>
+    <!-- <link rel="stylesheet" href="styles/prism.css"> -->
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul class=namespaces><li><a href="Api.html">Api</a></li><li><a href="Component.html">Component</a></li></ul><h3>Classes</h3><ul class=classes><li><a href="Api.html">Api</a><ul class='methods'><li data-type='method'><a href="Api.html#call">call</a></li><li data-type='method'><a href="Api.html#executeHook">executeHook</a></li><li data-type='method'><a href="Api.html#getConfigValue">getConfigValue</a></li><li data-type='method'><a href="Api.html#getPluginModule">getPluginModule</a></li><li data-type='method'><a href="Api.html#getPluginModulesForTarget">getPluginModulesForTarget</a></li><li data-type='method'><a href="Api.html#hasLocalConfiguration">hasLocalConfiguration</a></li><li data-type='method'><a href="Api.html#init">init</a></li></ul></li><li><a href="Api.Article.html"><span class="member-of">Api.</span>Article</a><ul class='methods'><li data-type='method'><a href="Api.Article.html#clear">clear</a></li><li data-type='method'><a href="Api.Article.html#copy">copy</a></li></ul></li><li><a href="Api.Browser.html"><span class="member-of">Api.</span>Browser</a><ul class='methods'><li data-type='method'><a href="Api.Browser.html#addExternalScript">addExternalScript</a></li><li data-type='method'><a href="Api.Browser.html#getHash">getHash</a></li><li data-type='method'><a href="Api.Browser.html#getUrl">getUrl</a></li><li data-type='method'><a href="Api.Browser.html#isSupported">isSupported</a></li><li data-type='method'><a href="Api.Browser.html#openInNewWindow">openInNewWindow</a></li><li data-type='method'><a href="Api.Browser.html#reload">reload</a></li><li data-type='method'><a href="Api.Browser.html#setHash">setHash</a></li><li data-type='method'><a href="Api.Browser.html#setTitle">setTitle</a></li><li data-type='method'><a href="Api.Browser.html#setupHashHandler">setupHashHandler</a></li></ul></li><li><a href="Api.Concept.html"><span class="member-of">Api.</span>Concept</a><ul class='methods'><li data-type='method'><a href="Api.Concept.html#.getDefinitionForType">getDefinitionForType</a></li><li data-type='method'><a href="Api.Concept.html#.setDefinitionDependingOnArrayOrObject">setDefinitionDependingOnArrayOrObject</a></li></ul></li><li><a href="Api.Document.html"><span class="member-of">Api.</span>Document</a><ul class='methods'><li data-type='method'><a href="Api.Document.html#deleteNode">deleteNode</a></li><li data-type='method'><a href="Api.Document.html#getDocumentNodes">getDocumentNodes</a></li><li data-type='method'><a href="Api.Document.html#getPreviousNode">getPreviousNode</a></li><li data-type='method'><a href="Api.Document.html#insertBlockNode">insertBlockNode</a></li><li data-type='method'><a href="Api.Document.html#insertInlineNode">insertInlineNode</a></li><li data-type='method'><a href="Api.Document.html#triggerFetchResourceNode">triggerFetchResourceNode</a></li></ul></li><li><a href="Api.Events.html"><span class="member-of">Api.</span>Events</a><ul class='methods'><li data-type='method'><a href="Api.Events.html#_triggerEvent">_triggerEvent</a></li><li data-type='method'><a href="Api.Events.html#documentChanged">documentChanged</a></li><li data-type='method'><a href="Api.Events.html#documentSaved">documentSaved</a></li><li data-type='method'><a href="Api.Events.html#documentSaveFailed">documentSaveFailed</a></li><li data-type='method'><a href="Api.Events.html#off">off</a></li><li data-type='method'><a href="Api.Events.html#on">on</a></li><li data-type='method'><a href="Api.Events.html#onDocumentStartSaving">onDocumentStartSaving</a></li></ul></li><li><a href="Api.History.html"><span class="member-of">Api.</span>History</a><ul class='methods'><li data-type='method'><a href="Api.History.html#cleanOldVersions">cleanOldVersions</a></li><li data-type='method'><a href="Api.History.html#cleanVersionsOlderThanMaxDays">cleanVersionsOlderThanMaxDays</a></li><li data-type='method'><a href="Api.History.html#deleteHistory">deleteHistory</a></li><li data-type='method'><a href="Api.History.html#get">get</a></li><li data-type='method'><a href="Api.History.html#getHistory">getHistory</a></li><li data-type='method'><a href="Api.History.html#isAvailable">isAvailable</a></li><li data-type='method'><a href="Api.History.html#saveHistory">saveHistory</a></li></ul></li><li><a href="Api.NewsItem.html"><span class="member-of">Api.</span>NewsItem</a><ul class='methods'><li data-type='method'><a href="Api.NewsItem.html#addAuthor">addAuthor</a></li><li data-type='method'><a href="Api.NewsItem.html#addCategory">addCategory</a></li><li data-type='method'><a href="Api.NewsItem.html#addChannel">addChannel</a></li><li data-type='method'><a href="Api.NewsItem.html#addConceptProfile">addConceptProfile</a></li><li data-type='method'><a href="Api.NewsItem.html#addContentMetaLink">addContentMetaLink</a></li><li data-type='method'><a href="Api.NewsItem.html#addContentProfile">addContentProfile</a></li><li data-type='method'><a href="Api.NewsItem.html#addLink">addLink</a></li><li data-type='method'><a href="Api.NewsItem.html#addLocation">addLocation</a></li><li data-type='method'><a href="Api.NewsItem.html#addSimpleAuthor">addSimpleAuthor</a></li><li data-type='method'><a href="Api.NewsItem.html#addStory">addStory</a></li><li data-type='method'><a href="Api.NewsItem.html#addTag">addTag</a></li><li data-type='method'><a href="Api.NewsItem.html#createNewsPriority">createNewsPriority</a></li><li data-type='method'><a href="Api.NewsItem.html#getAuthors">getAuthors</a></li><li data-type='method'><a href="Api.NewsItem.html#getCategories">getCategories</a></li><li data-type='method'><a href="Api.NewsItem.html#getChannels">getChannels</a></li><li data-type='method'><a href="Api.NewsItem.html#getContentCreated">getContentCreated</a></li><li data-type='method'><a href="Api.NewsItem.html#getContentMetaLinkByType">getContentMetaLinkByType</a></li><li data-type='method'><a href="Api.NewsItem.html#getContentMetaObjectById">getContentMetaObjectById</a></li><li data-type='method'><a href="Api.NewsItem.html#getContentMetaObjectsByType">getContentMetaObjectsByType</a></li><li data-type='method'><a href="Api.NewsItem.html#getContentModified">getContentModified</a></li><li data-type='method'><a href="Api.NewsItem.html#getContentProfiles">getContentProfiles</a></li><li data-type='method'><a href="Api.NewsItem.html#getEdNote">getEdNote</a></li><li data-type='method'><a href="Api.NewsItem.html#getFirstCreated">getFirstCreated</a></li><li data-type='method'><a href="Api.NewsItem.html#getGuid">getGuid</a></li><li data-type='method'><a href="Api.NewsItem.html#getIdForArticle">getIdForArticle</a></li><li data-type='method'><a href="Api.NewsItem.html#getLinkByType">getLinkByType</a></li><li data-type='method'><a href="Api.NewsItem.html#getLinkByTypeAndRel">getLinkByTypeAndRel</a></li><li data-type='method'><a href="Api.NewsItem.html#getLinksByType">getLinksByType</a></li><li data-type='method'><a href="Api.NewsItem.html#getLocations">getLocations</a></li><li data-type='method'><a href="Api.NewsItem.html#getMainChannel">getMainChannel</a></li><li data-type='method'><a href="Api.NewsItem.html#getNewspilotArticleId">getNewspilotArticleId</a></li><li data-type='method'><a href="Api.NewsItem.html#getNewsPriority">getNewsPriority</a></li><li data-type='method'><a href="Api.NewsItem.html#getPubStart">getPubStart</a></li><li data-type='method'><a href="Api.NewsItem.html#getPubStatus">getPubStatus</a></li><li data-type='method'><a href="Api.NewsItem.html#getPubStop">getPubStop</a></li><li data-type='method'><a href="Api.NewsItem.html#getSection">getSection</a></li><li data-type='method'><a href="Api.NewsItem.html#getSections">getSections</a></li><li data-type='method'><a href="Api.NewsItem.html#getStories">getStories</a></li><li data-type='method'><a href="Api.NewsItem.html#getTags">getTags</a></li><li data-type='method'><a href="Api.NewsItem.html#getTemporaryId">getTemporaryId</a></li><li data-type='method'><a href="Api.NewsItem.html#getVersionCreated">getVersionCreated</a></li><li data-type='method'><a href="Api.NewsItem.html#hasTemporaryId">hasTemporaryId</a></li><li data-type='method'><a href="Api.NewsItem.html#invalidate">invalidate</a></li><li data-type='method'><a href="Api.NewsItem.html#removeAuthorByTitle">removeAuthorByTitle</a></li><li data-type='method'><a href="Api.NewsItem.html#removeAuthorByUUID">removeAuthorByUUID</a></li><li data-type='method'><a href="Api.NewsItem.html#removeChannel">removeChannel</a></li><li data-type='method'><a href="Api.NewsItem.html#removeContentMetaObject">removeContentMetaObject</a></li><li data-type='method'><a href="Api.NewsItem.html#removeLinkByUUID">removeLinkByUUID</a></li><li data-type='method'><a href="Api.NewsItem.html#removeLinkByUUIDAndRel">removeLinkByUUIDAndRel</a></li><li data-type='method'><a href="Api.NewsItem.html#removeLinkContentMetaByTypeAndMatchingFilter">removeLinkContentMetaByTypeAndMatchingFilter</a></li><li data-type='method'><a href="Api.NewsItem.html#removeLinkContentMetaByTypeAndRel">removeLinkContentMetaByTypeAndRel</a></li><li data-type='method'><a href="Api.NewsItem.html#removePubStart">removePubStart</a></li><li data-type='method'><a href="Api.NewsItem.html#removePubStop">removePubStop</a></li><li data-type='method'><a href="Api.NewsItem.html#removeSection">removeSection</a></li><li data-type='method'><a href="Api.NewsItem.html#save">save</a></li><li data-type='method'><a href="Api.NewsItem.html#setContentMetaObject">setContentMetaObject</a></li><li data-type='method'><a href="Api.NewsItem.html#setEdNote">setEdNote</a></li><li data-type='method'><a href="Api.NewsItem.html#setGuid">setGuid</a></li><li data-type='method'><a href="Api.NewsItem.html#setNewsPriority">setNewsPriority</a></li><li data-type='method'><a href="Api.NewsItem.html#setPubStart">setPubStart</a></li><li data-type='method'><a href="Api.NewsItem.html#setPubStatus">setPubStatus</a></li><li data-type='method'><a href="Api.NewsItem.html#setPubStop">setPubStop</a></li><li data-type='method'><a href="Api.NewsItem.html#setSource">setSource</a></li><li data-type='method'><a href="Api.NewsItem.html#setTemporaryId">setTemporaryId</a></li><li data-type='method'><a href="Api.NewsItem.html#updateAuthorWithUUID">updateAuthorWithUUID</a></li><li data-type='method'><a href="Api.NewsItem.html#updateConceptProfile">updateConceptProfile</a></li><li data-type='method'><a href="Api.NewsItem.html#updateContentProfile">updateContentProfile</a></li><li data-type='method'><a href="Api.NewsItem.html#updateLocation">updateLocation</a></li><li data-type='method'><a href="Api.NewsItem.html#updateSection">updateSection</a></li><li data-type='method'><a href="Api.NewsItem.html#updateStory">updateStory</a></li><li data-type='method'><a href="Api.NewsItem.html#updateTag">updateTag</a></li></ul></li><li><a href="Api.Router.html"><span class="member-of">Api.</span>Router</a><ul class='methods'><li data-type='method'><a href="Api.Router.html#checkForOKStatus">checkForOKStatus</a></li><li data-type='method'><a href="Api.Router.html#createConceptItem">createConceptItem</a></li><li data-type='method'><a href="Api.Router.html#get">get</a></li><li data-type='method'><a href="Api.Router.html#getConceptItem">getConceptItem</a></li><li data-type='method'><a href="Api.Router.html#getEndpoint">getEndpoint</a></li><li data-type='method'><a href="Api.Router.html#getNewsItem">getNewsItem</a></li><li data-type='method'><a href="Api.Router.html#getQuerystringFromParameters">getQuerystringFromParameters</a></li><li data-type='method'><a href="Api.Router.html#getRequestPropertiesForMethod">getRequestPropertiesForMethod</a></li><li data-type='method'><a href="Api.Router.html#post">post</a></li><li data-type='method'><a href="Api.Router.html#postBinary">postBinary</a></li><li data-type='method'><a href="Api.Router.html#proxy">proxy</a></li><li data-type='method'><a href="Api.Router.html#put">put</a></li><li data-type='method'><a href="Api.Router.html#toJson">toJson</a></li><li data-type='method'><a href="Api.Router.html#updateConceptItem">updateConceptItem</a></li></ul></li><li><a href="Api.Settings.html"><span class="member-of">Api.</span>Settings</a><ul class='methods'><li data-type='method'><a href="Api.Settings.html#delete">delete</a></li><li data-type='method'><a href="Api.Settings.html#get">get</a></li><li data-type='method'><a href="Api.Settings.html#getAllSettings">getAllSettings</a></li><li data-type='method'><a href="Api.Settings.html#isAvailable">isAvailable</a></li><li data-type='method'><a href="Api.Settings.html#set">set</a></li></ul></li><li><a href="Api.Ui.html"><span class="member-of">Api.</span>Ui</a><ul class='methods'><li data-type='method'><a href="Api.Ui.html#getComponent">getComponent</a></li><li data-type='method'><a href="Api.Ui.html#showDialog">showDialog</a></li><li data-type='method'><a href="Api.Ui.html#showMessageDialog">showMessageDialog</a></li><li data-type='method'><a href="Api.Ui.html#showNotification">showNotification</a></li></ul></li><li><a href="Api.Upload.html"><span class="member-of">Api.</span>Upload</a><ul class='methods'><li data-type='method'><a href="Api.Upload.html#uploadFile">uploadFile</a></li></ul></li><li><a href="Component.AvatarComponent.html"><span class="member-of">Component.</span>AvatarComponent</a><ul class='methods'><li data-type='method'><a href="Component.AvatarComponent.html#loadAvatarUrlForAvatarId">loadAvatarUrlForAvatarId</a></li></ul></li><li><a href="Component.BylineComponent.html"><span class="member-of">Component.</span>BylineComponent</a></li><li><a href="Component.DatetimeFieldEditorComponent.html"><span class="member-of">Component.</span>DatetimeFieldEditorComponent</a></li><li><a href="Component.DialogComponent.html"><span class="member-of">Component.</span>DialogComponent</a><ul class='methods'><li data-type='method'><a href="Component.DialogComponent.html#changeModalHeight">changeModalHeight</a></li></ul></li><li><a href="Component.DialogImageComponent.html"><span class="member-of">Component.</span>DialogImageComponent</a><ul class='methods'><li data-type='method'><a href="Component.DialogImageComponent.html#renderAuthor">renderAuthor</a></li><li data-type='method'><a href="Component.DialogImageComponent.html#saveImageData">saveImageData</a></li><li data-type='method'><a href="Component.DialogImageComponent.html#syncPhotoDate">syncPhotoDate</a></li></ul></li><li><a href="Component.FieldEditorComponent.html"><span class="member-of">Component.</span>FieldEditorComponent</a></li><li><a href="Component.FormAddComponent.html"><span class="member-of">Component.</span>FormAddComponent</a></li><li><a href="Component.FormSearchComponent.html"><span class="member-of">Component.</span>FormSearchComponent</a></li><li><a href="Component.InlineImageComponent.html"><span class="member-of">Component.</span>InlineImageComponent</a></li><li><a href="Component.LinkComponent.html"><span class="member-of">Component.</span>LinkComponent</a></li><li><a href="Component.Notification.html"><span class="member-of">Component.</span>Notification</a></li><li><a href="Component.NotificationListComponent.html"><span class="member-of">Component.</span>NotificationListComponent</a></li><li><a href="Component.PlaceholderComponent.html"><span class="member-of">Component.</span>PlaceholderComponent</a></li><li><a href="Component.SelectComponent.html"><span class="member-of">Component.</span>SelectComponent</a><ul class='methods'><li data-type='method'><a href="Component.SelectComponent.html#renderButtonList">renderButtonList</a></li><li data-type='method'><a href="Component.SelectComponent.html#renderDropDownList">renderDropDownList</a></li><li data-type='method'><a href="Component.SelectComponent.html#renderList">renderList</a></li><li data-type='method'><a href="Component.SelectComponent.html#renderToggleList">renderToggleList</a></li></ul></li><li><a href="Component.ToggleComponent.html"><span class="member-of">Component.</span>ToggleComponent</a></li><li><a href="Component.TooltipComponent.html"><span class="member-of">Component.</span>TooltipComponent</a></li><li><a href="ConfigEditorComponent.html">ConfigEditorComponent</a></li><li><a href="NewsMLArticle.html">NewsMLArticle</a></li><li><a href="NewsMLImporter.html">NewsMLImporter</a><ul class='methods'><li data-type='method'><a href="NewsMLImporter.html#getFirstElementWithTypeElement">getFirstElementWithTypeElement</a></li></ul></li><li><a href="NotFoundException.html">NotFoundException</a></li><li><a href="PluginManager.html">PluginManager</a><ul class='methods'><li data-type='method'><a href="PluginManager.html#_getValue">_getValue</a></li><li data-type='method'><a href="PluginManager.html#appendPluginScripts">appendPluginScripts</a></li><li data-type='method'><a href="PluginManager.html#getListOfPlugins">getListOfPlugins</a></li><li data-type='method'><a href="PluginManager.html#load">load</a></li><li data-type='method'><a href="PluginManager.html#registerPlugin">registerPlugin</a></li><li data-type='method'><a href="PluginManager.html#validatePluginPackage">validatePluginPackage</a></li></ul></li><li><a href="Validator.html">Validator</a><ul class='methods'><li data-type='method'><a href="Validator.html#addError">addError</a></li><li data-type='method'><a href="Validator.html#addInfo">addInfo</a></li><li data-type='method'><a href="Validator.html#addWarning">addWarning</a></li><li data-type='method'><a href="Validator.html#getMessages">getMessages</a></li><li data-type='method'><a href="Validator.html#hasMessages">hasMessages</a></li></ul></li></ul><h3>Externals</h3><ul class=externals><li><a href="external-Substance.html">Substance</a></li></ul><h3>Global</h3><ul><li><a href="global.html#removeControlCodes">removeControlCodes</a></li><li><a href="global.html#removeEmptyNamespaces">removeEmptyNamespaces</a></li></ul>
+</nav>
+
+<div id="main">
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import {Fragmenter, XMLExporter} from 'substance'
+
+class NewsMLExporter extends XMLExporter {
+
+    constructor(...args) {
+        super(...args)
+    }
+
+    removeElementIfExists(textEditElement, existingChildren) {
+        existingChildren.forEach((child) => {
+            if (textEditElement.el.tagName === child.nodeName &amp;&amp; textEditElement.el.getAttribute('type') === child.getAttribute('type')) {
+                child.remove()
+            }
+        })
+    }
+
+    addHeaderGroup(doc, newsItem) {
+
+        const idfHeaderGroup = newsItem.querySelector('idf group[type="header"]')
+        if (!idfHeaderGroup) {
+            return
+        }
+
+        const textEditComponents = this.context.api.configurator.getTextEditComponents()
+
+        let headerElements = []
+        textEditComponents.forEach(textEditComponent => {
+            const node = doc.get(textEditComponent.nodeType)
+            if (node) {
+                const convertedTextEdit = this.convertNode(node)
+                headerElements.push(convertedTextEdit.childNodes)
+            }
+        })
+
+        if (headerElements &amp;&amp; headerElements.length > 0) {
+            headerElements.forEach((elements) => {
+                elements.forEach(element => {
+                    this.removeElementIfExists(element, idfHeaderGroup.childNodes)
+                    idfHeaderGroup.appendChild(element.el)
+                })
+            })
+        }
+    }
+
+    addBodyGroup(doc, newsItem, parent) {
+        const serializer = new XMLSerializer()
+        const parser = new DOMParser()
+        const ownerDocument = parent.ownerDocument
+
+        // Get the first group with type body in IDF section
+        const groupNode = newsItem.querySelector('idf group[type="body"]')
+        if (!groupNode) {
+            throw new Error('IDF node not found!')
+        }
+
+        // Export article body with substance convert container function
+        // FIXME: Should use createElementNS, but currently this creates extra xmlns attribute.
+        // FIXME: Not sure how this is handled in transformers...
+        //
+        // const nsURI = parent.namespaceURI
+        // const bodyGroup = ownerDocument.createElementNS(nsURI, 'group')
+        const bodyGroup = ownerDocument.createElement('group')
+        bodyGroup.setAttribute('type', 'body')
+        for (var node of this.convertContainer(doc.get('body'))) {
+            bodyGroup.appendChild(node.el)
+        }
+
+        // Clean from control codes
+        let cleanGroupNode
+        try {
+            cleanGroupNode = parser.parseFromString(
+                removeControlCodes(serializer.serializeToString(bodyGroup)),
+                'text/xml'
+            ).firstChild
+        }
+        catch (err) {
+            throw new Error('Failed cleaning control codes: ' + err.message)
+        }
+
+        parent.replaceChild(cleanGroupNode, groupNode)
+    }
+
+    addTeaser(newsItem, groupContainer) {
+        const teaserTypes = this.context.api.getConfigValue('se.infomaker.ximteaser', 'types', false)
+        const hasMultiTeaserSupport = teaserTypes !== false
+
+        if(hasMultiTeaserSupport) {
+            const queryForMetaTypes = teaserTypes.map(({type}) => `contentMeta > metadata > object[type="${type}"]`).join(',')
+            const teaserContainer = newsItem.querySelector('object[type="x-im/teasercontainer"]')
+            const teaserMetaElements = newsItem.querySelectorAll(queryForMetaTypes)
+            const metadata = newsItem.querySelector('contentMeta > metadata')
+
+            // Extract x-im/*-teaser objects and move it to its correct position if it exists
+            teaserMetaElements.forEach((teaserElement) => metadata.removeChild(teaserElement))
+
+            // Add fresh teaser elements to metadata
+            if(teaserContainer !== null) {
+                [...teaserContainer.children].forEach((newTeaserElement) => metadata.appendChild(newTeaserElement))
+
+                // Remove teasercontainer from xml
+                teaserContainer.parentElement.removeChild(teaserContainer)
+            }
+        } else {
+            // Backwards compatibility for teaser plugin
+
+            // Extract x-im/teaser object and move it to its correct position if it exists
+            const oldTeaser = newsItem.querySelector('contentMeta > metadata > object[type="x-im/teaser"]');
+            const metadata = newsItem.querySelector('contentMeta > metadata');
+            if (oldTeaser) {
+                metadata.removeChild(oldTeaser);
+            }
+
+            const newTeaser = groupContainer.querySelector('object[type="x-im/teaser"]');
+
+            if (newTeaser) {
+                newTeaser.parentElement.removeChild(newTeaser);
+                metadata.appendChild(newTeaser);
+            }
+        }
+    }
+
+
+    exportDocument(doc, newsItemArticle) {
+        this.state.doc = doc
+        const groupContainer = newsItemArticle.querySelector('idf')
+
+        this.addHeaderGroup(doc, newsItemArticle)
+        this.addBodyGroup(doc, newsItemArticle, groupContainer)
+        this.addTeaser(newsItemArticle, groupContainer)
+
+        const serializer = new XMLSerializer()
+        try {
+            return removeEmptyNamespaces(
+                removeControlCodes(
+                    serializer.serializeToString(newsItemArticle.documentElement)
+                )
+            )
+        }
+        catch (err) {
+            throw new Error('Failed cleaning control codes in article: ' + err.message)
+        }
+    }
+
+    /**
+     * @deprecated
+     */
+    convert(doc, options, newsItem) {
+        console.info("convert method is deprecated, use exportDocument")
+        this.state.doc = doc;
+        return removeControlCodes(newsItem.documentElement.outerHTML);
+    }
+
+    // TODO Remove when/if substance has fixed the double encoding problem
+    /**
+     * This code is copied from DOMExporter.js in substance. This is because
+     * removing the encodeXMLEntities() invocation fixed the double encoding problem (WRIT-255).
+     */
+    _annotatedText(text, annotations) {
+        var self = this
+
+        var annotator = new Fragmenter()
+        annotator.onText = function (context, text) {
+            // context.children.push(encodeXMLEntities(text))
+            context.children.push(text)
+        }
+        annotator.onEnter = function (fragment) {
+            var anno = fragment.node
+            return {
+                annotation: anno,
+                children: []
+            }
+        }
+        annotator.onExit = function (fragment, context, parentContext) {
+            var anno = context.annotation
+            var converter = self.getNodeConverter(anno)
+            if (!converter) {
+                converter = self.getDefaultPropertyAnnotationConverter()
+            }
+            var el
+            // Text annotations should not have the same start and end tag, a.k.a being an empty tag WRIT-433
+            if (anno.start.equals(anno.end)) {
+                el = ""
+            } else {
+                if (converter.tagName) {
+                    el = this.$$(converter.tagName)
+                } else {
+                    el = this.$$('span')
+                }
+                el.attr(this.config.idAttribute, anno.id)
+                el.append(context.children)
+                if (converter.export) {
+                    el = converter.export(anno, el, self) || el
+                }
+            }
+            parentContext.children.push(el)
+        }.bind(this)
+        var wrapper = { children: [] }
+        annotator.start(wrapper, text, annotations)
+        return wrapper.children
+    }
+
+}
+
+export default NewsMLExporter
+
+
+/**
+ * Removes for XML illegal control codes from text (range from 0x00 - 0x1F with the exception of
+ * TAB, CR and LF). See http://www.w3.org/TR/xml/#charsets
+ * @param {string} serializedXML Serialized xml to process
+ * @return {string} Serialized xml without control codes
+ */
+function removeControlCodes(serializedXML) {
+    if (serializedXML === undefined) {
+        return serializedXML
+    }
+
+    const regex = new RegExp("[\x00-\x08\x0b\x0c\x0e-\x1f]|(\&amp;nbsp\;{1})", "g")
+    if (regex.exec(serializedXML) !== null) {
+        console.warn("Removing illegal XML character in content")
+        return serializedXML.replace(regex, "")
+    }
+
+    return serializedXML
+}
+
+/**
+ * Removes empty xmlns attributes created because the writer and substance
+ * dont' create elements with correct namespace.
+ *
+ * HACK: This should not be necessary when the writer and substance handle namespaces correctly
+ *
+ * @param {string} serializedXML Serialized xml
+ * @return {string} Serialized xml without empty namespaces
+ */
+function removeEmptyNamespaces(serializedXML) {
+    if (serializedXML === undefined) {
+        return serializedXML
+    }
+
+    const regex = new RegExp(" xmlns=\"\"", "g")
+    if (regex.exec(serializedXML) !== null) {
+        console.warn("Removing illegal empty namespace in XML")
+        return serializedXML.replace(regex, "")
+    }
+
+    return serializedXML
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Fri Nov 24 2017 09:13:07 GMT+0100 (CET) using a modified version of the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+<!-- <script src="scripts/prism.js"></script> -->
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
