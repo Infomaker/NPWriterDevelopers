@@ -44,7 +44,6 @@
       description: "Register to handle when user dropping a file or an uri"
       subhref: "handle-drops/"
 
-
     - subtitle: "Add plugin to top bar"
       description: "Add a plugin and popover to the topbar"
       subhref: "top-bar/"
@@ -60,6 +59,10 @@
     - subtitle: "Newspilot Writer format"
       description: "Quick guide to the format used by the Newspilot Writer"
       subhref: "writer-format.html"
+
+    - subtitle: "Substance tips"
+      description: "Some tips for working with substance [CHANGEME]"
+      subhref: "substance-tips/"
 
     - subtitle: "Migration guide"
       description: "Migrate your version 1 plugin to version 3"
