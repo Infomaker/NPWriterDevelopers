@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>app.js - Documentation</title>
+    <script src="scripts/prettify/prettify.js"></script>
+    <!-- <link rel="stylesheet" href="styles/prism.css"> -->
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul class=namespaces><li><a href="Api.html">Api</a></li><li><a href="Component.html">Component</a></li><li><a href="Trait.html">Trait</a></li></ul><h3>Classes</h3><ul class=classes><li><a href="Api.html">Api</a><ul class='methods'><li data-type='method'><a href="Api.html#call">call</a></li><li data-type='method'><a href="Api.html#executeHook">executeHook</a></li><li data-type='method'><a href="Api.html#getConfigValue">getConfigValue</a></li><li data-type='method'><a href="Api.html#getPluginModule">getPluginModule</a></li><li data-type='method'><a href="Api.html#getPluginModulesForTarget">getPluginModulesForTarget</a></li><li data-type='method'><a href="Api.html#hasLocalConfiguration">hasLocalConfiguration</a></li><li data-type='method'><a href="Api.html#init">init</a></li></ul></li><li><a href="Api.Article.html"><span class="member-of">Api.</span>Article</a><ul class='methods'><li data-type='method'><a href="Api.Article.html#clear">clear</a></li><li data-type='method'><a href="Api.Article.html#copy">copy</a></li></ul></li><li><a href="Api.Browser.html"><span class="member-of">Api.</span>Browser</a><ul class='methods'><li data-type='method'><a href="Api.Browser.html#addExternalScript">addExternalScript</a></li><li data-type='method'><a href="Api.Browser.html#getHash">getHash</a></li><li data-type='method'><a href="Api.Browser.html#getUrl">getUrl</a></li><li data-type='method'><a href="Api.Browser.html#isSupported">isSupported</a></li><li data-type='method'><a href="Api.Browser.html#openInNewWindow">openInNewWindow</a></li><li data-type='method'><a href="Api.Browser.html#reload">reload</a></li><li data-type='method'><a href="Api.Browser.html#setHash">setHash</a></li><li data-type='method'><a href="Api.Browser.html#setTitle">setTitle</a></li><li data-type='method'><a href="Api.Browser.html#setupHashHandler">setupHashHandler</a></li></ul></li><li><a href="Api.Concept.html"><span class="member-of">Api.</span>Concept</a><ul class='methods'><li data-type='method'><a href="Api.Concept.html#.getDefinitionForType">getDefinitionForType</a></li><li data-type='method'><a href="Api.Concept.html#.setDefinitionDependingOnArrayOrObject">setDefinitionDependingOnArrayOrObject</a></li></ul></li><li><a href="Api.Document.html"><span class="member-of">Api.</span>Document</a><ul class='methods'><li data-type='method'><a href="Api.Document.html#deleteNode">deleteNode</a></li><li data-type='method'><a href="Api.Document.html#getDocumentNodes">getDocumentNodes</a></li><li data-type='method'><a href="Api.Document.html#getPreviousNode">getPreviousNode</a></li><li data-type='method'><a href="Api.Document.html#insertBlockNode">insertBlockNode</a></li><li data-type='method'><a href="Api.Document.html#insertInlineNode">insertInlineNode</a></li><li data-type='method'><a href="Api.Document.html#triggerFetchResourceNode">triggerFetchResourceNode</a></li></ul></li><li><a href="Api.Events.html"><span class="member-of">Api.</span>Events</a><ul class='methods'><li data-type='method'><a href="Api.Events.html#_triggerEvent">_triggerEvent</a></li><li data-type='method'><a href="Api.Events.html#documentChanged">documentChanged</a></li><li data-type='method'><a href="Api.Events.html#documentSaved">documentSaved</a></li><li data-type='method'><a href="Api.Events.html#documentSaveFailed">documentSaveFailed</a></li><li data-type='method'><a href="Api.Events.html#off">off</a></li><li data-type='method'><a href="Api.Events.html#on">on</a></li><li data-type='method'><a href="Api.Events.html#onDocumentStartSaving">onDocumentStartSaving</a></li></ul></li><li><a href="Api.History.html"><span class="member-of">Api.</span>History</a><ul class='methods'><li data-type='method'><a href="Api.History.html#cleanOldVersions">cleanOldVersions</a></li><li data-type='method'><a href="Api.History.html#cleanVersionsOlderThanMaxDays">cleanVersionsOlderThanMaxDays</a></li><li data-type='method'><a href="Api.History.html#deleteHistory">deleteHistory</a></li><li data-type='method'><a href="Api.History.html#get">get</a></li><li data-type='method'><a href="Api.History.html#getHistory">getHistory</a></li><li data-type='method'><a href="Api.History.html#isAvailable">isAvailable</a></li><li data-type='method'><a href="Api.History.html#saveHistory">saveHistory</a></li></ul></li><li><a href="Api.NewsItem.html"><span class="member-of">Api.</span>NewsItem</a><ul class='methods'><li data-type='method'><a href="Api.NewsItem.html#addAuthor">addAuthor</a></li><li data-type='method'><a href="Api.NewsItem.html#addCategory">addCategory</a></li><li data-type='method'><a href="Api.NewsItem.html#addChannel">addChannel</a></li><li data-type='method'><a href="Api.NewsItem.html#addConceptProfile">addConceptProfile</a></li><li data-type='method'><a href="Api.NewsItem.html#addContentMetaLink">addContentMetaLink</a></li><li data-type='method'><a href="Api.NewsItem.html#addContentProfile">addContentProfile</a></li><li data-type='method'><a href="Api.NewsItem.html#addLink">addLink</a></li><li data-type='method'><a href="Api.NewsItem.html#addLocation">addLocation</a></li><li data-type='method'><a href="Api.NewsItem.html#addSimpleAuthor">addSimpleAuthor</a></li><li data-type='method'><a href="Api.NewsItem.html#addStory">addStory</a></li><li data-type='method'><a href="Api.NewsItem.html#addTag">addTag</a></li><li data-type='method'><a href="Api.NewsItem.html#createNewsPriority">createNewsPriority</a></li><li data-type='method'><a href="Api.NewsItem.html#getAuthors">getAuthors</a></li><li data-type='method'><a href="Api.NewsItem.html#getCategories">getCategories</a></li><li data-type='method'><a href="Api.NewsItem.html#getChannels">getChannels</a></li><li data-type='method'><a href="Api.NewsItem.html#getContentCreated">getContentCreated</a></li><li data-type='method'><a href="Api.NewsItem.html#getContentMetaLinkByType">getContentMetaLinkByType</a></li><li data-type='method'><a href="Api.NewsItem.html#getContentMetaObjectById">getContentMetaObjectById</a></li><li data-type='method'><a href="Api.NewsItem.html#getContentMetaObjectsByType">getContentMetaObjectsByType</a></li><li data-type='method'><a href="Api.NewsItem.html#getContentModified">getContentModified</a></li><li data-type='method'><a href="Api.NewsItem.html#getContentProfiles">getContentProfiles</a></li><li data-type='method'><a href="Api.NewsItem.html#getEdNote">getEdNote</a></li><li data-type='method'><a href="Api.NewsItem.html#getFirstCreated">getFirstCreated</a></li><li data-type='method'><a href="Api.NewsItem.html#getGuid">getGuid</a></li><li data-type='method'><a href="Api.NewsItem.html#getHasPublishedVersion">getHasPublishedVersion</a></li><li data-type='method'><a href="Api.NewsItem.html#getIdForArticle">getIdForArticle</a></li><li data-type='method'><a href="Api.NewsItem.html#getLinkByType">getLinkByType</a></li><li data-type='method'><a href="Api.NewsItem.html#getLinkByTypeAndRel">getLinkByTypeAndRel</a></li><li data-type='method'><a href="Api.NewsItem.html#getLinksByType">getLinksByType</a></li><li data-type='method'><a href="Api.NewsItem.html#getLocations">getLocations</a></li><li data-type='method'><a href="Api.NewsItem.html#getMainChannel">getMainChannel</a></li><li data-type='method'><a href="Api.NewsItem.html#getNewspilotArticleId">getNewspilotArticleId</a></li><li data-type='method'><a href="Api.NewsItem.html#getNewsPriority">getNewsPriority</a></li><li data-type='method'><a href="Api.NewsItem.html#getPubStart">getPubStart</a></li><li data-type='method'><a href="Api.NewsItem.html#getPubStatus">getPubStatus</a></li><li data-type='method'><a href="Api.NewsItem.html#getPubStop">getPubStop</a></li><li data-type='method'><a href="Api.NewsItem.html#getSection">getSection</a></li><li data-type='method'><a href="Api.NewsItem.html#getSections">getSections</a></li><li data-type='method'><a href="Api.NewsItem.html#getStories">getStories</a></li><li data-type='method'><a href="Api.NewsItem.html#getTags">getTags</a></li><li data-type='method'><a href="Api.NewsItem.html#getTemporaryId">getTemporaryId</a></li><li data-type='method'><a href="Api.NewsItem.html#getVersionCreated">getVersionCreated</a></li><li data-type='method'><a href="Api.NewsItem.html#hasTemporaryId">hasTemporaryId</a></li><li data-type='method'><a href="Api.NewsItem.html#invalidate">invalidate</a></li><li data-type='method'><a href="Api.NewsItem.html#removeAuthorByTitle">removeAuthorByTitle</a></li><li data-type='method'><a href="Api.NewsItem.html#removeAuthorByUUID">removeAuthorByUUID</a></li><li data-type='method'><a href="Api.NewsItem.html#removeChannel">removeChannel</a></li><li data-type='method'><a href="Api.NewsItem.html#removeContentMetaObject">removeContentMetaObject</a></li><li data-type='method'><a href="Api.NewsItem.html#removeLinkByUUID">removeLinkByUUID</a></li><li data-type='method'><a href="Api.NewsItem.html#removeLinkByUUIDAndRel">removeLinkByUUIDAndRel</a></li><li data-type='method'><a href="Api.NewsItem.html#removeLinkContentMetaByTypeAndMatchingFilter">removeLinkContentMetaByTypeAndMatchingFilter</a></li><li data-type='method'><a href="Api.NewsItem.html#removeLinkContentMetaByTypeAndRel">removeLinkContentMetaByTypeAndRel</a></li><li data-type='method'><a href="Api.NewsItem.html#removePubStart">removePubStart</a></li><li data-type='method'><a href="Api.NewsItem.html#removePubStop">removePubStop</a></li><li data-type='method'><a href="Api.NewsItem.html#removeSection">removeSection</a></li><li data-type='method'><a href="Api.NewsItem.html#save">save</a></li><li data-type='method'><a href="Api.NewsItem.html#setContentMetaObject">setContentMetaObject</a></li><li data-type='method'><a href="Api.NewsItem.html#setEdNote">setEdNote</a></li><li data-type='method'><a href="Api.NewsItem.html#setGuid">setGuid</a></li><li data-type='method'><a href="Api.NewsItem.html#setHasPublishedVersion">setHasPublishedVersion</a></li><li data-type='method'><a href="Api.NewsItem.html#setNewsPriority">setNewsPriority</a></li><li data-type='method'><a href="Api.NewsItem.html#setPubStart">setPubStart</a></li><li data-type='method'><a href="Api.NewsItem.html#setPubStatus">setPubStatus</a></li><li data-type='method'><a href="Api.NewsItem.html#setPubStop">setPubStop</a></li><li data-type='method'><a href="Api.NewsItem.html#setSource">setSource</a></li><li data-type='method'><a href="Api.NewsItem.html#setTemporaryId">setTemporaryId</a></li><li data-type='method'><a href="Api.NewsItem.html#updateAuthorWithUUID">updateAuthorWithUUID</a></li><li data-type='method'><a href="Api.NewsItem.html#updateConceptProfile">updateConceptProfile</a></li><li data-type='method'><a href="Api.NewsItem.html#updateContentProfile">updateContentProfile</a></li><li data-type='method'><a href="Api.NewsItem.html#updateLocation">updateLocation</a></li><li data-type='method'><a href="Api.NewsItem.html#updateSection">updateSection</a></li><li data-type='method'><a href="Api.NewsItem.html#updateStory">updateStory</a></li><li data-type='method'><a href="Api.NewsItem.html#updateTag">updateTag</a></li></ul></li><li><a href="Api.Router.html"><span class="member-of">Api.</span>Router</a><ul class='methods'><li data-type='method'><a href="Api.Router.html#checkForOKStatus">checkForOKStatus</a></li><li data-type='method'><a href="Api.Router.html#createConceptItem">createConceptItem</a></li><li data-type='method'><a href="Api.Router.html#get">get</a></li><li data-type='method'><a href="Api.Router.html#getConceptItem">getConceptItem</a></li><li data-type='method'><a href="Api.Router.html#getEndpoint">getEndpoint</a></li><li data-type='method'><a href="Api.Router.html#getNewsItem">getNewsItem</a></li><li data-type='method'><a href="Api.Router.html#getQuerystringFromParameters">getQuerystringFromParameters</a></li><li data-type='method'><a href="Api.Router.html#getRequestPropertiesForMethod">getRequestPropertiesForMethod</a></li><li data-type='method'><a href="Api.Router.html#post">post</a></li><li data-type='method'><a href="Api.Router.html#postBinary">postBinary</a></li><li data-type='method'><a href="Api.Router.html#proxy">proxy</a></li><li data-type='method'><a href="Api.Router.html#put">put</a></li><li data-type='method'><a href="Api.Router.html#toJson">toJson</a></li><li data-type='method'><a href="Api.Router.html#updateConceptItem">updateConceptItem</a></li></ul></li><li><a href="Api.Settings.html"><span class="member-of">Api.</span>Settings</a><ul class='methods'><li data-type='method'><a href="Api.Settings.html#delete">delete</a></li><li data-type='method'><a href="Api.Settings.html#get">get</a></li><li data-type='method'><a href="Api.Settings.html#getAllSettings">getAllSettings</a></li><li data-type='method'><a href="Api.Settings.html#isAvailable">isAvailable</a></li><li data-type='method'><a href="Api.Settings.html#set">set</a></li></ul></li><li><a href="Api.Ui.html"><span class="member-of">Api.</span>Ui</a><ul class='methods'><li data-type='method'><a href="Api.Ui.html#getComponent">getComponent</a></li><li data-type='method'><a href="Api.Ui.html#showDialog">showDialog</a></li><li data-type='method'><a href="Api.Ui.html#showMessageDialog">showMessageDialog</a></li><li data-type='method'><a href="Api.Ui.html#showNotification">showNotification</a></li></ul></li><li><a href="Api.Upload.html"><span class="member-of">Api.</span>Upload</a><ul class='methods'><li data-type='method'><a href="Api.Upload.html#uploadFile">uploadFile</a></li></ul></li><li><a href="Component.AvatarComponent.html"><span class="member-of">Component.</span>AvatarComponent</a><ul class='methods'><li data-type='method'><a href="Component.AvatarComponent.html#loadAvatarUrlForAvatarId">loadAvatarUrlForAvatarId</a></li></ul></li><li><a href="Component.BylineComponent.html"><span class="member-of">Component.</span>BylineComponent</a></li><li><a href="Component.DatetimeFieldEditorComponent.html"><span class="member-of">Component.</span>DatetimeFieldEditorComponent</a></li><li><a href="Component.DialogComponent.html"><span class="member-of">Component.</span>DialogComponent</a><ul class='methods'><li data-type='method'><a href="Component.DialogComponent.html#changeModalHeight">changeModalHeight</a></li></ul></li><li><a href="Component.DialogImageComponent.html"><span class="member-of">Component.</span>DialogImageComponent</a><ul class='methods'><li data-type='method'><a href="Component.DialogImageComponent.html#renderAuthor">renderAuthor</a></li><li data-type='method'><a href="Component.DialogImageComponent.html#saveImageData">saveImageData</a></li><li data-type='method'><a href="Component.DialogImageComponent.html#syncPhotoDate">syncPhotoDate</a></li></ul></li><li><a href="Component.DropdownComponent.html"><span class="member-of">Component.</span>DropdownComponent</a></li><li><a href="Component.FieldEditorComponent.html"><span class="member-of">Component.</span>FieldEditorComponent</a></li><li><a href="Component.FormAddComponent.html"><span class="member-of">Component.</span>FormAddComponent</a></li><li><a href="Component.FormSearchComponent.html"><span class="member-of">Component.</span>FormSearchComponent</a></li><li><a href="Component.ImageCropperComponent.html"><span class="member-of">Component.</span>ImageCropperComponent</a></li><li><a href="Component.InlineImageComponent.html"><span class="member-of">Component.</span>InlineImageComponent</a></li><li><a href="Component.LinkComponent.html"><span class="member-of">Component.</span>LinkComponent</a></li><li><a href="Component.Notification.html"><span class="member-of">Component.</span>Notification</a></li><li><a href="Component.NotificationListComponent.html"><span class="member-of">Component.</span>NotificationListComponent</a></li><li><a href="Component.PlaceholderComponent.html"><span class="member-of">Component.</span>PlaceholderComponent</a></li><li><a href="Component.SelectComponent.html"><span class="member-of">Component.</span>SelectComponent</a><ul class='methods'><li data-type='method'><a href="Component.SelectComponent.html#renderButtonList">renderButtonList</a></li><li data-type='method'><a href="Component.SelectComponent.html#renderDropDownList">renderDropDownList</a></li><li data-type='method'><a href="Component.SelectComponent.html#renderList">renderList</a></li><li data-type='method'><a href="Component.SelectComponent.html#renderToggleList">renderToggleList</a></li></ul></li><li><a href="Component.ToggleComponent.html"><span class="member-of">Component.</span>ToggleComponent</a></li><li><a href="Component.TooltipComponent.html"><span class="member-of">Component.</span>TooltipComponent</a></li><li><a href="ConfigEditorComponent.html">ConfigEditorComponent</a></li><li><a href="NewsMLArticle.html">NewsMLArticle</a></li><li><a href="NewsMLImporter.html">NewsMLImporter</a><ul class='methods'><li data-type='method'><a href="NewsMLImporter.html#getFirstElementWithTypeElement">getFirstElementWithTypeElement</a></li></ul></li><li><a href="NotFoundException.html">NotFoundException</a></li><li><a href="PluginManager.html">PluginManager</a><ul class='methods'><li data-type='method'><a href="PluginManager.html#_getValue">_getValue</a></li><li data-type='method'><a href="PluginManager.html#appendPluginScripts">appendPluginScripts</a></li><li data-type='method'><a href="PluginManager.html#getListOfPlugins">getListOfPlugins</a></li><li data-type='method'><a href="PluginManager.html#load">load</a></li><li data-type='method'><a href="PluginManager.html#registerPlugin">registerPlugin</a></li><li data-type='method'><a href="PluginManager.html#validatePluginPackage">validatePluginPackage</a></li></ul></li><li><a href="Validator.html">Validator</a><ul class='methods'><li data-type='method'><a href="Validator.html#addError">addError</a></li><li data-type='method'><a href="Validator.html#addInfo">addInfo</a></li><li data-type='method'><a href="Validator.html#addWarning">addWarning</a></li><li data-type='method'><a href="Validator.html#getMessages">getMessages</a></li><li data-type='method'><a href="Validator.html#hasMessages">hasMessages</a></li></ul></li></ul><h3>Externals</h3><ul class=externals><li><a href="external-Substance.html">Substance</a></li></ul><h3>Mixins</h3><ul class=mixins><li><a href="Trait.authorNodeTrait.html"><span class="member-of">Trait.</span>authorNodeTrait</a><ul class='methods'><li data-type='method'><a href="Trait.authorNodeTrait.html#.addAuthor">addAuthor</a></li><li data-type='method'><a href="Trait.authorNodeTrait.html#.fetchAuthorConcept">fetchAuthorConcept</a></li><li data-type='method'><a href="Trait.authorNodeTrait.html#.fetchAuthorsConcept">fetchAuthorsConcept</a></li><li data-type='method'><a href="Trait.authorNodeTrait.html#.removeAuthor">removeAuthor</a></li><li data-type='method'><a href="Trait.authorNodeTrait.html#.setAuthors">setAuthors</a></li><li data-type='method'><a href="Trait.authorNodeTrait.html#.updateAuthorFromConcept">updateAuthorFromConcept</a></li></ul></li><li><a href="Trait.imageCropTrait.html"><span class="member-of">Trait.</span>imageCropTrait</a><ul class='methods'><li data-type='method'><a href="Trait.imageCropTrait.html#.setSoftcropData">setSoftcropData</a></li></ul></li><li><a href="Trait.imageNodeTrait.html"><span class="member-of">Trait.</span>imageNodeTrait</a><ul class='methods'><li data-type='method'><a href="Trait.imageNodeTrait.html#.fetchSpecifiedUrls">fetchSpecifiedUrls</a></li><li data-type='method'><a href="Trait.imageNodeTrait.html#.getImageFile">getImageFile</a></li><li data-type='method'><a href="Trait.imageNodeTrait.html#.getUrl">getUrl</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import './styles/app.scss'
+
+import {Component, EditorSession} from 'substance'
+import NPWriterComponent from './packages/npwriter/NPWriterComponent'
+import NPWriterConfigurator from './packages/npwriter/NPWriterConfigurator'
+import AppPackage from './AppPackage'
+import UnsupportedPackage from './packages/unsupported/UnsupportedPackage'
+import PluginManager from './utils/PluginManager'
+import API from './api/Api'
+import Start from './packages/load-screens/Start'
+import Error from './packages/load-screens/Error'
+import SaveHandler from './packages/npwriter/SaveHandler'
+import Event from './utils/Event'
+import Hook from './utils/Hook'
+import NilUUID from './utils/NilUUID'
+import moment from 'moment'
+import idGenerator from './utils/IdGenerator'
+import fetchImageMeta from './utils/fetchImageMeta'
+import APIManager from './api/APIManager'
+import lodash from 'lodash'
+import jxon from 'jxon'
+import Validator from './packages/npwriter/Validator'
+import NPWriterCommand from './packages/npwriter/NPWriterCommand'
+import NPFileProxy from './packages/npwriter/NPFileProxy'
+import uuidv5 from 'uuidv5'
+import DialogPlaceholder from "./packages/dialog/DialogPlaceholder"
+import {addTraits, withTraits, hasTrait} from './utils/traits'
+import traitBundle from './traits/traitBundle'
+
+import NPWriterAnnotationCommand from './packages/npwriter/NPWriterAnnotationCommand'
+
+const STATUS_READY = 'isReady',
+    STATUS_LOADING = 'loading',
+    STATUS_HAS_ERROR = 'hasErrors',
+    HAS_DOCUMENT = 'writerHasDocument',
+    HAS_NO_DOCUMENT = 'writerHasNoDocument',
+    ROUTE_ARTICLE = '/api/newsitem/',
+    ROUTE_CONFIG = '/api/config/'
+
+class App extends Component {
+
+    constructor(...args) {
+        super(...args)
+
+        this.pluginManager = null
+        this.api = null
+
+        const actionHandlers = {
+            validate: () => {
+                console.warn("Implement Validation")
+            },
+            save: () => {
+                console.warn("Implement save action")
+            },
+            error: (error) => {
+                this.api.router.get('/api/err?error=' + JSON.stringify(error.error.message) + '&amp;uuid='+this.api.browser.getHash())
+                this.handleError(error.humanError)
+            }
+        }
+
+        this.handleActions(actionHandlers)
+
+        console.info("Running writer in environment: ", process.env.NODE_ENV);
+    }
+
+    getInitialState() {
+        return {
+            status: STATUS_LOADING
+        }
+    }
+
+    /**
+     * A Dependency injection mechanism
+     * Added objects is reachable from this.context in children
+     * @returns {*}
+     */
+    getChildContext() {
+        const componentRegistry = this.configurator ? this.configurator.getComponentRegistry() : null
+        return Object.assign({}, {
+            configurator: this.configurator,
+            pluginManager: this.pluginManager,
+            api: this.api,
+            componentRegistry: componentRegistry
+        });
+    }
+
+
+    /**
+     * If no ID is available in browser hash,
+     * check if there is a specified id in the config file
+     *
+     * @returns {string} hash
+     * @throws Error
+     */
+    getHash() {
+        let hash = this.api.browser.getHash();
+        if (!hash) {
+            if (this.configurator.getNewsItemTemplateId()) {
+                hash = this.configurator.getNewsItemTemplateId()
+            } else {
+                throw new Error('No template was found')
+            }
+        }
+        return hash
+    }
+
+
+    /**
+     * Returns the saveHandler or create one if not created
+     * @returns {SaveHandler}
+     */
+    getSaveHandler() {
+        if (!this.saveHandler) {
+            this.saveHandler = new SaveHandler({
+                configurator: this.configurator,
+                api: this.api
+            })
+        }
+        return this.saveHandler
+    }
+
+    didMount() {
+        this.configurator = new NPWriterConfigurator().import(AppPackage)
+        this.APIManager = new APIManager()
+
+        this.pluginManager = new PluginManager(this.configurator, this.APIManager)
+        this.api = new API(this.pluginManager, this.configurator, this.APIManager)
+        const api = this.api
+
+        this.configurator.npKeyboardManager.setApi(api)
+        api.setAppReference(this)
+
+        // Expose classes and endpoint on window.writer
+        api.apiManager.expose('api', this.api)
+        api.apiManager.expose('NilUUID', NilUUID)
+        api.apiManager.expose('event', Event) // Expose the API on the window
+        api.apiManager.expose('hook', Hook) // Expose hook constants to window
+        api.apiManager.expose('moment', moment) // Expose moment.js on window
+        api.apiManager.expose('idGenerator', idGenerator) // Expose the ID Generator helper method
+        api.apiManager.expose('lodash', lodash) // Expose the ID Generator helper method
+        api.apiManager.expose('jxon', jxon) // Expose JXON library
+        api.apiManager.expose('uuidv5', uuidv5) // Expose a UUID V5 library
+        api.apiManager.expose('fetchImageMeta', fetchImageMeta(api)) // Expose fetchImageMeta helper function loaded with api variable
+
+        api.apiManager.expose('NPFileProxy', NPFileProxy) // Expose NPFileProxy base class
+        api.apiManager.expose('Validator', Validator) // Expose the validator base class
+        api.apiManager.expose('WriterCommand', NPWriterCommand) // The NPWriter base class for commands containg commandState method
+        api.apiManager.expose('NPWriterAnnotationCommand', NPWriterAnnotationCommand) // Expose NPWriterAnnotationCommand base class
+
+
+        // Expose class traits
+        api.apiManager.expose('withTraits', withTraits) // Expose ability to add traits to extended es6 classes using traits
+        api.apiManager.expose('addTraits', addTraits) // Expose ability to add traits to normal objects
+        api.apiManager.expose('hasTrait', hasTrait) // Expose helper function to check if object or class is implementing a specific trait
+        api.apiManager.expose('traitBundle', traitBundle.build(api)) // Expose collection of common Node-trait objects
+
+        // TODO: Setup timeout that asks the user if the local config is successful
+        // TODO: Clear if user says it doesn't work and reload
+        // TODO: Should warn user that local config loading failed
+
+        Promise.resolve()
+        .then(() => {
+            return this.loadConfiguration(api)
+        })
+        .then(config => {
+            return this.pluginManager.load(config.plugins)
+        })
+        .then(() => {
+            if (this.configurator.config.writerConfigFile.forcePlaintextPaste) {
+                AppPackage.setOption('forcePlainTextPaste', true)
+            }
+        })
+        .then(() => {
+            return this.loadTemplate(api)
+        })
+        .then(() => {
+            setTimeout(() => {
+                if (this.api.hasLocalConfiguration()) {
+                    this.api.ui.showNotification(
+                        '__app',
+                        'Warning',
+                        'You are loading the Writer with a local configuration. Only do this if you know what you are doing.'
+                    )
+                }
+            }, 100)
+        })
+        .catch(e => {
+            this.handleError(e, api)
+        })
+    }
+
+    /**
+     * Load configuration from server, then check if there is a configuration
+     * in local storage that should override the configuration loaded.
+     *
+     * @param {object} api
+     * @return {Promise}
+     */
+    loadConfiguration(api) {
+        return this.configurator.loadWriterConfiguration(ROUTE_CONFIG)
+        .then(config => {
+            let localConfig
+            try {
+                // If local storage has config override config fetched from server
+                localConfig = api.settings.get('__global__', 'localConfiguration')
+                if (localConfig &amp;&amp; Array.isArray(localConfig.plugins) &amp;&amp; localConfig.plugins.length) {
+                    this.configurator.setWriterConfiguration(localConfig)
+                    config = localConfig
+                }
+            }
+            catch(err) {
+                console.warn('Could not read and parse config from localStorage. Using server based config', err)
+            }
+
+            return config
+        })
+    }
+
+    /**
+     * Load template article from backend
+     *
+     * @param {object} api
+     * @return {Promise}
+     */
+    loadTemplate(api) {
+        const url = ROUTE_ARTICLE + this.getHash()
+        const promise = api.router.get(url, {imType: 'x-im/article'}) // Make request to fetch article
+            .then(response => api.router.checkForOKStatus(response))                // Check if the status is between 200 and 300
+            .then(response => api.router.handleEtag(response, this.getHash()))      // "Save" ETag from response (used for update)
+            .then(response => response.text())                                      // Gets the text/xml in the response
+            .then((xmlStr) => {
+
+                this.addDefaultConfiguratorComponent()
+
+                var result = api.newsItem.setSource(xmlStr, {});
+
+                // Locale for moment
+                moment.locale(this.configurator.config.writerConfigFile.language)
+
+                this.replaceDoc(result);
+
+                // Clear guid if hash is empty
+                if (!api.browser.getHash()) {
+                    api.newsItem.setGuid(null);
+                    api.newsItem.removeDocumentURI();
+                }
+
+                this.setState({
+                    status: STATUS_READY
+                })
+            })
+
+        // Don't catch errors during development as we loose the stacktrace
+        if (process.env &amp;&amp; process.env.NODE_ENV === 'production') {
+            promise.catch(this.handleError.bind(this));
+        }
+
+        return promise
+    }
+
+    /**
+     * Handles errors from for instance plugin loading
+     * @param {PluginNotLoadedError | String} error
+     * @param {object} api
+     */
+    handleError(error) {
+        console.error(error)
+
+        this.setState({
+            status: STATUS_HAS_ERROR,
+            error: error
+        })
+    }
+
+    /**
+     * Replace changes the current newsItem and creates and replaces the document session and then rerenders the writer
+     * @param newsItem
+     * @param idfDocument
+     */
+    replaceDoc({newsItemArticle, idfDocument}) {
+        this.newsItemArticle = newsItemArticle
+        if (this.editorSession) {
+            this.editorSession.dispose()
+        }
+
+        this.saveHandler = null
+
+        this.editorSession = new EditorSession(idfDocument, {
+            configurator: this.configurator,
+            lang: this.configurator.config.writerConfigFile.language,
+            context: {
+                api: this.api
+            }
+        })
+        this.editorSession.saveHandler = this.getSaveHandler()
+        this.api.init(newsItemArticle, this.editorSession)
+        this.api.events.removeAllEventListeners()
+
+        if (this.refs.writer) {
+            // First load we have to reference to writer so we know it's the initial load
+            this.api.document._setDocumentStatus(HAS_DOCUMENT)
+        }
+        else {
+            this.api.document._setDocumentStatus(HAS_NO_DOCUMENT)
+        }
+
+        // Emptying the component here makes sure that no component
+        // survives connected to the old document
+        this.empty()
+        this.rerender()
+    }
+
+    setTemporaryId() {
+        if (!this.temporaryArticleID) {
+            this.temporaryArticleID = '__temp__' + idGenerator();
+        }
+    }
+
+    render($$) {
+        const el = $$('div')
+            .addClass('sc-app')
+            .ref('app')
+
+        switch (this.state.status) {
+            case STATUS_HAS_ERROR:
+                el.append([
+                    $$(Error, {
+                        error: this.state.error,
+                        getLabel: this.getLabel.bind(this)
+                    }),
+                    $$(DialogPlaceholder).addClass('modal-placeholder')
+                ])
+                break
+
+            case STATUS_READY:
+                if (!this.api.browser.getHash()) {
+                    this.setTemporaryId();
+                }
+
+                el.append([
+                    $$(NPWriterComponent, {
+                        pluginManager: this.pluginManager,
+                        editorSession: this.editorSession,
+                        configurator: this.configurator,
+                        api: this.api,
+                        disableSpellcheck: this.configurator.config.writerConfigFile.disableSpellcheck
+                    }).ref('writer')
+                ])
+                break
+
+            case STATUS_LOADING:
+            default:
+                el.append(
+                    $$(Start, {})
+                )
+        }
+
+        return el
+    }
+
+
+    getLabel(label) {
+        const labelLanguage = this.configurator.config.writerConfigFile.labelLanguage
+        if (labelLanguage) {
+            if (this.configurator.config.labels[labelLanguage][label]) {
+                label = this.configurator.config.labels[labelLanguage][label]
+            }
+        }
+
+        return label
+    }
+
+    /**
+     * Adds a couple of defaults component to our configurator
+     */
+    addDefaultConfiguratorComponent() {
+        // Adds package for unsupported elements in document
+        this.configurator.import(UnsupportedPackage)
+
+        // This is a HACK to get labels for the metadata tab
+        // The API and LabelProvider is not quite finished in this situation
+        // So the read directly from the labels property in the configurator
+        this.configurator.addSidebarTab('main', this.getLabel('Meta'))
+    }
+}
+
+export default App
+
+window.onload = () => {
+// /
+    // if(window.PRODUCTION) {
+    //     if('serviceWorker' in navigator) {
+    //         navigator.serviceWorker.register('serviceworker.js')
+    //             .then(() => {
+    //                 console.log("Registration done");
+    //                 showNotification()
+    //             })
+    //             .catch((error) => {
+    //                 console.log("Registrsation of serviceworker failed")
+    //             })
+    //     }
+    // }
+
+
+    //
+    /*    function showNotification() {
+     Notification.requestPermission(function (result) {
+     if (result === 'granted') {
+     navigator.serviceWorker.ready.then(function (registration) {
+     registration.showNotification('Service worker is installed and ready to use');
+     });
+     }
+     });
+     }
+     */
+
+    App.mount({}, document.body)
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Wed Dec 13 2017 14:01:31 GMT+0100 (CET) using a modified version of the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+<!-- <script src="scripts/prism.js"></script> -->
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
