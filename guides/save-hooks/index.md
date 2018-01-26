@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Validation and execute hooks when saving
+title: Validation and execute hooks
 active: /guides/
 ---
 
-# Execute hooks before and after save
+# Validate and execute hooks
 
 ## Overview
-It is possible to add hooks in various stages of the saving process. There are three general hooks that as well as the more special validation hook. All hooks must return a `Promise()` that is either resolved or reject by the hook. Any `reject()` will cancel the process and show an error message to the user.
+It is possible to add hooks in various stages of the saving process. There are three general hooks in addition to the more special validation. All hooks must return a `Promise()` that is either resolved or rejected by the hook. Any `reject()` will cancel the process and show an error message to the user.
 
 *Any plugin can provide hooks or validation. The order of multiple hooks in the same stage is not guaranteed so no assumption should be made on the execution order.*
 
