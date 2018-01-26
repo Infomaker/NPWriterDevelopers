@@ -40,6 +40,10 @@
       description: "Learn how to create plugin components and let the writer handle plugin settings"
       subhref: "settings/"
 
+    - subtitle: "Validate and execute save hooks"
+      description: "Register hooks for execution in various stages of the save process"
+      subhref: "save-hooks"
+      
     - subtitle: "Handle File and URI drops"
       description: "Register to handle when user dropping a file or an uri"
       subhref: "handle-drops/"
