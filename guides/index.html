@@ -5,20 +5,13 @@ title: Guides
 
 <h1>Guides</h1>
 
-
 {% for navItem in site.data.nav %}
     {% if page.url == navItem.href %}
         {% for subpage in navItem.subpages%}
-             <div class="subpage-item">
-                 <h3><a href="{{ site.url }}{{ site.baseurl }}{{ page.url }}{{ subpage.subhref }}">{{subpage.subtitle}}</a></h3>
-                 <p>{{subpage.description}}</p>
-             </div>
-
-
-            <hr />
-
-    {% endfor %}
+            <div class="subpage-item">
+                <h3><a href="{{ site.url }}{{ site.baseurl }}{{ page.url }}{{ subpage.subhref }}">{{subpage.subtitle}}</a></h3>
+                <p>{{subpage.description}}</p>
+            </div>
+        {% endfor %}
     {% endif %}
 {% endfor %}
-
-

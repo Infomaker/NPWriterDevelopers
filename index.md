@@ -3,13 +3,14 @@ layout: full-width
 title: Developer Portal for Newspilot Writer
 ---
 
-<div class="jumbotron">
+<div id="jumbosplash" class="jumbotron">
     <h1>Newspilot Writer Developer Portal</h1>
+
     <p class="lead">
     Learn how to create a lot of different type of plugins for Newspilot Writer.
-    Our writer is based on the reliable Substance.io text editor. 
-    
-</p>
+    Our writer is based on the reliable Substance.io text editor.     
+    </p>
+
 <p><center><a class="btn btn-lg btn-success" href="{{site.baseurl}}/getting-started/" role="button">Get started</a></center></p>
 </div>
 <div class="row marketing">
@@ -20,11 +21,11 @@ title: Developer Portal for Newspilot Writer
   <h3>Insert any type of content</h3>
   <p>With our API and underlying Substance technology you can insert and edit any type of content,
   Youtube videos, Graphs, Socialembeds</p>
-  
-  
+
+
   <h3>Host and configure your plugins</h3>
   <p>We have created a neat solution to enable you to host and configure your own plugins.</p>
-  
+
 </div>
 
 <div class="col-lg-6">
@@ -33,13 +34,13 @@ title: Developer Portal for Newspilot Writer
   ReactJS build plugins will be a walk in the park.</p>
 
   <h3>Create notifications</h3>
-  <p>With our API and Gui components you can easily take advantage of our notification system and 
+  <p>With our API and Gui components you can easily take advantage of our notification system and
   create dialogs.</p>
-  
+
   <h3>Provide your own stylesheet</h3>
   <p>Provide your own stylesheet with your plugin to get the look and feel you want</p>
 
-  
+
   <h3>Using ES6</h3>
   <p>We are using javascript based on the ES6 standard.</p>
 
