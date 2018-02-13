@@ -17,6 +17,7 @@ In order to enable the spellcheck integration, the Writer's server-config needs 
 added to your server-config's `external`-config object:
 
 ~~~json
+
 "spellcheck": {
     "check": {
         "url": "[your-spellcheck-endpoint]",
@@ -31,6 +32,7 @@ added to your server-config's `external`-config object:
         }
     }
 }
+
 ~~~
 
 ### Fields Explanation
@@ -63,6 +65,8 @@ The API must be able to receive the following request on an endpoint you define:
 
 #### Request
 
+~~~
+
     POST [your-spellcheck-endpoint]
     headers
         Accept: application/json
@@ -86,32 +90,39 @@ The API must be able to receive the following request on an endpoint you define:
             ]
         }
 
+~~~
+
 #### Response
 The API should respond with a single array containing the misspelled words in the same json-format as 
 they were sent, if no words were misspelled, response should contain an empty array.
 
 **Response Format**
 
-    headers
-        Content-Type: application/json 
-    body
-        [
-          { "start": 0, "end": 5, "text": "Lorem" },
-          { "start": 6, "end": 11, "text": "ipsum" },
-          { "start": 12, "end": 17, "text": "dolor" },
-          { "start": 61, "end": 63, "text": "do" },
-          { "start": 64, "end": 71, "text": "eiusmod" }
-        ]
+~~~
+
+headers
+    Content-Type: application/json 
+body
+    [
+      { "start": 0, "end": 5, "text": "Lorem" },
+      { "start": 6, "end": 11, "text": "ipsum" },
+      { "start": 12, "end": 17, "text": "dolor" },
+      { "start": 61, "end": 63, "text": "do" },
+      { "start": 64, "end": 71, "text": "eiusmod" }
+    ]
+
+~~~
 
 #### Example Request
 Your API should be able to perform the call below, and output an array of the misspelled words, or an empty array.
 
-~~~ javascript
+~~~javascript
+
 fetch("[your-spellcheck-endpoint]", {
     method: 'post',
     headers: {'Accept': 'application/json', 'Content-Type': 'application/json'},
     body: JSON.stringify({
-        "lang": "en_US",
+        "lang": "[language_code]",
         "words": [
             { "start": 0, "end": 5, "text": "Lorem" },
             { "start": 6, "end": 11, "text": "ipsum" },
@@ -123,9 +134,12 @@ fetch("[your-spellcheck-endpoint]", {
 })
     .then((res) => res.json())
     .then((json) => console.log(json))
+
 ~~~
 
 Output:
+
+~~~json
 
     [
         {"start":0,"end":5,"text":"Lorem"},
@@ -133,10 +147,14 @@ Output:
         {"start":64,"end":71,"text":"eiusmod"}
     ]
 
+~~~
+
 ### Suggestions
 The API must be able to receive the following request on an endpoint you define:
 
 #### Request
+
+~~~
 
     POST [your-suggestion-endpoint]
     headers
@@ -146,11 +164,15 @@ The API must be able to receive the following request on an endpoint you define:
         word=String
         lang=[language_code]
 
+~~~
+
 #### Response
 The API should respond with a single array containing the misspelled words in the same json-format as 
 they were sent, if no words were misspelled, response should be an empty array.
 
 **Response Format**
+
+~~~
 
     headers
         Content-Type: application/json
@@ -163,17 +185,25 @@ they were sent, if no words were misspelled, response should be an empty array.
             "teorem"
         ]
 
+~~~
+
 #### Example Request
 Your API should be able to perform the call below, and output an array of words, or an empty array.
 
-~~~ javascript
+~~~javascript
+
 fetch("[your-suggestion-endpoint]?word=tempor&lang=en_US", {
     headers: {'Accept': 'application/json', 'Content-Type': 'application/json'}
 })
     .then((res) => res.json())
     .then((json) => console.log(json))
+
 ~~~
 
 Output
 
+~~~json
+
     ["tempo", "temper", "tempos", "temp or", "temp-or", "tempo r"]
+
+~~~
