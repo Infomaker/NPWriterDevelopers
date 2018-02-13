@@ -69,6 +69,10 @@
       description: "Migrate your version 1 plugin to version 3"
       subhref: "migration-guide/"
 
+    - subtitle: "Integrating External Spell Checking"
+      description: "Integrate your own spell checking and suggestion API in the Writer"
+      subhref: "spellcheck-integration"
+
 - title: "API Reference"
   href: "/api-reference/"
 
