@@ -7,16 +7,13 @@ infomaker: Infomaker
 
 # {{ page.title }}
 
-**{{ page.writer }} consists of the NPWriter core project, which provides core editing functionality,
-and optional plugin projects that extends the functionality of the writer.
-In this article you will find instructions of how to download and start the {{ page.writer }} locally
+**In this article you will find instructions of how to download and start the {{ page.writer }} locally
 and how to start developing your first plugin.**
 
 
-## Prerequisites
+## Before you start
 
-To use  {{ page.writer }} you need to use the latest version of Google Chrome 
-
+To use  {{ page.writer }} you need to use the latest version of Google Chrome
 {{ page.writer }} requires Node.js version 6.9.1
 
 Start by installing Node.js on your machine.
@@ -31,64 +28,87 @@ The code resides on github, hence you also need to have Git installed.
 
 ---
 
-## Clone  Newspilot Writer
+## The Writer
 
-Download and clone from Github
+### Get the code
 
-~~~text
+In order to get access to the writer you will need to be added to the Infomaker /Writer3-Plugin-Developer/ team on Github. You will also need to obtain an API key to get access to services necessary to run the Writer.
 
+Start by cloning the NPWriter project.
+
+```
+mkdir workshop
+cd workshop
 git clone https://github.com/Infomaker/NPWriter.git
+```
+
+### Prepare and start the Writer
+
+```
 cd NPWriter
-npm install
-npm run build-dep
+npm install && npm run build-dep
+```
 
-~~~
+The writer is now almost ready. The only thing we need to do now is add the API key to the server config file. Open the file `server/config.server.json` and add the obtained API key, which looks something like `fAL0FFu9kcbaUDIh4W130rOrOogkDd38YBYJJ0`, where you see `[Enter API key here]`
 
-## Add your API key to the Writer backend
+*The default developer usage plan allows for 10 requests per second and 5.000 requests per month.*
 
-The development backend requires an API key in order to enable acces to it. The api key should be specified in the `server/config/server.json` file. 
+Now start the writer in dev mode using the default configuration.
 
-## Start the writer backend
-
-~~~text
-
+```
 npm run dev
+```
 
-~~~
+This should have the Writer running and you will find it on [localhost:5000](http://localhost:5000).
 
-You can now open thw writer with a demo document [localhost:5000/#demo](http://localhost:5000/#demo) or just 
-[localhost:5000/](http://localhost:5000/) to create a new article
+## Getting on with plugin development
 
+Get started with the dev kit
+The dev kit provides everything needed to get started, including build steps and local plugin server. Start by going to the workshop directory again and clone the NPWriterDevKit project.
 
----
-
-## Download add enable the Devkit plugin
-
-We have provided you with a developers kit which is supplied with an example plugin.
-
-<video src="{{site.url}}{{site.baseurl}}/getting-started/add-devkit-plugin.mp4" width="70%" controls="true">
-</video>
-
-
-~~~ 
-
-git clone https://github.com/Infomaker/NPWriterDevKit.git
+```
+git clone https://github.com/Infomaker/NPWriterDevKit.git
 cd NPWriterDevKit
-npm install 
+rm -rf .git
+npm install
 npm start
+```
 
-~~~ 
+This should have the plugin started and served by the plugin server on [localhost:3000](http://localhost:3000). Next you need to add this plugin to the Writer configuration so it loads the plugin. The configuration should look like below.
 
-Plugin server started at [localhost:3000](http://localhost:3000)
+*[You can find more information on plugin configuration here]({{site.url}}{{site.baseurl}}/guides/plugin-configuration.html)*
 
+```json
+{
+    "id": "se.infomaker.npwriterdevkit",
+    "name": "npwriterdevkit",
+    "url": "http://localhost:3000/index.js",
+    "style": "http://localhost:3000/style.css",
+    "mandatory": false,
+    "enabled": true
+}
+```
 
-To enable plugin open NPWriter and edit server/config/writer.json, the plugin url should be `http://localhost:3000/index.js`
+Add this to the top of the plugins section in  `server/config/writer.json`. After this it should look something like
 
+```json
+{
+  "newsItemTemplateId": "30eae1c0-c640-4053-b114-05c64e28bbe7",
+  "language": "en_US",
+  "labelLanguage": "en",
+  "plugins": [
+        {
+            "id": "se.infomaker.npwriterdevkit",
+            ...
+        },
+        ...
+    ]
+}
+```
 
-[More information about plugin config is found here]({{site.url}}{{site.baseurl}}/guides/plugin-configuration.html)
+### Next… improvise!
 
-
-
+Next up is to familiarize yourself with the [API reference]({{site.url}}{{site.baseurl}}/api-reference/), the [howto guides]({{site.url}}{{site.baseurl}}/guides/) and play around.
 
 
 <!--
@@ -100,7 +120,7 @@ let myvar = "this"
 let myvar = "this"
 let myvar = "this"
 
-~~~ 
+~~~
 -->
 
 
@@ -125,4 +145,3 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                                
