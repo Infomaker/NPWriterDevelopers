@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>packages/byline/AddToByline.js - Documentation</title>
+    <script src="scripts/prettify/prettify.js"></script>
+    <!-- <link rel="stylesheet" href="styles/prism.css"> -->
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul class=namespaces><li><a href="Api.html">Api</a></li><li><a href="Component.html">Component</a></li><li><a href="Trait.html">Trait</a></li></ul><h3>Classes</h3><ul class=classes><li><a href="Api.html">Api</a><ul class='methods'><li data-type='method'><a href="Api.html#call">call</a></li><li data-type='method'><a href="Api.html#getConfigValue">getConfigValue</a></li><li data-type='method'><a href="Api.html#getPluginModule">getPluginModule</a></li><li data-type='method'><a href="Api.html#getPluginModulesForTarget">getPluginModulesForTarget</a></li><li data-type='method'><a href="Api.html#hasLocalConfiguration">hasLocalConfiguration</a></li><li data-type='method'><a href="Api.html#init">init</a></li></ul></li><li><a href="Api.Article.html"><span class="member-of">Api.</span>Article</a><ul class='methods'><li data-type='method'><a href="Api.Article.html#clear">clear</a></li><li data-type='method'><a href="Api.Article.html#copy">copy</a></li></ul></li><li><a href="Api.Browser.html"><span class="member-of">Api.</span>Browser</a><ul class='methods'><li data-type='method'><a href="Api.Browser.html#addExternalScript">addExternalScript</a></li><li data-type='method'><a href="Api.Browser.html#getHash">getHash</a></li><li data-type='method'><a href="Api.Browser.html#getUrl">getUrl</a></li><li data-type='method'><a href="Api.Browser.html#isSupported">isSupported</a></li><li data-type='method'><a href="Api.Browser.html#openInNewWindow">openInNewWindow</a></li><li data-type='method'><a href="Api.Browser.html#reload">reload</a></li><li data-type='method'><a href="Api.Browser.html#setHash">setHash</a></li><li data-type='method'><a href="Api.Browser.html#setTitle">setTitle</a></li><li data-type='method'><a href="Api.Browser.html#setupHashHandler">setupHashHandler</a></li></ul></li><li><a href="Api.Concept.html"><span class="member-of">Api.</span>Concept</a><ul class='methods'><li data-type='method'><a href="Api.Concept.html#.getDefinitionForType">getDefinitionForType</a></li><li data-type='method'><a href="Api.Concept.html#.setDefinitionDependingOnArrayOrObject">setDefinitionDependingOnArrayOrObject</a></li></ul></li><li><a href="Api.Document.html"><span class="member-of">Api.</span>Document</a><ul class='methods'><li data-type='method'><a href="Api.Document.html#deleteNode">deleteNode</a></li><li data-type='method'><a href="Api.Document.html#getDocumentNodes">getDocumentNodes</a></li><li data-type='method'><a href="Api.Document.html#getPreviousNode">getPreviousNode</a></li><li data-type='method'><a href="Api.Document.html#insertBlockNode">insertBlockNode</a></li><li data-type='method'><a href="Api.Document.html#insertInlineNode">insertInlineNode</a></li><li data-type='method'><a href="Api.Document.html#triggerFetchResourceNode">triggerFetchResourceNode</a></li></ul></li><li><a href="Api.Events.html"><span class="member-of">Api.</span>Events</a><ul class='methods'><li data-type='method'><a href="Api.Events.html#_triggerEvent">_triggerEvent</a></li><li data-type='method'><a href="Api.Events.html#documentChanged">documentChanged</a></li><li data-type='method'><a href="Api.Events.html#documentSaved">documentSaved</a></li><li data-type='method'><a href="Api.Events.html#documentSaveFailed">documentSaveFailed</a></li><li data-type='method'><a href="Api.Events.html#off">off</a></li><li data-type='method'><a href="Api.Events.html#on">on</a></li><li data-type='method'><a href="Api.Events.html#onDocumentStartSaving">onDocumentStartSaving</a></li></ul></li><li><a href="Api.History.html"><span class="member-of">Api.</span>History</a><ul class='methods'><li data-type='method'><a href="Api.History.html#cleanOldVersions">cleanOldVersions</a></li><li data-type='method'><a href="Api.History.html#cleanVersionsOlderThanMaxDays">cleanVersionsOlderThanMaxDays</a></li><li data-type='method'><a href="Api.History.html#deleteHistory">deleteHistory</a></li><li data-type='method'><a href="Api.History.html#get">get</a></li><li data-type='method'><a href="Api.History.html#getHistory">getHistory</a></li><li data-type='method'><a href="Api.History.html#isAvailable">isAvailable</a></li><li data-type='method'><a href="Api.History.html#saveHistory">saveHistory</a></li></ul></li><li><a href="Api.NewsItem.html"><span class="member-of">Api.</span>NewsItem</a><ul class='methods'><li data-type='method'><a href="Api.NewsItem.html#addAuthor">addAuthor</a></li><li data-type='method'><a href="Api.NewsItem.html#addCategory">addCategory</a></li><li data-type='method'><a href="Api.NewsItem.html#addChannel">addChannel</a></li><li data-type='method'><a href="Api.NewsItem.html#addConceptProfile">addConceptProfile</a></li><li data-type='method'><a href="Api.NewsItem.html#addContentMetaLink">addContentMetaLink</a></li><li data-type='method'><a href="Api.NewsItem.html#addContentProfile">addContentProfile</a></li><li data-type='method'><a href="Api.NewsItem.html#addLink">addLink</a></li><li data-type='method'><a href="Api.NewsItem.html#addLocation">addLocation</a></li><li data-type='method'><a href="Api.NewsItem.html#addSimpleAuthor">addSimpleAuthor</a></li><li data-type='method'><a href="Api.NewsItem.html#addStory">addStory</a></li><li data-type='method'><a href="Api.NewsItem.html#addTag">addTag</a></li><li data-type='method'><a href="Api.NewsItem.html#createExtendedGeoLink">createExtendedGeoLink</a></li><li data-type='method'><a href="Api.NewsItem.html#createNewsPriority">createNewsPriority</a></li><li data-type='method'><a href="Api.NewsItem.html#getAuthors">getAuthors</a></li><li data-type='method'><a href="Api.NewsItem.html#getCategories">getCategories</a></li><li data-type='method'><a href="Api.NewsItem.html#getChannels">getChannels</a></li><li data-type='method'><a href="Api.NewsItem.html#getContentCreated">getContentCreated</a></li><li data-type='method'><a href="Api.NewsItem.html#getContentMetaLinkByType">getContentMetaLinkByType</a></li><li data-type='method'><a href="Api.NewsItem.html#getContentMetaObjectById">getContentMetaObjectById</a></li><li data-type='method'><a href="Api.NewsItem.html#getContentMetaObjectsByType">getContentMetaObjectsByType</a></li><li data-type='method'><a href="Api.NewsItem.html#getContentModified">getContentModified</a></li><li data-type='method'><a href="Api.NewsItem.html#getContentProfiles">getContentProfiles</a></li><li data-type='method'><a href="Api.NewsItem.html#getEdNote">getEdNote</a></li><li data-type='method'><a href="Api.NewsItem.html#getFirstCreated">getFirstCreated</a></li><li data-type='method'><a href="Api.NewsItem.html#getGuid">getGuid</a></li><li data-type='method'><a href="Api.NewsItem.html#getHasPublishedVersion">getHasPublishedVersion</a></li><li data-type='method'><a href="Api.NewsItem.html#getIdForArticle">getIdForArticle</a></li><li data-type='method'><a href="Api.NewsItem.html#getLinkByType">getLinkByType</a></li><li data-type='method'><a href="Api.NewsItem.html#getLinkByTypeAndRel">getLinkByTypeAndRel</a></li><li data-type='method'><a href="Api.NewsItem.html#getLinksByType">getLinksByType</a></li><li data-type='method'><a href="Api.NewsItem.html#getLocations">getLocations</a></li><li data-type='method'><a href="Api.NewsItem.html#getMainChannel">getMainChannel</a></li><li data-type='method'><a href="Api.NewsItem.html#getNewspilotArticleId">getNewspilotArticleId</a></li><li data-type='method'><a href="Api.NewsItem.html#getNewsPriority">getNewsPriority</a></li><li data-type='method'><a href="Api.NewsItem.html#getPubStart">getPubStart</a></li><li data-type='method'><a href="Api.NewsItem.html#getPubStatus">getPubStatus</a></li><li data-type='method'><a href="Api.NewsItem.html#getPubStop">getPubStop</a></li><li data-type='method'><a href="Api.NewsItem.html#getSection">getSection</a></li><li data-type='method'><a href="Api.NewsItem.html#getSections">getSections</a></li><li data-type='method'><a href="Api.NewsItem.html#getStories">getStories</a></li><li data-type='method'><a href="Api.NewsItem.html#getTags">getTags</a></li><li data-type='method'><a href="Api.NewsItem.html#getTemporaryId">getTemporaryId</a></li><li data-type='method'><a href="Api.NewsItem.html#getVersionCreated">getVersionCreated</a></li><li data-type='method'><a href="Api.NewsItem.html#hasTemporaryId">hasTemporaryId</a></li><li data-type='method'><a href="Api.NewsItem.html#invalidate">invalidate</a></li><li data-type='method'><a href="Api.NewsItem.html#removeAuthorByTitle">removeAuthorByTitle</a></li><li data-type='method'><a href="Api.NewsItem.html#removeAuthorByUUID">removeAuthorByUUID</a></li><li data-type='method'><a href="Api.NewsItem.html#removeChannel">removeChannel</a></li><li data-type='method'><a href="Api.NewsItem.html#removeContentMetaObject">removeContentMetaObject</a></li><li data-type='method'><a href="Api.NewsItem.html#removeLinkByUUID">removeLinkByUUID</a></li><li data-type='method'><a href="Api.NewsItem.html#removeLinkByUUIDAndRel">removeLinkByUUIDAndRel</a></li><li data-type='method'><a href="Api.NewsItem.html#removeLinkContentMetaByTypeAndMatchingFilter">removeLinkContentMetaByTypeAndMatchingFilter</a></li><li data-type='method'><a href="Api.NewsItem.html#removeLinkContentMetaByTypeAndRel">removeLinkContentMetaByTypeAndRel</a></li><li data-type='method'><a href="Api.NewsItem.html#removePubStart">removePubStart</a></li><li data-type='method'><a href="Api.NewsItem.html#removePubStop">removePubStop</a></li><li data-type='method'><a href="Api.NewsItem.html#removeSection">removeSection</a></li><li data-type='method'><a href="Api.NewsItem.html#save">save</a></li><li data-type='method'><a href="Api.NewsItem.html#setContentMetaObject">setContentMetaObject</a></li><li data-type='method'><a href="Api.NewsItem.html#setEdNote">setEdNote</a></li><li data-type='method'><a href="Api.NewsItem.html#setGuid">setGuid</a></li><li data-type='method'><a href="Api.NewsItem.html#setHasPublishedVersion">setHasPublishedVersion</a></li><li data-type='method'><a href="Api.NewsItem.html#setNewsPriority">setNewsPriority</a></li><li data-type='method'><a href="Api.NewsItem.html#setPubStart">setPubStart</a></li><li data-type='method'><a href="Api.NewsItem.html#setPubStatus">setPubStatus</a></li><li data-type='method'><a href="Api.NewsItem.html#setPubStop">setPubStop</a></li><li data-type='method'><a href="Api.NewsItem.html#setSource">setSource</a></li><li data-type='method'><a href="Api.NewsItem.html#setTemporaryId">setTemporaryId</a></li><li data-type='method'><a href="Api.NewsItem.html#updateAuthorWithUUID">updateAuthorWithUUID</a></li><li data-type='method'><a href="Api.NewsItem.html#updateBroaderLinks">updateBroaderLinks</a></li><li data-type='method'><a href="Api.NewsItem.html#updateConcept">updateConcept</a></li><li data-type='method'><a href="Api.NewsItem.html#updateConceptData">updateConceptData</a></li><li data-type='method'><a href="Api.NewsItem.html#updateConceptProfile">updateConceptProfile</a></li><li data-type='method'><a href="Api.NewsItem.html#updateContentProfile">updateContentProfile</a></li><li data-type='method'><a href="Api.NewsItem.html#updateLocation">updateLocation</a></li><li data-type='method'><a href="Api.NewsItem.html#updateSection">updateSection</a></li><li data-type='method'><a href="Api.NewsItem.html#updateStory">updateStory</a></li><li data-type='method'><a href="Api.NewsItem.html#updateTag">updateTag</a></li></ul></li><li><a href="Api.Router.html"><span class="member-of">Api.</span>Router</a><ul class='methods'><li data-type='method'><a href="Api.Router.html#checkForOKStatus">checkForOKStatus</a></li><li data-type='method'><a href="Api.Router.html#createConceptItem">createConceptItem</a></li><li data-type='method'><a href="Api.Router.html#get">get</a></li><li data-type='method'><a href="Api.Router.html#getConceptItem">getConceptItem</a></li><li data-type='method'><a href="Api.Router.html#getEndpoint">getEndpoint</a></li><li data-type='method'><a href="Api.Router.html#getNewsItem">getNewsItem</a></li><li data-type='method'><a href="Api.Router.html#getQuerystringFromParameters">getQuerystringFromParameters</a></li><li data-type='method'><a href="Api.Router.html#getRequestPropertiesForMethod">getRequestPropertiesForMethod</a></li><li data-type='method'><a href="Api.Router.html#post">post</a></li><li data-type='method'><a href="Api.Router.html#postBinary">postBinary</a></li><li data-type='method'><a href="Api.Router.html#proxy">proxy</a></li><li data-type='method'><a href="Api.Router.html#put">put</a></li><li data-type='method'><a href="Api.Router.html#toJson">toJson</a></li><li data-type='method'><a href="Api.Router.html#updateConceptItem">updateConceptItem</a></li></ul></li><li><a href="Api.Settings.html"><span class="member-of">Api.</span>Settings</a><ul class='methods'><li data-type='method'><a href="Api.Settings.html#delete">delete</a></li><li data-type='method'><a href="Api.Settings.html#get">get</a></li><li data-type='method'><a href="Api.Settings.html#getAllSettings">getAllSettings</a></li><li data-type='method'><a href="Api.Settings.html#isAvailable">isAvailable</a></li><li data-type='method'><a href="Api.Settings.html#set">set</a></li></ul></li><li><a href="Api.Ui.html"><span class="member-of">Api.</span>Ui</a><ul class='methods'><li data-type='method'><a href="Api.Ui.html#getComponent">getComponent</a></li><li data-type='method'><a href="Api.Ui.html#showDialog">showDialog</a></li><li data-type='method'><a href="Api.Ui.html#showMessageDialog">showMessageDialog</a></li><li data-type='method'><a href="Api.Ui.html#showNotification">showNotification</a></li></ul></li><li><a href="Api.Upload.html"><span class="member-of">Api.</span>Upload</a><ul class='methods'><li data-type='method'><a href="Api.Upload.html#uploadFile">uploadFile</a></li></ul></li><li><a href="Component.AvatarComponent.html"><span class="member-of">Component.</span>AvatarComponent</a><ul class='methods'><li data-type='method'><a href="Component.AvatarComponent.html#loadAvatarUrlForAvatarId">loadAvatarUrlForAvatarId</a></li></ul></li><li><a href="Component.ButtonComponent.html"><span class="member-of">Component.</span>ButtonComponent</a></li><li><a href="Component.BylineComponent.html"><span class="member-of">Component.</span>BylineComponent</a></li><li><a href="Component.DatetimeFieldEditorComponent.html"><span class="member-of">Component.</span>DatetimeFieldEditorComponent</a></li><li><a href="Component.DialogComponent.html"><span class="member-of">Component.</span>DialogComponent</a><ul class='methods'><li data-type='method'><a href="Component.DialogComponent.html#changeModalHeight">changeModalHeight</a></li></ul></li><li><a href="Component.DialogImageComponent.html"><span class="member-of">Component.</span>DialogImageComponent</a><ul class='methods'><li data-type='method'><a href="Component.DialogImageComponent.html#renderAuthor">renderAuthor</a></li><li data-type='method'><a href="Component.DialogImageComponent.html#saveImageData">saveImageData</a></li><li data-type='method'><a href="Component.DialogImageComponent.html#syncPhotoDate">syncPhotoDate</a></li></ul></li><li><a href="Component.DropdownComponent.html"><span class="member-of">Component.</span>DropdownComponent</a></li><li><a href="Component.FieldEditorComponent.html"><span class="member-of">Component.</span>FieldEditorComponent</a></li><li><a href="Component.FormAddComponent.html"><span class="member-of">Component.</span>FormAddComponent</a></li><li><a href="Component.FormSearchComponent.html"><span class="member-of">Component.</span>FormSearchComponent</a></li><li><a href="Component.ImageCropperComponent.html"><span class="member-of">Component.</span>ImageCropperComponent</a></li><li><a href="Component.InlineImageComponent.html"><span class="member-of">Component.</span>InlineImageComponent</a></li><li><a href="Component.Notification.html"><span class="member-of">Component.</span>Notification</a></li><li><a href="Component.NotificationListComponent.html"><span class="member-of">Component.</span>NotificationListComponent</a></li><li><a href="Component.PlaceholderComponent.html"><span class="member-of">Component.</span>PlaceholderComponent</a></li><li><a href="Component.SelectComponent.html"><span class="member-of">Component.</span>SelectComponent</a><ul class='methods'><li data-type='method'><a href="Component.SelectComponent.html#renderButtonList">renderButtonList</a></li><li data-type='method'><a href="Component.SelectComponent.html#renderDropDownList">renderDropDownList</a></li><li data-type='method'><a href="Component.SelectComponent.html#renderList">renderList</a></li><li data-type='method'><a href="Component.SelectComponent.html#renderToggleList">renderToggleList</a></li></ul></li><li><a href="Component.ToggleComponent.html"><span class="member-of">Component.</span>ToggleComponent</a></li><li><a href="Component.TooltipComponent.html"><span class="member-of">Component.</span>TooltipComponent</a><ul class='methods'><li data-type='method'><a href="Component.TooltipComponent.html#hide">hide</a></li></ul></li><li><a href="ConceptService.html">ConceptService</a><ul class='methods'><li data-type='method'><a href="ConceptService.html#_search">_search</a></li><li data-type='method'><a href="ConceptService.html#addArticleConcept">addArticleConcept</a></li><li data-type='method'><a href="ConceptService.html#addExtendedGeo">addExtendedGeo</a></li><li data-type='method'><a href="ConceptService.html#createConceptItemXml">createConceptItemXml</a></li><li data-type='method'><a href="ConceptService.html#extractBroaderText">extractBroaderText</a></li><li data-type='method'><a href="ConceptService.html#fetchConceptItemConfigJson">fetchConceptItemConfigJson</a></li><li data-type='method'><a href="ConceptService.html#fetchConceptItemProperties">fetchConceptItemProperties</a></li><li data-type='method'><a href="ConceptService.html#fetchConceptItemTemplateXml">fetchConceptItemTemplateXml</a></li><li data-type='method'><a href="ConceptService.html#getArticleConceptsByType">getArticleConceptsByType</a></li><li data-type='method'><a href="ConceptService.html#getConceptItemXml">getConceptItemXml</a></li><li data-type='method'><a href="ConceptService.html#getPropertyMap">getPropertyMap</a></li><li data-type='method'><a href="ConceptService.html#removeArticleConceptItem">removeArticleConceptItem</a></li><li data-type='method'><a href="ConceptService.html#searchForConceptSuggestions">searchForConceptSuggestions</a></li><li data-type='method'><a href="ConceptService.html#updateArticleConcept">updateArticleConcept</a></li><li data-type='method'><a href="ConceptService.html#updateConceptItemXml">updateConceptItemXml</a></li></ul></li><li><a href="ConfigEditorComponent.html">ConfigEditorComponent</a></li><li><a href="KBDKeyComboComponent.html">KBDKeyComboComponent</a></li><li><a href="KeybindingCaptureComponent.html">KeybindingCaptureComponent</a></li><li><a href="KeybindingEditorComponent.html">KeybindingEditorComponent</a><ul class='methods'><li data-type='method'><a href="KeybindingEditorComponent.html#_onCapturedKeybindingCancel">_onCapturedKeybindingCancel</a></li><li data-type='method'><a href="KeybindingEditorComponent.html#_onCapturedKeybindingSave">_onCapturedKeybindingSave</a></li><li data-type='method'><a href="KeybindingEditorComponent.html#_renderKeybindingRow">_renderKeybindingRow</a></li><li data-type='method'><a href="KeybindingEditorComponent.html#_renderTableHeader">_renderTableHeader</a></li><li data-type='method'><a href="KeybindingEditorComponent.html#getInitialState">getInitialState</a></li><li data-type='method'><a href="KeybindingEditorComponent.html#getKeybindings">getKeybindings</a></li><li data-type='method'><a href="KeybindingEditorComponent.html#onClose">onClose</a></li></ul></li><li><a href="NewsMLArticle.html">NewsMLArticle</a></li><li><a href="NewsMLImporter.html">NewsMLImporter</a><ul class='methods'><li data-type='method'><a href="NewsMLImporter.html#getFirstElementWithTypeElement">getFirstElementWithTypeElement</a></li></ul></li><li><a href="NotFoundException.html">NotFoundException</a></li><li><a href="NPWriterConfigurator.html">NPWriterConfigurator</a><ul class='methods'><li data-type='method'><a href="NPWriterConfigurator.html#addContentMenuTool">addContentMenuTool</a></li><li data-type='method'><a href="NPWriterConfigurator.html#addFileProxy">addFileProxy</a></li><li data-type='method'><a href="NPWriterConfigurator.html#addHook">addHook</a></li><li data-type='method'><a href="NPWriterConfigurator.html#addKeyboardShortcut">addKeyboardShortcut</a></li><li data-type='method'><a href="NPWriterConfigurator.html#addOverlayTool">addOverlayTool</a></li><li data-type='method'><a href="NPWriterConfigurator.html#addPluginModule">addPluginModule</a></li><li data-type='method'><a href="NPWriterConfigurator.html#addPopover">addPopover</a></li><li data-type='method'><a href="NPWriterConfigurator.html#addTextEditComponent">addTextEditComponent</a></li><li data-type='method'><a href="NPWriterConfigurator.html#addTopBarComponent">addTopBarComponent</a></li><li data-type='method'><a href="NPWriterConfigurator.html#addToSidebar">addToSidebar</a></li><li data-type='method'><a href="NPWriterConfigurator.html#addValidator">addValidator</a></li><li data-type='method'><a href="NPWriterConfigurator.html#getHooks">getHooks</a></li><li data-type='method'><a href="NPWriterConfigurator.html#getLabelProvider">getLabelProvider</a></li><li data-type='method'><a href="NPWriterConfigurator.html#getLocale">getLocale</a></li><li data-type='method'><a href="NPWriterConfigurator.html#getNewsItemTemplateId">getNewsItemTemplateId</a></li><li data-type='method'><a href="NPWriterConfigurator.html#getOrderedSideBars">getOrderedSideBars</a></li><li data-type='method'><a href="NPWriterConfigurator.html#getPluginModule">getPluginModule</a></li><li data-type='method'><a href="NPWriterConfigurator.html#getPluginModulesForTarget">getPluginModulesForTarget</a></li><li data-type='method'><a href="NPWriterConfigurator.html#getSidebarPanels">getSidebarPanels</a></li><li data-type='method'><a href="NPWriterConfigurator.html#getSideBars">getSideBars</a></li><li data-type='method'><a href="NPWriterConfigurator.html#getValidators">getValidators</a></li><li data-type='method'><a href="NPWriterConfigurator.html#getWriterConfiguration">getWriterConfiguration</a></li><li data-type='method'><a href="NPWriterConfigurator.html#loadWriterConfiguration">loadWriterConfiguration</a></li><li data-type='method'><a href="NPWriterConfigurator.html#registerConflictHandler">registerConflictHandler</a></li><li data-type='method'><a href="NPWriterConfigurator.html#setWriterConfiguration">setWriterConfiguration</a></li></ul></li><li><a href="OEmbedExporter.html">OEmbedExporter</a><ul class='methods'><li data-type='method'><a href="OEmbedExporter.html#getContext">getContext</a></li><li data-type='method'><a href="OEmbedExporter.html#getTitle">getTitle</a></li></ul></li><li><a href="PaginationComponent.html">PaginationComponent</a></li><li><a href="PluginManager.html">PluginManager</a><ul class='methods'><li data-type='method'><a href="PluginManager.html#_getValue">_getValue</a></li><li data-type='method'><a href="PluginManager.html#appendPluginScripts">appendPluginScripts</a></li><li data-type='method'><a href="PluginManager.html#getListOfPlugins">getListOfPlugins</a></li><li data-type='method'><a href="PluginManager.html#load">load</a></li><li data-type='method'><a href="PluginManager.html#registerPlugin">registerPlugin</a></li><li data-type='method'><a href="PluginManager.html#validatePluginPackage">validatePluginPackage</a></li></ul></li><li><a href="Validator.html">Validator</a><ul class='methods'><li data-type='method'><a href="Validator.html#addError">addError</a></li><li data-type='method'><a href="Validator.html#addInfo">addInfo</a></li><li data-type='method'><a href="Validator.html#addWarning">addWarning</a></li><li data-type='method'><a href="Validator.html#getMessages">getMessages</a></li><li data-type='method'><a href="Validator.html#hasMessages">hasMessages</a></li></ul></li></ul><h3>Externals</h3><ul class=externals><li><a href="external-Substance.html">Substance</a></li></ul><h3>Mixins</h3><ul class=mixins><li><a href="Trait.authorNodeTrait.html"><span class="member-of">Trait.</span>authorNodeTrait</a><ul class='methods'><li data-type='method'><a href="Trait.authorNodeTrait.html#.addAuthor">addAuthor</a></li><li data-type='method'><a href="Trait.authorNodeTrait.html#.fetchAuthorConcept">fetchAuthorConcept</a></li><li data-type='method'><a href="Trait.authorNodeTrait.html#.fetchAuthorsConcept">fetchAuthorsConcept</a></li><li data-type='method'><a href="Trait.authorNodeTrait.html#.removeAuthor">removeAuthor</a></li><li data-type='method'><a href="Trait.authorNodeTrait.html#.setAuthors">setAuthors</a></li><li data-type='method'><a href="Trait.authorNodeTrait.html#.updateAuthorFromConcept">updateAuthorFromConcept</a></li></ul></li><li><a href="Trait.imageCropTrait.html"><span class="member-of">Trait.</span>imageCropTrait</a><ul class='methods'><li data-type='method'><a href="Trait.imageCropTrait.html#.setSoftcropData">setSoftcropData</a></li></ul></li><li><a href="Trait.imageNodeTrait.html"><span class="member-of">Trait.</span>imageNodeTrait</a><ul class='methods'><li data-type='method'><a href="Trait.imageNodeTrait.html#.fetchSpecifiedUrls">fetchSpecifiedUrls</a></li><li data-type='method'><a href="Trait.imageNodeTrait.html#.getImageFile">getImageFile</a></li><li data-type='method'><a href="Trait.imageNodeTrait.html#.getUrl">getUrl</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#exportSoftcropLinks">exportSoftcropLinks</a></li><li><a href="global.html#importSoftcropLinks">importSoftcropLinks</a></li></ul>
+</nav>
+
+<div id="main">
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import {Component, FontAwesomeIcon} from "substance";
+import NilUUID from '../../utils/NilUUID'
+import Author from './Author'
+
+class AddToBylineComponent extends Component {
+
+    constructor(...args) {
+        super(...args)
+    }
+
+    /**
+     * Ensures that focus it put on input field when component is shown
+     */
+    // TODO No jquery
+    // didMount() {
+    //     setTimeout(function () {
+    //         // Workaround: Need to wait because of initial rerender process
+    //         $('#formSearch').focus()
+    //     }, 50)
+    // }
+
+    didMount() {
+        this.context.editorSession.onRender('document', this._onDocumentChange, this)
+    }
+
+    dispose() {
+        this.context.editorSession.off(this)
+    }
+
+    _onDocumentChange(change) {
+        if (change.isAffected(this.props.node.id) || change.isAffected(this.props.node.imageFile)) {
+            this.rerender()
+        }
+    }
+
+    render($$) {
+        const el = $$('div')
+            .ref('authorContainer')
+            .addClass('authors dialog-image-info clearfix')
+
+        let searchComponent
+
+        if (this.props.bylineSearch) {
+            const AuthorSearchComponent = this.context.componentRegistry.get('form-search')
+            searchComponent = $$(AuthorSearchComponent, {
+                existingItems: this.props.node.authors,
+                searchUrl: '/api/search/concepts/authors?q=',
+                onSelect: this.addAuthor.bind(this),
+                onCreate: this.createAuthor.bind(this),
+                createAllowed: true,
+                placeholderText: this.getLabel("Add to byline")
+            }).ref('authorSearchComponent')
+        } else {
+            const AuthorAddComponent = this.context.componentRegistry.get('form-add')
+
+            searchComponent = $$(AuthorAddComponent, {
+                existingItems: this.props.node.authors,
+                onSelect: this.addAuthor.bind(this),
+                onCreate: this.createAuthor.bind(this),
+                createAllowed: true,
+                placeholderText: this.getLabel("Add to byline")
+            }).ref('authorSearchComponent')
+        }
+
+        return el.append([
+            searchComponent,
+            this.renderAuthors($$)
+        ])
+
+    }
+
+    renderAuthors($$) {
+        const authorList = $$('ul')
+            .addClass('dialog-image-authorlist')
+            .attr('contenteditable', false)
+
+        for (let n = 0; n &lt; this.props.node.authors.length; n++) {
+            const authorItem = this.renderAuthor($$, this.props.node.authors[n])
+            if (authorItem) {
+                authorList.append(authorItem)
+            }
+        }
+
+        return $$('div')
+            .addClass('dialog-image-authors')
+            .append(
+                authorList
+            )
+    }
+
+    renderAuthor($$, author) {
+        const Avatar = this.context.api.ui.getComponent('avatar')
+
+        let twitterHandle
+        if (author.isLoaded &amp;&amp; author.links &amp;&amp; author.links.link) {
+            const twitterLink = Avatar._getLinkForType(author.links.link, 'x-im/social+twitter')
+            const twitterURL = Avatar._getTwitterUrlFromAuthorLink(twitterLink)
+            if (twitterURL) {
+                twitterHandle = Avatar._getTwitterHandleFromTwitterUrl(twitterURL)
+            }
+        }
+        const avatarEl = $$(Avatar, {avatarSource: 'twitter', avatarId: twitterHandle})
+
+        const refid = (NilUUID.isNilUUID(author.uuid)) ? author.name : author.uuid
+        return $$('li').append(
+            $$('div').append([
+                avatarEl,
+                $$('div').append([
+                    $$('strong').append(author.name),
+                    $$('em').append(author.data ? author.data.email ? author.data.email : '' : '')
+                ]),
+                $$('span').append(
+                    $$('a').append(
+                        $$(FontAwesomeIcon, {icon: 'fa-times'})
+                    )
+                        .attr('title', this.getLabel('Remove'))
+                        .on('click', function () {
+                            this.removeAuthor(author)
+                        }.bind(this))
+                )
+            ])
+        ).ref('item-' + refid)
+    }
+
+    createAuthor(authorItem) {
+
+        const author = new Author(NilUUID.getNilUUID(), authorItem.inputValue, this.props.node.id)
+        try {
+            this.props.addAuthor(author, () => {
+                this.rerender()
+            })
+        } catch (e) {
+            this.context.api.ui.showNotification('formsearchcomponent', this.getLabel('formsearch.item-exists-label'), this.getLabel('formsearch.item-exists-description'))
+            throw e
+        }
+    }
+
+    addAuthor(authorItem) {
+
+        const author = new Author(authorItem.uuid, authorItem.name[0], this.props.node.id)
+
+        this.props.addAuthor(author, function () {
+            this.rerender()
+        }.bind(this))
+    }
+
+    removeAuthor(author) {
+        const refid = (NilUUID.isNilUUID(author.uuid)) ? author.name : author.uuid
+        delete this.refs['item-' + refid]
+        this.props.node.removeAuthor(author)
+    }
+
+    onClose() {
+        return true
+    }
+
+}
+
+export default AddToBylineComponent
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Fri Feb 23 2018 11:15:41 GMT+0100 (CET) using a modified version of the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+<!-- <script src="scripts/prism.js"></script> -->
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
